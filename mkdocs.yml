@@ -1,0 +1,29 @@
+site_name: python notes
+site_url: https://jzztf.github.io/python_notes
+theme: 
+    name: 'material'
+    font:
+        text: 'Ubuntu'
+        code: 'Ubuntu Mono'
+    palette:
+        primary: 'cyan'
+        accent: 'indigo'
+
+repo_name: 'jzztf/python_notes'
+repo_url: 'https://github.com/jzztf/python_notes'
+
+extra:
+    disqus: 'jzztf'
+    social:
+      - type: 'github'
+        link: 'https://github.com/jzztf'
+
+markdown_extensions:
+    - admonition
+    - codehilite:
+        guess_lang: false
+    - toc:
+        permalink: "¶"
+
+plugins:
+    - search
