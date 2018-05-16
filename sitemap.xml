@@ -4,9 +4,19 @@
     
     <url>
      <loc>https://jzztf.github.io/python_notes/</loc>
-     <lastmod>2018-05-09</lastmod>
+     <lastmod>2018-05-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
+    
+        
+    <url>
+     <loc>https://jzztf.github.io/python_notes/tools/dot_notes/</loc>
+     <lastmod>2018-05-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>
