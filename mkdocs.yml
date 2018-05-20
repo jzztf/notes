@@ -1,5 +1,5 @@
-site_name: python notes
-site_url: https://jzztf.github.io/python_notes
+site_name: notes
+site_url: https://jzztf.github.io/notes/
 theme: 
     name: 'material'
     font:
@@ -10,7 +10,7 @@ theme:
         accent: 'indigo'
 
 repo_name: 'jzztf/python_notes'
-repo_url: 'https://github.com/jzztf/python_notes'
+repo_url: 'https://github.com/jzztf/notes'
 
 extra:
     disqus: 'jzztf'
