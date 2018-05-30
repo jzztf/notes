@@ -9,7 +9,7 @@ theme:
         primary: 'cyan'
         accent: 'indigo'
 
-repo_name: 'jzztf/python_notes'
+repo_name: 'jzztf/notes'
 repo_url: 'https://github.com/jzztf/notes'
 
 extra:
