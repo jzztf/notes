@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://jzztf.github.io/notes/tools/vim_config/">
+        <link rel="canonical" href="https://jzztf.github.io/notes/linux/package_manage/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>vim 设置 - notes</title>
+        <title>linux 包管理 - notes</title>
       
     
     
@@ -95,7 +95,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#vim" tabindex="1" class="md-skip">
+      <a href="#linux" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -121,7 +121,7 @@
                 notes
               </span>
               <span class="md-header-nav__topic">
-                vim 设置
+                linux 包管理
               </span>
             
           
@@ -248,10 +248,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Linux
@@ -269,7 +271,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../linux/disk_manage/" title="linux 磁盘管理" class="md-nav__link">
+    <a href="../disk_manage/" title="linux 磁盘管理" class="md-nav__link">
       linux 磁盘管理
     </a>
   </li>
@@ -279,11 +281,82 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../linux/package_manage/" title="linux 包管理" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        linux 包管理
+      </label>
+    
+    <a href="./" title="linux 包管理" class="md-nav__link md-nav__link--active">
       linux 包管理
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dpkg" title="dpkg" class="md-nav__link">
+    dpkg
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aptapt-get" title="apt/apt-get" class="md-nav__link">
+    apt/apt-get
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sourceslist" title="sources.list" class="md-nav__link">
+    sources.list
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aptitude-synaptic" title="aptitude &amp; synaptic" class="md-nav__link">
+    aptitude &amp; synaptic
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -293,8 +366,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../linux/processing_manage/" title="linux 进程管理" class="md-nav__link">
-      linux 进程管理
+    <a href="../processing_manage/" title="Processing manage" class="md-nav__link">
+      Processing manage
     </a>
   </li>
 
@@ -305,8 +378,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../linux/user_group_manage/" title="linux 用户和用户组管理" class="md-nav__link">
-      linux 用户和用户组管理
+    <a href="../user_group_manage/" title="User group manage" class="md-nav__link">
+      User group manage
     </a>
   </li>
 
@@ -365,8 +438,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python_basis/dict_type/" title="字典" class="md-nav__link">
-      字典
+    <a href="../../python_basis/dict_type/" title="Dict type" class="md-nav__link">
+      Dict type
     </a>
   </li>
 
@@ -401,8 +474,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python_modules/PIL_pillow/" title="pillow模块用来处理图像" class="md-nav__link">
-      pillow模块用来处理图像
+    <a href="../../python_modules/PIL_pillow/" title="PIL pillow" class="md-nav__link">
+      PIL pillow
     </a>
   </li>
 
@@ -413,8 +486,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python_modules/datetime_time/" title="datetime and time" class="md-nav__link">
-      datetime and time
+    <a href="../../python_modules/datetime_time/" title="Datetime time" class="md-nav__link">
+      Datetime time
     </a>
   </li>
 
@@ -425,8 +498,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python_modules/mysqlclient_pyhon/" title="mysqlclient-python" class="md-nav__link">
-      mysqlclient-python
+    <a href="../../python_modules/mysqlclient_pyhon/" title="Mysqlclient pyhon" class="md-nav__link">
+      Mysqlclient pyhon
     </a>
   </li>
 
@@ -449,8 +522,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python_modules/socket/" title="socket-套接字模块" class="md-nav__link">
-      socket-套接字模块
+    <a href="../../python_modules/socket/" title="Socket" class="md-nav__link">
+      Socket
     </a>
   </li>
 
@@ -485,8 +558,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tips_tricks/preventing_password_leaks_in_code/" title="妥善管理密钥" class="md-nav__link">
-      妥善管理密钥
+    <a href="../../tips_tricks/preventing_password_leaks_in_code/" title="Preventing password leaks in code" class="md-nav__link">
+      Preventing password leaks in code
     </a>
   </li>
 
@@ -500,12 +573,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
       Tools
@@ -523,8 +594,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../dot_notes/" title="dot 笔记" class="md-nav__link">
-      dot 笔记
+    <a href="../../tools/dot_notes/" title="Dot notes" class="md-nav__link">
+      Dot notes
     </a>
   </li>
 
@@ -535,8 +606,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../git_github/" title="git 和 github 基础教程" class="md-nav__link">
-      git 和 github 基础教程
+    <a href="../../tools/git_github/" title="Git github" class="md-nav__link">
+      Git github
     </a>
   </li>
 
@@ -547,8 +618,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../hexo/" title="hexo安装设置" class="md-nav__link">
-      hexo安装设置
+    <a href="../../tools/hexo/" title="Hexo" class="md-nav__link">
+      Hexo
     </a>
   </li>
 
@@ -559,8 +630,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../install_linux_into_usb/" title="将linux安装到USB移动设备" class="md-nav__link">
-      将linux安装到USB移动设备
+    <a href="../../tools/install_linux_into_usb/" title="Install linux into usb" class="md-nav__link">
+      Install linux into usb
     </a>
   </li>
 
@@ -571,8 +642,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../ipython/" title="ipython 使用技巧" class="md-nav__link">
-      ipython 使用技巧
+    <a href="../../tools/ipython/" title="Ipython" class="md-nav__link">
+      Ipython
     </a>
   </li>
 
@@ -583,8 +654,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../jekyll/" title="jekyll 安装设置" class="md-nav__link">
-      jekyll 安装设置
+    <a href="../../tools/jekyll/" title="Jekyll" class="md-nav__link">
+      Jekyll
     </a>
   </li>
 
@@ -595,7 +666,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../jupyter_notebook/" title="Jupyter notebook" class="md-nav__link">
+    <a href="../../tools/jupyter_notebook/" title="Jupyter notebook" class="md-nav__link">
       Jupyter notebook
     </a>
   </li>
@@ -607,8 +678,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../linux_config/" title="linux 系统配置" class="md-nav__link">
-      linux 系统配置
+    <a href="../../tools/linux_config/" title="Linux config" class="md-nav__link">
+      Linux config
     </a>
   </li>
 
@@ -619,7 +690,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mdwiki/" title="Mdwiki" class="md-nav__link">
+    <a href="../../tools/mdwiki/" title="Mdwiki" class="md-nav__link">
       Mdwiki
     </a>
   </li>
@@ -631,7 +702,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mkdocs/" title="Mkdocs" class="md-nav__link">
+    <a href="../../tools/mkdocs/" title="Mkdocs" class="md-nav__link">
       Mkdocs
     </a>
   </li>
@@ -643,8 +714,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../pip/" title="pip & pipenv & autoenv" class="md-nav__link">
-      pip & pipenv & autoenv
+    <a href="../../tools/pip/" title="Pip" class="md-nav__link">
+      Pip
     </a>
   </li>
 
@@ -655,7 +726,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../pycharm/" title="Pycharm" class="md-nav__link">
+    <a href="../../tools/pycharm/" title="Pycharm" class="md-nav__link">
       Pycharm
     </a>
   </li>
@@ -667,8 +738,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../strong_code/" title="如何编写强密码" class="md-nav__link">
-      如何编写强密码
+    <a href="../../tools/strong_code/" title="Strong code" class="md-nav__link">
+      Strong code
     </a>
   </li>
 
@@ -679,8 +750,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tmux/" title="tmux 基础教程" class="md-nav__link">
-      tmux 基础教程
+    <a href="../../tools/tmux/" title="Tmux" class="md-nav__link">
+      Tmux
     </a>
   </li>
 
@@ -691,8 +762,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../veracrypt/" title="加密工具——veracrypt" class="md-nav__link">
-      加密工具——veracrypt
+    <a href="../../tools/veracrypt/" title="Veracrypt" class="md-nav__link">
+      Veracrypt
     </a>
   </li>
 
@@ -703,85 +774,9 @@
 
 
   <li class="md-nav__item">
-    <a href="../vim/" title="vim 操作" class="md-nav__link">
-      vim 操作
+    <a href="../../tools/vim/" title="Vim" class="md-nav__link">
+      Vim
     </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        vim 设置
-      </label>
-    
-    <a href="./" title="vim 设置" class="md-nav__link md-nav__link--active">
-      vim 设置
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install-vim" title="install vim" class="md-nav__link">
-    install vim
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install-vim-plugin" title="install vim plugin" class="md-nav__link">
-    install vim plugin
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-setting" title="other setting" class="md-nav__link">
-    other setting
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -791,7 +786,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../zsh/" title="Zsh" class="md-nav__link">
+    <a href="../../tools/vim_config/" title="Vim config" class="md-nav__link">
+      Vim config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/zsh/" title="Zsh" class="md-nav__link">
       Zsh
     </a>
   </li>
@@ -823,29 +830,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-vim" title="install vim" class="md-nav__link">
-    install vim
+  <a href="#dpkg" title="dpkg" class="md-nav__link">
+    dpkg
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aptapt-get" title="apt/apt-get" class="md-nav__link">
+    apt/apt-get
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-vim-plugin" title="install vim plugin" class="md-nav__link">
-    install vim plugin
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-setting" title="other setting" class="md-nav__link">
-    other setting
+  <a href="#sourceslist" title="sources.list" class="md-nav__link">
+    sources.list
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aptitude-synaptic" title="aptitude &amp; synaptic" class="md-nav__link">
+    aptitude &amp; synaptic
+  </a>
   
 </li>
       
@@ -871,89 +885,78 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jzztf/notes/edit/master/docs/tools/vim_config.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jzztf/notes/edit/master/docs/linux/package_manage.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="vim">vim 设置<a class="headerlink" href="#vim" title="Permanent link">¶</a></h1>
-<h2 id="install-vim">install vim<a class="headerlink" href="#install-vim" title="Permanent link">¶</a></h2>
-<ul>
-<li>install</li>
-</ul>
-<div class="codehilite"><pre><span></span>sudo apt install vim
+                <h1 id="linux">linux 包管理<a class="headerlink" href="#linux" title="Permanent link">¶</a></h1>
+<h2 id="dpkg">dpkg<a class="headerlink" href="#dpkg" title="Permanent link">¶</a></h2>
+<p>dpkg是linux底层的包管理软件，不会解决依赖之间的问题</p>
+<div class="codehilite"><pre><span></span>dpkg -l  <span class="c1"># 列出所有包</span>
+dpkg -l <span class="p">|</span> grep firefox  <span class="c1"># 列出所有安装包，查找firefox</span>
+dpkg -L firefox  <span class="c1"># 列出某一包安装的文件</span>
+dpkg -S ~/.npmrc  <span class="c1"># 查找某一文件所属程序</span>
+sudo dpkg -i package.deb  <span class="c1"># 安装.deb安装包</span>
+sudo dpkg -r package.deb  <span class="c1"># 卸载包</span>
 </pre></div>
 
 
-<ul>
-<li>
-<p>install  vundle(vim plugin manager)</p>
-</li>
-<li>
-<p>repo: <a href="https://github.com/VundleVim/Vundle.vim">VundleVim/Vundle.vim</a></p>
-</li>
-</ul>
-<h3 id="install-vim-plugin">install vim plugin<a class="headerlink" href="#install-vim-plugin" title="Permanent link">¶</a></h3>
-<ul>
-<li>
-<p>air-line/air-line-theme</p>
-</li>
-<li>
-<p>repo: <a href="https://github.com/vim-airline/vim-airline">vim-airline/vim-airline</a></p>
-</li>
-<li>
-<p>themes: <a href="https://github.com/vim-airline/vim-airline/wiki/Screenshots">screenshots</a></p>
-</li>
-<li>
-<p>plugin(add to .vimrc):</p>
-</li>
-</ul>
-<div class="codehilite"><pre><span></span>Plugin &#39;vim-airline/vim-airline&#39;
-Plugin &#39;vim-airline/vim-airline-themes&#39;
-let g:airline_theme=&#39;simple&#39;
+<h2 id="aptapt-get">apt/apt-get<a class="headerlink" href="#aptapt-get" title="Permanent link">¶</a></h2>
+<p>Advanced Packaging Tool (APT) </p>
+<blockquote>
+<p>比apt-get有更好的交互体验</p>
+</blockquote>
+<div class="codehilite"><pre><span></span>sudo apt install package  <span class="c1"># 安装包</span>
+sudo apt remove package  <span class="c1"># 移除包，但会留一些个人配置或信息的文件</span>
+sudo apt purge package  <span class="c1"># 比之remove删的更多点</span>
+sudo apt autoremove  <span class="c1"># 自动移除当前所有包不需要的依赖（可能是安装其他包，安装的依赖，当之前的包被移除后，这些依赖也就没用了）</span>
+sudo apt search package  <span class="c1"># 查找包</span>
+sudo apt show package  <span class="c1"># 显示给定包的信息以及其依赖的信息</span>
+sudo apt list  <span class="c1"># 显示所有包</span>
+sudo apt list --installed  <span class="c1"># 显示已安装</span>
+sudo apt edit-source  <span class="c1"># 编辑&quot;/etc/apt/sources.list&quot;文件</span>
+sudo apt update  <span class="c1"># 更新源</span>
+sudo apt upgrade  <span class="c1"># 更新可更新包</span>
 </pre></div>
 
 
+<h3 id="sourceslist">sources.list<a class="headerlink" href="#sourceslist" title="Permanent link">¶</a></h3>
+<p><strong>如果只是用<code>apt</code>安装，可以只留<code>deb</code>开头的</strong></p>
 <ul>
-<li>
-<p>markdown-preview</p>
-</li>
-<li>
-<p>repo: <a href="https://github.com/iamcco/markdown-preview.vim">iamcco/markdown-preview.vim</a></p>
-</li>
-<li>
-<p>plugin:</p>
-</li>
+<li><code>deb</code>行关联二进制预编译软件包，可以通过<code>apt</code>安装</li>
+<li><code>deb-src</code>行关联用于编译二进制软件包的源代码，通过<code>apt-get source $package</code>，随后进行编译</li>
 </ul>
-<div class="codehilite"><pre><span></span>Plugin &#39;iamcco/markdown-preview.vim&#39;
-&quot; 设置自动打开
-&quot;let g:mkdp_auto_start = 1
-&quot; 设置F8快捷键操作
-nmap &lt;silent&gt; &lt;F8&gt; &lt;Plug&gt;MarkdownPreview        &quot; for normal mode
-imap &lt;silent&gt; &lt;F8&gt; &lt;Plug&gt;MarkdownPreview        &quot; for insert mode
-nmap &lt;silent&gt; &lt;F9&gt; &lt;Plug&gt;StopMarkdownPreview    &quot; for normal mode
-imap &lt;silent&gt; &lt;F9&gt; &lt;Plug&gt;StopMarkdownPreview    &quot; for insert mode
+<p><strong>根据需求选择软件库</strong></p>
+<ul>
+<li><code>main</code> canoical支持的免费和开源</li>
+<li><code>universe</code> 社区支持的免费和开源</li>
+<li><code>restricted</code> 官方支持的非完全自由软件</li>
+<li><code>multiverse</code> 非官方支持的非自由软件</li>
+</ul>
+<p><strong>更新软件源</strong></p>
+<div class="codehilite"><pre><span></span>deb http://cn.archive.ubuntu.com/ubuntu/ bionic main restricted
+deb http://cn.archive.ubuntu.com/ubuntu/ bionic universe
+deb http://cn.archive.ubuntu.com/ubuntu/ bionic multiverse
+
+deb http://cn.archive.ubuntu.com/ubuntu/ binoic-updates main restricted
+deb http://cn.archive.ubuntu.com/ubuntu/ binoic-updates universe
+deb http://cn.archive.ubuntu.com/ubuntu/ binoic-updates multiverse
+
+deb http://cn.archive.ubuntu.com/ubuntu/ binoic-security main restricted
+deb http://cn.archive.ubuntu.com/ubuntu/ binoic-security universe
+deb http://cn.archive.ubuntu.com/ubuntu/ binoic-security multiverse
+
+<span class="c1"># 使用vim编辑可使用s替换命令，更换特定源</span>
+<span class="c1"># “:,$s/cn.archive.ubuntu.com/mirrors.aliyun.com/g”</span>
 </pre></div>
 
 
-<h3 id="other-setting">other setting<a class="headerlink" href="#other-setting" title="Permanent link">¶</a></h3>
-<div class="codehilite"><pre><span></span>&quot; set coding
-set encoding=utf-8
-
-set nu
-
-au BufNewFile,BufRead *.js, *.html, *.css, *.md
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2
-
-&quot; Split Layouts,&lt;:sv filename&gt;;&lt;:vs filename&gt;
-set splitbelow
-set splitright
-
-&quot;split navigations
-nnoremap &lt;C-J&gt; &lt;C-W&gt;&lt;C-J&gt;
-nnoremap &lt;C-K&gt; &lt;C-W&gt;&lt;C-K&gt;
-nnoremap &lt;C-L&gt; &lt;C-W&gt;&lt;C-L&gt;
-nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
+<h2 id="aptitude-synaptic">aptitude &amp; synaptic<a class="headerlink" href="#aptitude-synaptic" title="Permanent link">¶</a></h2>
+<ul>
+<li>aptitude 终端的菜单式带界面的包管理</li>
+<li>synaptic 可视化包管理器</li>
+</ul>
+<div class="codehilite"><pre><span></span>sudo aptitude install package  <span class="c1"># 命令行下使用aptitude</span>
+sudo aptitude remove package
 </pre></div>
                 
                   
@@ -967,9 +970,9 @@ nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://jzztf.github.io/notes/tools/vim_config/";
+      this.page.url = "https://jzztf.github.io/notes/linux/package_manage/";
       this.page.identifier =
-        "tools/vim_config/";
+        "linux/package_manage/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -991,7 +994,7 @@ nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../vim/" title="vim 操作" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../disk_manage/" title="linux 磁盘管理" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1000,19 +1003,19 @@ nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                vim 操作
+                linux 磁盘管理
               </span>
             </div>
           </a>
         
         
-          <a href="../zsh/" title="Zsh" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../processing_manage/" title="Processing manage" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Zsh
+                Processing manage
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

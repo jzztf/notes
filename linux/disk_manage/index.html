@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://jzztf.github.io/notes/tools/vim_config/">
+        <link rel="canonical" href="https://jzztf.github.io/notes/linux/disk_manage/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>vim 设置 - notes</title>
+        <title>linux 磁盘管理 - notes</title>
       
     
     
@@ -95,7 +95,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#vim" tabindex="1" class="md-skip">
+      <a href="#linux" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -121,7 +121,7 @@
                 notes
               </span>
               <span class="md-header-nav__topic">
-                vim 设置
+                linux 磁盘管理
               </span>
             
           
@@ -248,10 +248,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Linux
@@ -267,11 +269,96 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../linux/disk_manage/" title="linux 磁盘管理" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        linux 磁盘管理
+      </label>
+    
+    <a href="./" title="linux 磁盘管理" class="md-nav__link md-nav__link--active">
       linux 磁盘管理
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#du" title="du" class="md-nav__link">
+    du
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#df" title="df" class="md-nav__link">
+    df
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fdisk" title="fdisk" class="md-nav__link">
+    fdisk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fstab" title="fstab（自动挂载）" class="md-nav__link">
+    fstab（自动挂载）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="参数" class="md-nav__link">
+    参数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="文件系统标识" class="md-nav__link">
+    文件系统标识
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -281,8 +368,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../linux/package_manage/" title="linux 包管理" class="md-nav__link">
-      linux 包管理
+    <a href="../package_manage/" title="Package manage" class="md-nav__link">
+      Package manage
     </a>
   </li>
 
@@ -293,8 +380,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../linux/processing_manage/" title="linux 进程管理" class="md-nav__link">
-      linux 进程管理
+    <a href="../processing_manage/" title="Processing manage" class="md-nav__link">
+      Processing manage
     </a>
   </li>
 
@@ -305,8 +392,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../linux/user_group_manage/" title="linux 用户和用户组管理" class="md-nav__link">
-      linux 用户和用户组管理
+    <a href="../user_group_manage/" title="User group manage" class="md-nav__link">
+      User group manage
     </a>
   </li>
 
@@ -365,8 +452,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python_basis/dict_type/" title="字典" class="md-nav__link">
-      字典
+    <a href="../../python_basis/dict_type/" title="Dict type" class="md-nav__link">
+      Dict type
     </a>
   </li>
 
@@ -401,8 +488,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python_modules/PIL_pillow/" title="pillow模块用来处理图像" class="md-nav__link">
-      pillow模块用来处理图像
+    <a href="../../python_modules/PIL_pillow/" title="PIL pillow" class="md-nav__link">
+      PIL pillow
     </a>
   </li>
 
@@ -413,8 +500,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python_modules/datetime_time/" title="datetime and time" class="md-nav__link">
-      datetime and time
+    <a href="../../python_modules/datetime_time/" title="Datetime time" class="md-nav__link">
+      Datetime time
     </a>
   </li>
 
@@ -425,8 +512,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python_modules/mysqlclient_pyhon/" title="mysqlclient-python" class="md-nav__link">
-      mysqlclient-python
+    <a href="../../python_modules/mysqlclient_pyhon/" title="Mysqlclient pyhon" class="md-nav__link">
+      Mysqlclient pyhon
     </a>
   </li>
 
@@ -449,8 +536,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python_modules/socket/" title="socket-套接字模块" class="md-nav__link">
-      socket-套接字模块
+    <a href="../../python_modules/socket/" title="Socket" class="md-nav__link">
+      Socket
     </a>
   </li>
 
@@ -485,8 +572,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tips_tricks/preventing_password_leaks_in_code/" title="妥善管理密钥" class="md-nav__link">
-      妥善管理密钥
+    <a href="../../tips_tricks/preventing_password_leaks_in_code/" title="Preventing password leaks in code" class="md-nav__link">
+      Preventing password leaks in code
     </a>
   </li>
 
@@ -500,12 +587,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
       Tools
@@ -523,8 +608,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../dot_notes/" title="dot 笔记" class="md-nav__link">
-      dot 笔记
+    <a href="../../tools/dot_notes/" title="Dot notes" class="md-nav__link">
+      Dot notes
     </a>
   </li>
 
@@ -535,8 +620,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../git_github/" title="git 和 github 基础教程" class="md-nav__link">
-      git 和 github 基础教程
+    <a href="../../tools/git_github/" title="Git github" class="md-nav__link">
+      Git github
     </a>
   </li>
 
@@ -547,8 +632,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../hexo/" title="hexo安装设置" class="md-nav__link">
-      hexo安装设置
+    <a href="../../tools/hexo/" title="Hexo" class="md-nav__link">
+      Hexo
     </a>
   </li>
 
@@ -559,8 +644,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../install_linux_into_usb/" title="将linux安装到USB移动设备" class="md-nav__link">
-      将linux安装到USB移动设备
+    <a href="../../tools/install_linux_into_usb/" title="Install linux into usb" class="md-nav__link">
+      Install linux into usb
     </a>
   </li>
 
@@ -571,8 +656,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../ipython/" title="ipython 使用技巧" class="md-nav__link">
-      ipython 使用技巧
+    <a href="../../tools/ipython/" title="Ipython" class="md-nav__link">
+      Ipython
     </a>
   </li>
 
@@ -583,8 +668,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../jekyll/" title="jekyll 安装设置" class="md-nav__link">
-      jekyll 安装设置
+    <a href="../../tools/jekyll/" title="Jekyll" class="md-nav__link">
+      Jekyll
     </a>
   </li>
 
@@ -595,7 +680,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../jupyter_notebook/" title="Jupyter notebook" class="md-nav__link">
+    <a href="../../tools/jupyter_notebook/" title="Jupyter notebook" class="md-nav__link">
       Jupyter notebook
     </a>
   </li>
@@ -607,8 +692,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../linux_config/" title="linux 系统配置" class="md-nav__link">
-      linux 系统配置
+    <a href="../../tools/linux_config/" title="Linux config" class="md-nav__link">
+      Linux config
     </a>
   </li>
 
@@ -619,7 +704,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mdwiki/" title="Mdwiki" class="md-nav__link">
+    <a href="../../tools/mdwiki/" title="Mdwiki" class="md-nav__link">
       Mdwiki
     </a>
   </li>
@@ -631,7 +716,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mkdocs/" title="Mkdocs" class="md-nav__link">
+    <a href="../../tools/mkdocs/" title="Mkdocs" class="md-nav__link">
       Mkdocs
     </a>
   </li>
@@ -643,8 +728,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../pip/" title="pip & pipenv & autoenv" class="md-nav__link">
-      pip & pipenv & autoenv
+    <a href="../../tools/pip/" title="Pip" class="md-nav__link">
+      Pip
     </a>
   </li>
 
@@ -655,7 +740,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../pycharm/" title="Pycharm" class="md-nav__link">
+    <a href="../../tools/pycharm/" title="Pycharm" class="md-nav__link">
       Pycharm
     </a>
   </li>
@@ -667,8 +752,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../strong_code/" title="如何编写强密码" class="md-nav__link">
-      如何编写强密码
+    <a href="../../tools/strong_code/" title="Strong code" class="md-nav__link">
+      Strong code
     </a>
   </li>
 
@@ -679,8 +764,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tmux/" title="tmux 基础教程" class="md-nav__link">
-      tmux 基础教程
+    <a href="../../tools/tmux/" title="Tmux" class="md-nav__link">
+      Tmux
     </a>
   </li>
 
@@ -691,8 +776,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../veracrypt/" title="加密工具——veracrypt" class="md-nav__link">
-      加密工具——veracrypt
+    <a href="../../tools/veracrypt/" title="Veracrypt" class="md-nav__link">
+      Veracrypt
     </a>
   </li>
 
@@ -703,85 +788,9 @@
 
 
   <li class="md-nav__item">
-    <a href="../vim/" title="vim 操作" class="md-nav__link">
-      vim 操作
+    <a href="../../tools/vim/" title="Vim" class="md-nav__link">
+      Vim
     </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        vim 设置
-      </label>
-    
-    <a href="./" title="vim 设置" class="md-nav__link md-nav__link--active">
-      vim 设置
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install-vim" title="install vim" class="md-nav__link">
-    install vim
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install-vim-plugin" title="install vim plugin" class="md-nav__link">
-    install vim plugin
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-setting" title="other setting" class="md-nav__link">
-    other setting
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -791,7 +800,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../zsh/" title="Zsh" class="md-nav__link">
+    <a href="../../tools/vim_config/" title="Vim config" class="md-nav__link">
+      Vim config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/zsh/" title="Zsh" class="md-nav__link">
       Zsh
     </a>
   </li>
@@ -823,23 +844,44 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-vim" title="install vim" class="md-nav__link">
-    install vim
+  <a href="#du" title="du" class="md-nav__link">
+    du
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#df" title="df" class="md-nav__link">
+    df
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fdisk" title="fdisk" class="md-nav__link">
+    fdisk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fstab" title="fstab（自动挂载）" class="md-nav__link">
+    fstab（自动挂载）
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-vim-plugin" title="install vim plugin" class="md-nav__link">
-    install vim plugin
+  <a href="#_1" title="参数" class="md-nav__link">
+    参数
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#other-setting" title="other setting" class="md-nav__link">
-    other setting
+  <a href="#_2" title="文件系统标识" class="md-nav__link">
+    文件系统标识
   </a>
   
 </li>
@@ -871,90 +913,64 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jzztf/notes/edit/master/docs/tools/vim_config.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jzztf/notes/edit/master/docs/linux/disk_manage.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="vim">vim 设置<a class="headerlink" href="#vim" title="Permanent link">¶</a></h1>
-<h2 id="install-vim">install vim<a class="headerlink" href="#install-vim" title="Permanent link">¶</a></h2>
-<ul>
-<li>install</li>
-</ul>
-<div class="codehilite"><pre><span></span>sudo apt install vim
+                <h1 id="linux">linux 磁盘管理<a class="headerlink" href="#linux" title="Permanent link">¶</a></h1>
+<h2 id="du">du<a class="headerlink" href="#du" title="Permanent link">¶</a></h2>
+<p>查看某个目录所占空间大小</p>
+<div class="codehilite"><pre><span></span>du /tmp  <span class="c1"># 查看tmp目录大小</span>
+du /tmp -h  <span class="c1"># 以易读的方式呈现大小（KB/MB/GB/TB）</span>
+du /tmp -s  <span class="c1"># 只显示该目录的大小，不显示内嵌目录</span>
 </pre></div>
 
 
-<ul>
-<li>
-<p>install  vundle(vim plugin manager)</p>
-</li>
-<li>
-<p>repo: <a href="https://github.com/VundleVim/Vundle.vim">VundleVim/Vundle.vim</a></p>
-</li>
-</ul>
-<h3 id="install-vim-plugin">install vim plugin<a class="headerlink" href="#install-vim-plugin" title="Permanent link">¶</a></h3>
-<ul>
-<li>
-<p>air-line/air-line-theme</p>
-</li>
-<li>
-<p>repo: <a href="https://github.com/vim-airline/vim-airline">vim-airline/vim-airline</a></p>
-</li>
-<li>
-<p>themes: <a href="https://github.com/vim-airline/vim-airline/wiki/Screenshots">screenshots</a></p>
-</li>
-<li>
-<p>plugin(add to .vimrc):</p>
-</li>
-</ul>
-<div class="codehilite"><pre><span></span>Plugin &#39;vim-airline/vim-airline&#39;
-Plugin &#39;vim-airline/vim-airline-themes&#39;
-let g:airline_theme=&#39;simple&#39;
+<h2 id="df">df<a class="headerlink" href="#df" title="Permanent link">¶</a></h2>
+<p>查看已挂在磁盘的总容量，使用容量，剩余容量</p>
+<div class="codehilite"><pre><span></span>df  <span class="c1"># 查看挂在的磁盘</span>
+df -h  <span class="c1"># 以易读的方式呈现大小</span>
 </pre></div>
 
 
+<h2 id="fdisk">fdisk<a class="headerlink" href="#fdisk" title="Permanent link">¶</a></h2>
+<p>查看磁盘使用情况</p>
+<div class="codehilite"><pre><span></span>sudo fdisk -l  <span class="c1"># 列出当前磁盘使用情况</span>
+sudo fdisk /dev/sdb1  <span class="c1"># 管理sdb1磁盘</span>
+m  <span class="c1"># 帮助信息</span>
+d  <span class="c1"># 删除分区</span>
+n  <span class="c1"># 创建分区</span>
+w  <span class="c1"># 写入，确认都没问题时才写入！</span>
+q  <span class="c1"># 退出</span>
+</pre></div>
+
+
+<h2 id="fstab">fstab（自动挂载）<a class="headerlink" href="#fstab" title="Permanent link">¶</a></h2>
+<p>如果要设置自动挂载，可设置此文件</p>
+<div class="codehilite"><pre><span></span>cat /etc/fstab
+<span class="c1"># 5个字段</span>
+<span class="c1"># &lt;file system&gt;  &lt;mount point&gt;  &lt;type&gt;  &lt;options&gt;  &lt;dump&gt;  &lt;pass&gt;</span>
+</pre></div>
+
+
+<h3 id="_1">参数<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
 <ul>
-<li>
-<p>markdown-preview</p>
-</li>
-<li>
-<p>repo: <a href="https://github.com/iamcco/markdown-preview.vim">iamcco/markdown-preview.vim</a></p>
-</li>
-<li>
-<p>plugin:</p>
-</li>
+<li><code>&lt;file systems&gt;</code> 要挂载的分区或存储设备.</li>
+<li><code>&lt;dir&gt;</code> 的挂载位置。</li>
+<li><code>&lt;type&gt;</code> 要挂载设备或是分区的文件系统类型，常见的类型：ext4, ntfs, swap 及 auto。 设置成auto类型，mount 命令会猜测使用的文件系统类型，对移动设备非常有用。</li>
+<li><code>&lt;options&gt;</code> 挂载时使用的参数，注意有些 参数是特定文件系统才有的。一些比较常用的参数有：</li>
+<li><code>auto</code> 在启动时或键入了 mount -a 命令时自动挂载。</li>
+<li><code>noauto</code> 只在你的命令下被挂载。</li>
+<li><code>defaults</code> 使用文件系统的默认挂载参数</li>
+<li><code>&lt;dump&gt;</code>  工具通过它决定何时作备份. dump 会检查其内容，并用数字来决定是否对这个文件系统进行备份。 允许的数字是 0 和 1 。0 表示忽略， 1 则进行备份。大部分的用户是没有安装 dump 的 ，对他们而言 <dump> 应设为 0。</li>
+<li><code>&lt;pass&gt;</code> <code>fsck</code> 读取 <pass> 的数值来决定需要检查的文件系统的检查顺序。允许的数字是0, 1, 和2。 根目录应当获得最高的优先权 1, 其它所有需要被检查的设备设置为 2. 0 表示设备不会被 fsck 所检查。</li>
 </ul>
-<div class="codehilite"><pre><span></span>Plugin &#39;iamcco/markdown-preview.vim&#39;
-&quot; 设置自动打开
-&quot;let g:mkdp_auto_start = 1
-&quot; 设置F8快捷键操作
-nmap &lt;silent&gt; &lt;F8&gt; &lt;Plug&gt;MarkdownPreview        &quot; for normal mode
-imap &lt;silent&gt; &lt;F8&gt; &lt;Plug&gt;MarkdownPreview        &quot; for insert mode
-nmap &lt;silent&gt; &lt;F9&gt; &lt;Plug&gt;StopMarkdownPreview    &quot; for normal mode
-imap &lt;silent&gt; &lt;F9&gt; &lt;Plug&gt;StopMarkdownPreview    &quot; for insert mode
+<h3 id="_2">文件系统标识<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p><code>/etc/fstab</code>可以以三种不同的方法表示文件系统：内核名称，UUID，或label。UUID和label与磁盘顺序无关，不会在重新插拔存储设备随机更改顺序。</p>
+<div class="codehilite"><pre><span></span>lsblk -f  <span class="c1"># 查看当前挂载磁盘UUID或label</span>
 </pre></div>
 
 
-<h3 id="other-setting">other setting<a class="headerlink" href="#other-setting" title="Permanent link">¶</a></h3>
-<div class="codehilite"><pre><span></span>&quot; set coding
-set encoding=utf-8
-
-set nu
-
-au BufNewFile,BufRead *.js, *.html, *.css, *.md
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2
-
-&quot; Split Layouts,&lt;:sv filename&gt;;&lt;:vs filename&gt;
-set splitbelow
-set splitright
-
-&quot;split navigations
-nnoremap &lt;C-J&gt; &lt;C-W&gt;&lt;C-J&gt;
-nnoremap &lt;C-K&gt; &lt;C-W&gt;&lt;C-K&gt;
-nnoremap &lt;C-L&gt; &lt;C-W&gt;&lt;C-L&gt;
-nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
-</pre></div>
+<p>link: <a href="https://wiki.archlinux.org/index.php/Fstab_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">https://wiki.archlinux.org/index.php/Fstab_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)</a></p>
                 
                   
                 
@@ -967,9 +983,9 @@ nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://jzztf.github.io/notes/tools/vim_config/";
+      this.page.url = "https://jzztf.github.io/notes/linux/disk_manage/";
       this.page.identifier =
-        "tools/vim_config/";
+        "linux/disk_manage/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -991,7 +1007,7 @@ nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../vim/" title="vim 操作" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../.." title="Welcome to MkDocs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1000,19 +1016,19 @@ nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                vim 操作
+                Welcome to MkDocs
               </span>
             </div>
           </a>
         
         
-          <a href="../zsh/" title="Zsh" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../package_manage/" title="Package manage" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Zsh
+                Package manage
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

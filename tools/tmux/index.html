@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://jzztf.github.io/notes/tools/vim_config/">
+        <link rel="canonical" href="https://jzztf.github.io/notes/tools/tmux/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>vim 设置 - notes</title>
+        <title>tmux 基础教程 - notes</title>
       
     
     
@@ -95,7 +95,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#vim" tabindex="1" class="md-skip">
+      <a href="#tmux" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -121,7 +121,7 @@
                 notes
               </span>
               <span class="md-header-nav__topic">
-                vim 设置
+                tmux 基础教程
               </span>
             
           
@@ -677,42 +677,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../tmux/" title="tmux 基础教程" class="md-nav__link">
-      tmux 基础教程
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../veracrypt/" title="加密工具——veracrypt" class="md-nav__link">
-      加密工具——veracrypt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../vim/" title="vim 操作" class="md-nav__link">
-      vim 操作
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -724,11 +688,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        vim 设置
+        tmux 基础教程
       </label>
     
-    <a href="./" title="vim 设置" class="md-nav__link md-nav__link--active">
-      vim 设置
+    <a href="./" title="tmux 基础教程" class="md-nav__link md-nav__link--active">
+      tmux 基础教程
     </a>
     
       
@@ -742,29 +706,78 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-vim" title="install vim" class="md-nav__link">
-    install vim
+  <a href="#_1" title="会话|窗口|面板" class="md-nav__link">
+    会话|窗口|面板
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="创建会话" class="md-nav__link">
+    创建会话
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="创建多窗口" class="md-nav__link">
+    创建多窗口
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="创建多个面板" class="md-nav__link">
+    创建多个面板
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-vim-plugin" title="install vim plugin" class="md-nav__link">
-    install vim plugin
+  <a href="#tmuxconf" title="～/.tmux.conf设置" class="md-nav__link">
+    ～/.tmux.conf设置
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#other-setting" title="other setting" class="md-nav__link">
-    other setting
+  <a href="#_5" title="切换多窗口" class="md-nav__link">
+    切换多窗口
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="改变窗口大小" class="md-nav__link">
+    改变窗口大小
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="复制" class="md-nav__link">
+    复制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="滚屏" class="md-nav__link">
+    滚屏
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tmux_1" title="退出（关闭tmux服务）" class="md-nav__link">
+    退出（关闭tmux服务）
+  </a>
   
 </li>
       
@@ -782,6 +795,42 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../veracrypt/" title="Veracrypt" class="md-nav__link">
+      Veracrypt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vim/" title="Vim" class="md-nav__link">
+      Vim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vim_config/" title="Vim config" class="md-nav__link">
+      Vim config
+    </a>
   </li>
 
         
@@ -823,29 +872,78 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-vim" title="install vim" class="md-nav__link">
-    install vim
+  <a href="#_1" title="会话|窗口|面板" class="md-nav__link">
+    会话|窗口|面板
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="创建会话" class="md-nav__link">
+    创建会话
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="创建多窗口" class="md-nav__link">
+    创建多窗口
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="创建多个面板" class="md-nav__link">
+    创建多个面板
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-vim-plugin" title="install vim plugin" class="md-nav__link">
-    install vim plugin
+  <a href="#tmuxconf" title="～/.tmux.conf设置" class="md-nav__link">
+    ～/.tmux.conf设置
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#other-setting" title="other setting" class="md-nav__link">
-    other setting
+  <a href="#_5" title="切换多窗口" class="md-nav__link">
+    切换多窗口
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="改变窗口大小" class="md-nav__link">
+    改变窗口大小
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="复制" class="md-nav__link">
+    复制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="滚屏" class="md-nav__link">
+    滚屏
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tmux_1" title="退出（关闭tmux服务）" class="md-nav__link">
+    退出（关闭tmux服务）
+  </a>
   
 </li>
       
@@ -871,89 +969,186 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jzztf/notes/edit/master/docs/tools/vim_config.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jzztf/notes/edit/master/docs/tools/tmux.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="vim">vim 设置<a class="headerlink" href="#vim" title="Permanent link">¶</a></h1>
-<h2 id="install-vim">install vim<a class="headerlink" href="#install-vim" title="Permanent link">¶</a></h2>
+                <h1 id="tmux">tmux 基础教程<a class="headerlink" href="#tmux" title="Permanent link">¶</a></h1>
+<p>link：
+- <a href="https://gist.github.com/ryerh/14b7c24dfd623ef8edc7">https://gist.github.com/ryerh/14b7c24dfd623ef8edc7</a>
+- <a href="http://wdxtub.com/2016/03/30/tmux-guide/">http://wdxtub.com/2016/03/30/tmux-guide/</a></p>
+<h2 id="_1">会话|窗口|面板<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <ul>
-<li>install</li>
+<li>执行一次<code>tmux</code>就打开一个会话；</li>
+<li>一个会话包含多个窗口；</li>
+<li>一个窗口包含多个面板。</li>
 </ul>
-<div class="codehilite"><pre><span></span>sudo apt install vim
+<h2 id="_2">创建会话<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<ul>
+<li><code>tmux</code></li>
+</ul>
+<h2 id="_3">创建多窗口<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<ul>
+<li><code>prefix c</code> ==&gt; c is 'create'</li>
+</ul>
+<blockquote>
+<p>类似于在视图界面操作多窗口一样，只是窗口最小化在tabbar。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>commands</th>
+<th>actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>prefix c</code></td>
+<td>创建新窗口（tabbar带<code>*</code>号的就是当前所在）</td>
+</tr>
+<tr>
+<td><code>prefix 0</code></td>
+<td>进入窗口0</td>
+</tr>
+<tr>
+<td><code>prefix 1</code></td>
+<td>进入窗口1</td>
+</tr>
+<tr>
+<td><code>prefix s</code></td>
+<td>预览所有窗口</td>
+</tr>
+<tr>
+<td><code>prefix x</code></td>
+<td>关闭当前窗口</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">创建多个面板<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<ul>
+<li><code>prefix -</code> ==&gt; 上下分屏</li>
+<li><code>prefix |</code> ==&gt; 左右分屏</li>
+</ul>
+<blockquote>
+<p>将一个窗口分成若干屏，同时显示</p>
+</blockquote>
+<h3 id="tmuxconf"><code>～/.tmux.conf</code>设置<a class="headerlink" href="#tmuxconf" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span>#command-key
+set -g prefix C-x
+
+# split window
+unbind &#39;&quot;&#39;
+# vertical split (prefix -)
+bind - splitw -v
+unbind %
+# horizontal split (prefix |)
+bind | splitw -h
+
+
+#up
+bind-key k select-pane -U
+#down
+bind-key j select-pane -D
+#left
+bind-key h select-pane -L
+#right
+bind-key l select-pane -R
 </pre></div>
 
 
-<ul>
-<li>
-<p>install  vundle(vim plugin manager)</p>
-</li>
-<li>
-<p>repo: <a href="https://github.com/VundleVim/Vundle.vim">VundleVim/Vundle.vim</a></p>
-</li>
-</ul>
-<h3 id="install-vim-plugin">install vim plugin<a class="headerlink" href="#install-vim-plugin" title="Permanent link">¶</a></h3>
-<ul>
-<li>
-<p>air-line/air-line-theme</p>
-</li>
-<li>
-<p>repo: <a href="https://github.com/vim-airline/vim-airline">vim-airline/vim-airline</a></p>
-</li>
-<li>
-<p>themes: <a href="https://github.com/vim-airline/vim-airline/wiki/Screenshots">screenshots</a></p>
-</li>
-<li>
-<p>plugin(add to .vimrc):</p>
-</li>
-</ul>
-<div class="codehilite"><pre><span></span>Plugin &#39;vim-airline/vim-airline&#39;
-Plugin &#39;vim-airline/vim-airline-themes&#39;
-let g:airline_theme=&#39;simple&#39;
+<h3 id="_5">切换多窗口<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>commands</th>
+<th>actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>prefix &amp;#124;</code></td>
+<td>添加垂直窗口</td>
+</tr>
+<tr>
+<td><code>prefix -</code></td>
+<td>添加水平窗口</td>
+</tr>
+<tr>
+<td><code>prefix arrow-key</code></td>
+<td>改变窗口大小</td>
+</tr>
+<tr>
+<td><code>prefix o</code>or <code>prefix arrow-key</code></td>
+<td>窗口之间切换</td>
+</tr>
+<tr>
+<td><code>prefix n</code></td>
+<td>后一个窗口</td>
+</tr>
+<tr>
+<td><code>prefix p</code></td>
+<td>前一个窗口</td>
+</tr>
+<tr>
+<td><code>prefix f</code></td>
+<td>查找窗口</td>
+</tr>
+<tr>
+<td><code>prefix ,</code></td>
+<td>重命名当前窗口</td>
+</tr>
+<tr>
+<td><code>prefix &amp;</code></td>
+<td>关闭当前窗口</td>
+</tr>
+<tr>
+<td><code>prefix x</code></td>
+<td>关闭tmux</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">改变窗口大小<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span>prefix to enter command mode
+
+PREFIX : resize-pane -D          当前窗格向下扩大 1 格
+PREFIX : resize-pane -U          当前窗格向上扩大 1 格
+PREFIX : resize-pane -L          当前窗格向左扩大 1 格
+PREFIX : resize-pane -R          当前窗格向右扩大 1 格
+PREFIX : resize-pane -D 20       当前窗格向下扩大 20 格
+PREFIX : resize-pane -t 2 -L 20  编号为 2 的窗格向左扩大 20 格
 </pre></div>
 
 
-<ul>
-<li>
-<p>markdown-preview</p>
-</li>
-<li>
-<p>repo: <a href="https://github.com/iamcco/markdown-preview.vim">iamcco/markdown-preview.vim</a></p>
-</li>
-<li>
-<p>plugin:</p>
-</li>
-</ul>
-<div class="codehilite"><pre><span></span>Plugin &#39;iamcco/markdown-preview.vim&#39;
-&quot; 设置自动打开
-&quot;let g:mkdp_auto_start = 1
-&quot; 设置F8快捷键操作
-nmap &lt;silent&gt; &lt;F8&gt; &lt;Plug&gt;MarkdownPreview        &quot; for normal mode
-imap &lt;silent&gt; &lt;F8&gt; &lt;Plug&gt;MarkdownPreview        &quot; for insert mode
-nmap &lt;silent&gt; &lt;F9&gt; &lt;Plug&gt;StopMarkdownPreview    &quot; for normal mode
-imap &lt;silent&gt; &lt;F9&gt; &lt;Plug&gt;StopMarkdownPreview    &quot; for insert mode
+<h3 id="_7">复制<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>tmux多屏模式下选择文本是个痛点，鼠标一拖几个屏的水平位置的文字都会被复制，可使用以下配置进行复制粘贴。</p>
+<p>link：<a href="https://sanctum.geek.nz/arabesque/vi-mode-in-tmux/">https://sanctum.geek.nz/arabesque/vi-mode-in-tmux/</a></p>
+<p><strong>配置</strong>：</p>
+<div class="codehilite"><pre><span></span># ~/.tmux.conf
+# tmux-command-mode:&#39;list-keys -T copy-mode-vi&#39;to confirm the commands
+# there is some difference between version2.3+ and version2.3-
+set-window-option -g mode-keys vi
+bind-key -T copy-mode-vi &#39;v&#39; send -X begin-selection
+bind-key -T copy-mode-vi &#39;y&#39; send -X copy-selection-and-cancel
 </pre></div>
 
 
-<h3 id="other-setting">other setting<a class="headerlink" href="#other-setting" title="Permanent link">¶</a></h3>
-<div class="codehilite"><pre><span></span>&quot; set coding
-set encoding=utf-8
+<p><strong>使用</strong>：</p>
+<div class="codehilite"><pre><span></span>prefix [    ==&gt; 进入tmux选择模式
+v           ==&gt; 进入vi选择模式，选择区块
+y           ==&gt; 复制选中区块
+prefix ]    ==&gt; 粘贴选中部分到光标处
+</pre></div>
 
-set nu
 
-au BufNewFile,BufRead *.js, *.html, *.css, *.md
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2
+<h3 id="_8">滚屏<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span>prefix [
+</pre></div>
 
-&quot; Split Layouts,&lt;:sv filename&gt;;&lt;:vs filename&gt;
-set splitbelow
-set splitright
 
-&quot;split navigations
-nnoremap &lt;C-J&gt; &lt;C-W&gt;&lt;C-J&gt;
-nnoremap &lt;C-K&gt; &lt;C-W&gt;&lt;C-K&gt;
-nnoremap &lt;C-L&gt; &lt;C-W&gt;&lt;C-L&gt;
-nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
+<h2 id="tmux_1">退出（关闭tmux服务）<a class="headerlink" href="#tmux_1" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>在我们使用<code>^d</code>退出tmux时，其服务器并没有停止，当再次进入tmux时，上次的会话依然存在，若要销毁所有会话，需销毁所有服务</p>
+</blockquote>
+<div class="codehilite"><pre><span></span>tmux kill-server
 </pre></div>
                 
                   
@@ -967,9 +1162,9 @@ nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://jzztf.github.io/notes/tools/vim_config/";
+      this.page.url = "https://jzztf.github.io/notes/tools/tmux/";
       this.page.identifier =
-        "tools/vim_config/";
+        "tools/tmux/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -991,7 +1186,7 @@ nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../vim/" title="vim 操作" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../strong_code/" title="如何编写强密码" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1000,19 +1195,19 @@ nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                vim 操作
+                如何编写强密码
               </span>
             </div>
           </a>
         
         
-          <a href="../zsh/" title="Zsh" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../veracrypt/" title="Veracrypt" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Zsh
+                Veracrypt
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://jzztf.github.io/notes/tools/vim_config/">
+        <link rel="canonical" href="https://jzztf.github.io/notes/tools/vim/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>vim 设置 - notes</title>
+        <title>vim 操作 - notes</title>
       
     
     
@@ -121,7 +121,7 @@
                 notes
               </span>
               <span class="md-header-nav__topic">
-                vim 设置
+                vim 操作
               </span>
             
           
@@ -701,18 +701,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../vim/" title="vim 操作" class="md-nav__link">
-      vim 操作
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -724,11 +712,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        vim 设置
+        vim 操作
       </label>
     
-    <a href="./" title="vim 设置" class="md-nav__link md-nav__link--active">
-      vim 设置
+    <a href="./" title="vim 操作" class="md-nav__link md-nav__link--active">
+      vim 操作
     </a>
     
       
@@ -742,29 +730,9 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-vim" title="install vim" class="md-nav__link">
-    install vim
+  <a href="#_1" title="小技巧" class="md-nav__link">
+    小技巧
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install-vim-plugin" title="install vim plugin" class="md-nav__link">
-    install vim plugin
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-setting" title="other setting" class="md-nav__link">
-    other setting
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -782,6 +750,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vim_config/" title="Vim config" class="md-nav__link">
+      Vim config
+    </a>
   </li>
 
         
@@ -823,29 +803,9 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-vim" title="install vim" class="md-nav__link">
-    install vim
+  <a href="#_1" title="小技巧" class="md-nav__link">
+    小技巧
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install-vim-plugin" title="install vim plugin" class="md-nav__link">
-    install vim plugin
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-setting" title="other setting" class="md-nav__link">
-    other setting
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -871,90 +831,23 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jzztf/notes/edit/master/docs/tools/vim_config.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jzztf/notes/edit/master/docs/tools/vim.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="vim">vim 设置<a class="headerlink" href="#vim" title="Permanent link">¶</a></h1>
-<h2 id="install-vim">install vim<a class="headerlink" href="#install-vim" title="Permanent link">¶</a></h2>
-<ul>
-<li>install</li>
-</ul>
-<div class="codehilite"><pre><span></span>sudo apt install vim
+                <h1 id="vim">vim 操作<a class="headerlink" href="#vim" title="Permanent link">¶</a></h1>
+<h2 id="_1">小技巧<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>使用系统剪切板</p>
+<div class="codehilite"><pre><span></span><span class="c1"># 安装必要包</span>
+$ sudo apt-get install vim-gui-common
+<span class="c1"># 使用，选中目标后</span>
+“+y
 </pre></div>
 
 
-<ul>
-<li>
-<p>install  vundle(vim plugin manager)</p>
-</li>
-<li>
-<p>repo: <a href="https://github.com/VundleVim/Vundle.vim">VundleVim/Vundle.vim</a></p>
-</li>
-</ul>
-<h3 id="install-vim-plugin">install vim plugin<a class="headerlink" href="#install-vim-plugin" title="Permanent link">¶</a></h3>
-<ul>
-<li>
-<p>air-line/air-line-theme</p>
-</li>
-<li>
-<p>repo: <a href="https://github.com/vim-airline/vim-airline">vim-airline/vim-airline</a></p>
-</li>
-<li>
-<p>themes: <a href="https://github.com/vim-airline/vim-airline/wiki/Screenshots">screenshots</a></p>
-</li>
-<li>
-<p>plugin(add to .vimrc):</p>
-</li>
-</ul>
-<div class="codehilite"><pre><span></span>Plugin &#39;vim-airline/vim-airline&#39;
-Plugin &#39;vim-airline/vim-airline-themes&#39;
-let g:airline_theme=&#39;simple&#39;
-</pre></div>
-
-
-<ul>
-<li>
-<p>markdown-preview</p>
-</li>
-<li>
-<p>repo: <a href="https://github.com/iamcco/markdown-preview.vim">iamcco/markdown-preview.vim</a></p>
-</li>
-<li>
-<p>plugin:</p>
-</li>
-</ul>
-<div class="codehilite"><pre><span></span>Plugin &#39;iamcco/markdown-preview.vim&#39;
-&quot; 设置自动打开
-&quot;let g:mkdp_auto_start = 1
-&quot; 设置F8快捷键操作
-nmap &lt;silent&gt; &lt;F8&gt; &lt;Plug&gt;MarkdownPreview        &quot; for normal mode
-imap &lt;silent&gt; &lt;F8&gt; &lt;Plug&gt;MarkdownPreview        &quot; for insert mode
-nmap &lt;silent&gt; &lt;F9&gt; &lt;Plug&gt;StopMarkdownPreview    &quot; for normal mode
-imap &lt;silent&gt; &lt;F9&gt; &lt;Plug&gt;StopMarkdownPreview    &quot; for insert mode
-</pre></div>
-
-
-<h3 id="other-setting">other setting<a class="headerlink" href="#other-setting" title="Permanent link">¶</a></h3>
-<div class="codehilite"><pre><span></span>&quot; set coding
-set encoding=utf-8
-
-set nu
-
-au BufNewFile,BufRead *.js, *.html, *.css, *.md
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2
-
-&quot; Split Layouts,&lt;:sv filename&gt;;&lt;:vs filename&gt;
-set splitbelow
-set splitright
-
-&quot;split navigations
-nnoremap &lt;C-J&gt; &lt;C-W&gt;&lt;C-J&gt;
-nnoremap &lt;C-K&gt; &lt;C-W&gt;&lt;C-K&gt;
-nnoremap &lt;C-L&gt; &lt;C-W&gt;&lt;C-L&gt;
-nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
-</pre></div>
+<p>实际上只是在原命令<code>y</code>前添加<code>”+</code></p>
+<p>links：
+- <a href="https://www.zhihu.com/question/19863631">https://www.zhihu.com/question/19863631</a>
+- <a href="https://github.com/ruanyf/articles/blob/master/dev/vim/operation.md">https://github.com/ruanyf/articles/blob/master/dev/vim/operation.md</a></p>
                 
                   
                 
@@ -967,9 +860,9 @@ nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://jzztf.github.io/notes/tools/vim_config/";
+      this.page.url = "https://jzztf.github.io/notes/tools/vim/";
       this.page.identifier =
-        "tools/vim_config/";
+        "tools/vim/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -991,7 +884,7 @@ nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../vim/" title="vim 操作" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../veracrypt/" title="加密工具——veracrypt" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1000,19 +893,19 @@ nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                vim 操作
+                加密工具——veracrypt
               </span>
             </div>
           </a>
         
         
-          <a href="../zsh/" title="Zsh" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../vim_config/" title="Vim config" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Zsh
+                Vim config
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
