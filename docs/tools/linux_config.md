@@ -2,29 +2,15 @@
 
 ## git
 
+[git & github](git_github.md)
+
 - git config
-
-```bash
-git config --global user.name "<name>"
-git config --global user.email "<email>"
-```
-
-- gen ssh-key
-
-```bash
-
-```
-
+- ssh-key
 - github
 
-```bash
-git clone git...
-git remote add origin git...
-git pull origin <master|gh-pages>
-git push -u origin master
-```
-
 ## vim
+
+[vim basis](vim.md) | [vim config](vim_config.md)
 
 - vundle
 - airline/airline-themes
@@ -33,15 +19,15 @@ git push -u origin master
 
 ## zsh
 
+[zsh](zsh.md)
+
 - ohmyzsh
-
-[ohmyzsh]()
-
 - `sudo chsh -s /bin/zsh <username>`
-
 - `vim .zshrc`
 
 ## pip
+
+[pip](pip.md)
 
 - source
 
@@ -74,6 +60,8 @@ pipenv shell
 
 ## ipython
 
+[ipython](ipython.md)
+
 - ipython
 
 ```bash
@@ -83,6 +71,4 @@ ipython profile create
 ```
 
 - jupyter_notebook
-
-
 

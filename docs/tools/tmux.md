@@ -1,11 +1,10 @@
 # tmux 基础教程
 
-link：<https://gist.github.com/ryerh/14b7c24dfd623ef8edc7>
+link：
+- <https://gist.github.com/ryerh/14b7c24dfd623ef8edc7>
+- <http://wdxtub.com/2016/03/30/tmux-guide/>
 
-
-## sessions/windows/panes
-
-`会话 ==> 窗口 ==> 面板`
+## 会话|窗口|面板
 
 - 执行一次`tmux`就打开一个会话；
 - 一个会话包含多个窗口；
@@ -88,6 +87,39 @@ PREFIX : resize-pane -L          当前窗格向左扩大 1 格
 PREFIX : resize-pane -R          当前窗格向右扩大 1 格
 PREFIX : resize-pane -D 20       当前窗格向下扩大 20 格
 PREFIX : resize-pane -t 2 -L 20  编号为 2 的窗格向左扩大 20 格
+```
+
+### 复制
+
+tmux多屏模式下选择文本是个痛点，鼠标一拖几个屏的水平位置的文字都会被复制，可使用以下配置进行复制粘贴。
+
+link：<https://sanctum.geek.nz/arabesque/vi-mode-in-tmux/>
+
+
+**配置**：
+
+```
+# ~/.tmux.conf
+# tmux-command-mode:'list-keys -T copy-mode-vi'to confirm the commands
+# there is some difference between version2.3+ and version2.3-
+set-window-option -g mode-keys vi
+bind-key -T copy-mode-vi 'v' send -X begin-selection
+bind-key -T copy-mode-vi 'y' send -X copy-selection-and-cancel
+```
+
+**使用**：
+
+```
+prefix [    ==> 进入tmux选择模式
+v           ==> 进入vi选择模式，选择区块
+y           ==> 复制选中区块
+prefix ]    ==> 粘贴选中部分到光标处
+```
+
+### 滚屏
+
+```
+prefix [
 ```
 
 ## 退出（关闭tmux服务）

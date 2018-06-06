@@ -2,7 +2,7 @@
 
 [文档](http://www.graphviz.org/pdf/dotguide.pdf)
 
-其实graphviz是围绕着"面-点-线"来组织的.
+**其实graphviz是围绕着"面-点-线"来组织的.**
 
 ## 面:
 
@@ -17,7 +17,7 @@ graph或者digraph表示生成的图是无向图还是有向图,附带一系列�
 **面(graph)的基本属性**:
 
 - label为当前图形的名称--`label="XX图"`
-- `randdir=TB|LR|RL|BT`表示图的走向,上下还是左右,或者相反
+- `rankdir=TB|LR|RL|BT`表示图的走向,上下还是左右,或者相反
 - `fontname=""`设置字体名
 - `fontsize=""`设置字体大小
 - `fontcolor=""`设置字体颜色
@@ -177,6 +177,29 @@ digraph {
 - [colors](https://www.graphviz.org/doc/info/colors.html)
 - [shapes](www.graphviz.org/doc/info/shapes.html)
 - [arrows](www.graphviz.org/doc/info/arrows.html)
+
+## 终端输出命令
+
+```bash
+dot -Tv -Kv -O example.dot
+```
+
+- `-Tv`表示希望生成的格式，默认`png`
+- `-Kv`表示使用的构造器，默认`dot`
+- `-O`"“大写的英文字母o”表示自动生成以dot文件名命名的图片`example.dot.png`
+- `-ofile` “小写的英文字母o”，表示生成以“file”命名的文件
+
+## vim 插件
+
+repo：<https://github.com/wannesm/wmgraphviz.vim>
+
+**命令**：
+
+```
+:GraphvizInteractive => 一边编辑一边预览 
+:GraphvizShow => 预览
+```
+
 
 ## 更多参考
 
