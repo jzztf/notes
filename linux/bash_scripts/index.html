@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://jzztf.github.io/notes/linux/package_manage/">
+        <link rel="canonical" href="https://jzztf.github.io/notes/linux/bash_scripts/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>linux 包管理 - notes</title>
+        <title>bash结构化命令 - notes</title>
       
     
     
@@ -95,7 +95,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#linux" tabindex="1" class="md-skip">
+      <a href="#bash" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -121,7 +121,7 @@
                 notes
               </span>
               <span class="md-header-nav__topic">
-                linux 包管理
+                bash结构化命令
               </span>
             
           
@@ -269,42 +269,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../bash_scripts/" title="bash结构化命令" class="md-nav__link">
-      bash结构化命令
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../disk_manage/" title="linux 磁盘管理" class="md-nav__link">
-      linux 磁盘管理
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../network_manage/" title="网络管理" class="md-nav__link">
-      网络管理
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -316,11 +280,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        linux 包管理
+        bash结构化命令
       </label>
     
-    <a href="./" title="linux 包管理" class="md-nav__link md-nav__link--active">
-      linux 包管理
+    <a href="./" title="bash结构化命令" class="md-nav__link md-nav__link--active">
+      bash结构化命令
     </a>
     
       
@@ -334,35 +298,99 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dpkg" title="dpkg" class="md-nav__link">
-    dpkg
+  <a href="#_1" title="变量" class="md-nav__link">
+    变量
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#aptapt-get" title="apt/apt-get" class="md-nav__link">
-    apt/apt-get
+  <a href="#_2" title="字符串" class="md-nav__link">
+    字符串
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sourceslist" title="sources.list" class="md-nav__link">
-    sources.list
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#aptitude-synaptic" title="aptitude &amp; synaptic" class="md-nav__link">
-    aptitude &amp; synaptic
+  <a href="#_3" title="特殊环境变量" class="md-nav__link">
+    特殊环境变量
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="数组" class="md-nav__link">
+    数组
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="反引号" class="md-nav__link">
+    反引号
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="命令执行顺序" class="md-nav__link">
+    命令执行顺序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-if" title="控制语句---if" class="md-nav__link">
+    控制语句---if
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-case" title="控制语句---case" class="md-nav__link">
+    控制语句---case
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-for" title="控制语句---for" class="md-nav__link">
+    控制语句---for
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-while" title="控制语句---while" class="md-nav__link">
+    控制语句---while
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-until" title="控制语句---until" class="md-nav__link">
+    控制语句---until
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-break" title="控制语句---break" class="md-nav__link">
+    控制语句---break
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-continue" title="控制语句---continue" class="md-nav__link">
+    控制语句---continue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="函数" class="md-nav__link">
+    函数
   </a>
   
 </li>
@@ -381,6 +409,42 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../disk_manage/" title="Disk manage" class="md-nav__link">
+      Disk manage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../network_manage/" title="Network manage" class="md-nav__link">
+      Network manage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../package_manage/" title="Package manage" class="md-nav__link">
+      Package manage
+    </a>
   </li>
 
         
@@ -914,35 +978,99 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dpkg" title="dpkg" class="md-nav__link">
-    dpkg
+  <a href="#_1" title="变量" class="md-nav__link">
+    变量
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#aptapt-get" title="apt/apt-get" class="md-nav__link">
-    apt/apt-get
+  <a href="#_2" title="字符串" class="md-nav__link">
+    字符串
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sourceslist" title="sources.list" class="md-nav__link">
-    sources.list
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#aptitude-synaptic" title="aptitude &amp; synaptic" class="md-nav__link">
-    aptitude &amp; synaptic
+  <a href="#_3" title="特殊环境变量" class="md-nav__link">
+    特殊环境变量
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="数组" class="md-nav__link">
+    数组
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="反引号" class="md-nav__link">
+    反引号
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="命令执行顺序" class="md-nav__link">
+    命令执行顺序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-if" title="控制语句---if" class="md-nav__link">
+    控制语句---if
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-case" title="控制语句---case" class="md-nav__link">
+    控制语句---case
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-for" title="控制语句---for" class="md-nav__link">
+    控制语句---for
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-while" title="控制语句---while" class="md-nav__link">
+    控制语句---while
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-until" title="控制语句---until" class="md-nav__link">
+    控制语句---until
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-break" title="控制语句---break" class="md-nav__link">
+    控制语句---break
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-continue" title="控制语句---continue" class="md-nav__link">
+    控制语句---continue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="函数" class="md-nav__link">
+    函数
   </a>
   
 </li>
@@ -969,79 +1097,288 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jzztf/notes/edit/master/docs/linux/package_manage.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jzztf/notes/edit/master/docs/linux/bash_scripts.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="linux">linux 包管理<a class="headerlink" href="#linux" title="Permanent link">¶</a></h1>
-<h2 id="dpkg">dpkg<a class="headerlink" href="#dpkg" title="Permanent link">¶</a></h2>
-<p>dpkg是linux底层的包管理软件，不会解决依赖之间的问题</p>
-<div class="codehilite"><pre><span></span>dpkg -l  <span class="c1"># 列出所有包</span>
-dpkg -l <span class="p">|</span> grep firefox  <span class="c1"># 列出所有安装包，查找firefox</span>
-dpkg -L firefox  <span class="c1"># 列出某一包安装的文件</span>
-dpkg -S ~/.npmrc  <span class="c1"># 查找某一文件所属程序</span>
-sudo dpkg -i package.deb  <span class="c1"># 安装.deb安装包</span>
-sudo dpkg -r package.deb  <span class="c1"># 卸载包</span>
-</pre></div>
-
-
-<h2 id="aptapt-get">apt/apt-get<a class="headerlink" href="#aptapt-get" title="Permanent link">¶</a></h2>
-<p>Advanced Packaging Tool (APT) </p>
-<blockquote>
-<p>比apt-get有更好的交互体验</p>
-</blockquote>
-<div class="codehilite"><pre><span></span>sudo apt install package  <span class="c1"># 安装包</span>
-sudo apt remove package  <span class="c1"># 移除包，但会留一些个人配置或信息的文件</span>
-sudo apt purge package  <span class="c1"># 比之remove删的更多点</span>
-sudo apt autoremove  <span class="c1"># 自动移除当前所有包不需要的依赖（可能是安装其他包，安装的依赖，当之前的包被移除后，这些依赖也就没用了）</span>
-sudo apt search package  <span class="c1"># 查找包</span>
-sudo apt show package  <span class="c1"># 显示给定包的信息以及其依赖的信息</span>
-sudo apt list  <span class="c1"># 显示所有包</span>
-sudo apt list --installed  <span class="c1"># 显示已安装</span>
-sudo apt edit-source  <span class="c1"># 编辑&quot;/etc/apt/sources.list&quot;文件</span>
-sudo apt update  <span class="c1"># 更新源</span>
-sudo apt upgrade  <span class="c1"># 更新可更新包</span>
-</pre></div>
-
-
-<h3 id="sourceslist">sources.list<a class="headerlink" href="#sourceslist" title="Permanent link">¶</a></h3>
-<p><strong>如果只是用<code>apt</code>安装，可以只留<code>deb</code>开头的</strong></p>
+                <h1 id="bash">bash结构化命令<a class="headerlink" href="#bash" title="Permanent link">¶</a></h1>
+<h2 id="_1">变量<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <ul>
-<li><code>deb</code>行关联二进制预编译软件包，可以通过<code>apt</code>安装</li>
-<li><code>deb-src</code>行关联用于编译二进制软件包的源代码，通过<code>apt-get source $package</code>，随后进行编译</li>
+<li>首字母（a-z, A-Z）</li>
+<li>中间不能有空格，可以使用下划线</li>
+<li>不能使用标点符号</li>
+<li>不能使用bash关键字</li>
 </ul>
-<p><strong>根据需求选择软件库</strong></p>
-<ul>
-<li><code>main</code> canoical支持的免费和开源</li>
-<li><code>universe</code> 社区支持的免费和开源</li>
-<li><code>restricted</code> 官方支持的非完全自由软件</li>
-<li><code>multiverse</code> 非官方支持的非自由软件</li>
-</ul>
-<p><strong>更新软件源</strong></p>
-<div class="codehilite"><pre><span></span>deb http://cn.archive.ubuntu.com/ubuntu/ bionic main restricted
-deb http://cn.archive.ubuntu.com/ubuntu/ bionic universe
-deb http://cn.archive.ubuntu.com/ubuntu/ bionic multiverse
-
-deb http://cn.archive.ubuntu.com/ubuntu/ binoic-updates main restricted
-deb http://cn.archive.ubuntu.com/ubuntu/ binoic-updates universe
-deb http://cn.archive.ubuntu.com/ubuntu/ binoic-updates multiverse
-
-deb http://cn.archive.ubuntu.com/ubuntu/ binoic-security main restricted
-deb http://cn.archive.ubuntu.com/ubuntu/ binoic-security universe
-deb http://cn.archive.ubuntu.com/ubuntu/ binoic-security multiverse
-
-<span class="c1"># 使用vim编辑可使用s替换命令，更换特定源</span>
-<span class="c1"># “:,$s/cn.archive.ubuntu.com/mirrors.aliyun.com/g”</span>
+<div class="codehilite"><pre><span></span>$ <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;python&quot;</span>  <span class="c1"># bash变量赋值，中间不加空格</span>
+$ <span class="nb">echo</span> <span class="nv">$name</span>  <span class="c1"># 调用变量添加“$”符号</span>
+python
+$ <span class="nb">echo</span> <span class="si">${</span><span class="nv">name</span><span class="si">}</span>  <span class="c1"># 也可以添加“{}”包裹变量名</span>
+python
+$ <span class="nb">echo</span> <span class="s1">&#39;name: $name&#39;</span>  <span class="c1"># 单双引号之间的区别，单引号会原文呈现，不会转换变量</span>
+name: <span class="nv">$name</span>
+$ <span class="nb">echo</span> <span class="s2">&quot;name: </span><span class="nv">$name</span><span class="s2">&quot;</span>  <span class="c1"># 双引号会自动转换变量</span>
+name: python
+$ <span class="nb">echo</span> <span class="s2">&quot;name: {</span><span class="nv">$name</span><span class="s2">}&quot;</span>  <span class="c1"># 错误使用“{}”</span>
+name: <span class="o">{</span>python<span class="o">}</span>
+$ <span class="nb">echo</span> <span class="s2">&quot;name: </span><span class="si">${</span><span class="nv">name</span><span class="si">}</span><span class="s2">&quot;</span>  <span class="c1"># “{}”的使用是为了确认变量边界</span>
+name: python
+$ <span class="nb">echo</span> <span class="s2">&quot;name </span><span class="nv">$names</span><span class="s2">&quot;</span>  <span class="c1"># 因找不到“$name”变量，只显示name</span>
+name
 </pre></div>
 
 
-<h2 id="aptitude-synaptic">aptitude &amp; synaptic<a class="headerlink" href="#aptitude-synaptic" title="Permanent link">¶</a></h2>
-<ul>
-<li>aptitude 终端的菜单式带界面的包管理</li>
-<li>synaptic 可视化包管理器</li>
-</ul>
-<div class="codehilite"><pre><span></span>sudo aptitude install package  <span class="c1"># 命令行下使用aptitude</span>
-sudo aptitude remove package
+<h2 id="_2">字符串<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>linux默认所有字符为字符串</p>
+<div class="codehilite"><pre><span></span>$ <span class="nv">var</span><span class="o">=</span><span class="m">1</span>
+$ <span class="nv">var</span><span class="o">=</span><span class="nv">$var</span>+1  <span class="c1"># 默认字符都为字符串</span>
+$ <span class="nb">echo</span> <span class="nv">$var</span>
+<span class="m">1</span>+1
+$ <span class="o">((</span> <span class="nv">var</span><span class="o">+=</span><span class="m">1</span>  <span class="o">))</span>  <span class="c1"># “(( commands ))”双括号表示运算，括号内与命令之间要保持空格</span>
+$ <span class="nb">echo</span> <span class="nv">$var</span>
+<span class="m">3</span>
+$ <span class="o">((</span> var++  <span class="o">))</span>
+$ <span class="nb">echo</span> <span class="nv">$var</span>
+<span class="m">4</span>
 </pre></div>
+
+
+<h2 id="_3">特殊环境变量<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<ul>
+<li><code>$0</code> 当前脚本名称</li>
+<li><code>$num</code> num从1开始，表示传入的第几个参数</li>
+<li><code>$#</code> 传入脚本的参数个数</li>
+<li><code>$*</code> 所有参数，组成的一个字符串</li>
+<li><code>$@</code> 所有参数，数组，每个参数都是独立的字符串</li>
+<li><code>$?</code> 当前shell进程，上一个命令的返回值，如果上一个命令成功执行，则<code>$?</code>为0</li>
+<li><code>$$</code> 当前shell进程pid</li>
+<li><code>$!</code> 后台运行的最后一个进程的pid</li>
+<li><code>$-</code> 现实shell使用的当前选项</li>
+<li><code>$_</code> 之前命令的最后一个参数</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="c1"># x.sh</span>
+---
+<span class="c1">#!/bin/bash</span>
+
+<span class="nb">echo</span> <span class="nv">$1</span> <span class="nv">$2</span> <span class="nv">$3</span>
+---
+
+$ chmod +x x.sh
+$ ./x.sh a b c  <span class="c1"># 运行脚本-1</span>
+a b c
+$ bash x.sh a b c  <span class="c1"># 运行脚本-2</span>
+$ sh x.sh a b c  <span class="c1"># 运行脚本-3</span>
+</pre></div>
+
+
+<h2 id="_4">数组<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<div class="codehilite"><pre><span></span>$ <span class="nv">array</span><span class="o">=(</span>a b c<span class="o">)</span>  <span class="c1"># 创建数组</span>
+$ <span class="nb">echo</span> <span class="si">${</span><span class="nv">array</span><span class="p">[*]</span><span class="si">}</span>  <span class="c1"># 查看数组元素</span>
+a b c
+$ array<span class="o">[</span><span class="m">3</span><span class="o">]=</span>d  <span class="c1"># 添加元素</span>
+$ <span class="nb">echo</span> <span class="si">${</span><span class="nv">array</span><span class="p">[*]</span><span class="si">}</span>
+a b c d
+$ <span class="nb">unset</span> array<span class="o">[</span><span class="m">3</span><span class="o">]</span>  <span class="c1"># 删除某元素</span>
+$ <span class="nb">echo</span> <span class="si">${</span><span class="nv">array</span><span class="p">[*]</span><span class="si">}</span>
+a b c
+</pre></div>
+
+
+<h2 id="_5">反引号<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<p>输出命令结果</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="sb">`</span>date<span class="sb">`</span>
+2018年 06月 17日 星期日 <span class="m">14</span>:29:35 CST
+$ <span class="nb">echo</span> <span class="sb">`</span><span class="nb">echo</span> my date is <span class="sb">`</span>date<span class="sb">``</span>  <span class="c1"># 反引号内不可使用反引号，若使用需要转义</span>
+my date isdate
+$ <span class="nb">echo</span> <span class="sb">`</span><span class="nb">echo</span> my date is <span class="se">\`</span>date<span class="se">\`</span><span class="sb">`</span>
+my date is 2018年 06月 17日 星期日 <span class="m">14</span>:30:21 CST
+</pre></div>
+
+
+<h2 id="_6">命令执行顺序<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s2">&quot;date&quot;</span><span class="p">;</span> date  <span class="c1"># 分号，似的命令依次进行</span>
+date: 
+2018年 06月 17日 星期日 <span class="m">14</span>:48:18 CST
+
+$ <span class="nb">echo</span> apple &gt; xx.txt
+$ <span class="nb">echo</span> banana &gt;&gt; xx.txt
+$ cat xx.txt <span class="p">|</span> grep apple  <span class="c1"># 管道符号，将前者的命令输出传递给后面的命令</span>
+apple
+
+$ <span class="sb">`</span><span class="nb">exit</span> <span class="m">0</span><span class="sb">`</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="m">1</span>  <span class="c1"># 前一个命令执行成功时，执行后面的命令</span>
+<span class="m">1</span>
+$ <span class="sb">`</span><span class="nb">exit</span> <span class="m">1</span><span class="sb">`</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="m">1</span>  
+$ <span class="sb">`</span><span class="nb">exit</span> <span class="m">0</span><span class="sb">`</span> <span class="o">||</span> <span class="nb">echo</span> <span class="m">1</span>
+$ <span class="sb">`</span><span class="nb">exit</span> <span class="m">1</span><span class="sb">`</span> <span class="o">||</span> <span class="nb">echo</span> <span class="m">1</span>  <span class="c1"># 前一个命令执行失败时，执行后面的命令</span>
+<span class="m">1</span>
+</pre></div>
+
+
+<h2 id="-if">控制语句---if<a class="headerlink" href="#-if" title="Permanent link">¶</a></h2>
+<div class="codehilite"><pre><span></span><span class="c1"># 语法</span>
+<span class="k">if</span> <span class="o">[</span>condition<span class="o">]</span>
+<span class="k">then</span>
+    <span class="nb">command</span>
+<span class="k">elif</span> <span class="o">[</span>condition2<span class="o">]</span>
+    command2
+<span class="k">else</span>
+    commandN
+<span class="k">fi</span>
+
+<span class="c1"># 实例</span>
+$ <span class="k">if</span> <span class="o">[[</span> -f xx.txt <span class="o">]]</span><span class="p">;</span> <span class="k">then</span> <span class="nb">echo</span> <span class="s2">&quot;xx.txt exists&quot;</span><span class="p">;</span> <span class="k">fi</span>
+xx.txt exists
+<span class="c1"># -f 判断文件存在，返回真</span>
+<span class="c1"># -d 判断文件为目录，返回真</span>
+<span class="c1"># -x 判断文件存在，并且可执行返回真</span>
+</pre></div>
+
+
+<h2 id="-case">控制语句---case<a class="headerlink" href="#-case" title="Permanent link">¶</a></h2>
+<p>比elif更有效的判断选择</p>
+<div class="codehilite"><pre><span></span><span class="c1"># 语法</span>
+<span class="k">case</span> expression in
+    pattern <span class="o">)</span>
+        statements <span class="p">;;</span>
+    pattern <span class="o">)</span>
+        statements <span class="p">;;</span>
+    ...
+<span class="k">esac</span>
+
+<span class="c1"># 实例</span>
+xx.sh
+---
+<span class="c1">#!/bin/bash</span>
+
+<span class="k">case</span> a in
+    <span class="nv">$1</span> <span class="o">)</span>
+        <span class="nb">echo</span> <span class="s2">&quot;first parameter is a&quot;</span><span class="p">;;</span>
+    <span class="nv">$2</span> <span class="o">)</span>
+        <span class="nb">echo</span> <span class="s2">&quot;second parameter is a&quot;</span><span class="p">;;</span>
+    * <span class="o">)</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Error&quot;</span>
+<span class="k">esac</span>
+---
+$ ./xx.sh
+$ ./xx.sh b a
+second parameter is a
+$ ./xx.sh a b
+first parameter is a
+$ ./xx.sh
+Error
+$ ./xx.sh c d
+Error
+</pre></div>
+
+
+<h2 id="-for">控制语句---for<a class="headerlink" href="#-for" title="Permanent link">¶</a></h2>
+<div class="codehilite"><pre><span></span><span class="c1"># 语法</span>
+<span class="k">for</span> var in argument-list
+<span class="k">do</span>
+    <span class="nb">command</span>
+<span class="k">done</span>
+
+<span class="c1"># 实例</span>
+$ <span class="k">for</span> var in a b c d
+&gt; <span class="k">do</span>
+&gt; <span class="nb">echo</span> <span class="nv">$var</span>
+&gt; <span class="k">done</span>
+a
+b
+c
+d
+</pre></div>
+
+
+<h2 id="-while">控制语句---while<a class="headerlink" href="#-while" title="Permanent link">¶</a></h2>
+<div class="codehilite"><pre><span></span><span class="c1"># 语法</span>
+<span class="k">while</span> condition
+<span class="k">do</span>
+    command-list
+<span class="k">done</span>
+<span class="c1"># 实例</span>
+$ <span class="nv">n</span><span class="o">=</span><span class="m">1</span>
+$ <span class="k">while</span> <span class="o">[</span> <span class="nv">$n</span> -lt <span class="m">5</span> <span class="o">]</span><span class="p">;</span> 
+&gt; <span class="k">do</span> 
+&gt; <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$n</span><span class="s2"> is less than 5&quot;</span>
+&gt; <span class="o">((</span> n++ <span class="o">))</span>
+&gt; <span class="k">done</span>
+<span class="m">1</span> is less than <span class="m">5</span>
+<span class="m">2</span> is less than <span class="m">5</span>
+<span class="m">3</span> is less than <span class="m">5</span>
+<span class="m">4</span> is less than <span class="m">5</span>
+</pre></div>
+
+
+<h2 id="-until">控制语句---until<a class="headerlink" href="#-until" title="Permanent link">¶</a></h2>
+<p>与whhile类似，但是不同：
+- while condition，满足condition条件下，下面命令执行
+- until condition，执行下面命令，知道condition条件达成</p>
+<div class="codehilite"><pre><span></span>$ <span class="nv">n</span><span class="o">=</span><span class="m">1</span>
+$ <span class="k">until</span> <span class="o">[</span> <span class="nv">$n</span> -ge <span class="m">5</span> <span class="o">]</span>
+&gt; <span class="k">do</span>
+&gt; <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$n</span><span class="s2"> is less than 5&quot;</span>
+&gt; <span class="o">((</span> n++ <span class="o">))</span>
+&gt; <span class="k">done</span>
+<span class="m">1</span> is less than <span class="m">5</span>
+<span class="m">2</span> is less than <span class="m">5</span>
+<span class="m">3</span> is less than <span class="m">5</span>
+<span class="m">4</span> is less than <span class="m">5</span>
+</pre></div>
+
+
+<h2 id="-break">控制语句---break<a class="headerlink" href="#-break" title="Permanent link">¶</a></h2>
+<p>break就是执行之后代码，不再循环</p>
+<div class="codehilite"><pre><span></span>$ <span class="k">while</span> <span class="o">[</span> <span class="nv">$n</span> -lt <span class="m">5</span> <span class="o">]</span>
+&gt; <span class="k">do</span>
+&gt; <span class="k">if</span> <span class="o">[</span> <span class="nv">$n</span> -eq <span class="m">3</span> <span class="o">]</span>
+&gt; <span class="k">then</span>
+&gt; <span class="nb">break</span>
+&gt; <span class="k">fi</span>
+&gt; <span class="nb">echo</span> <span class="nv">$n</span>  <span class="c1"># 满足break条件之后，之后代码不再执行，故只有1,2</span>
+&gt; <span class="o">((</span> n++ <span class="o">))</span>
+&gt; <span class="k">done</span>
+<span class="m">1</span>
+<span class="m">2</span>
+</pre></div>
+
+
+<h2 id="-continue">控制语句---continue<a class="headerlink" href="#-continue" title="Permanent link">¶</a></h2>
+<p>continue就是不执行之后的代码，跳到下一轮循环</p>
+<div class="codehilite"><pre><span></span>$ <span class="nv">n</span><span class="o">=</span><span class="m">1</span>
+$ <span class="k">while</span> <span class="o">[</span> <span class="nv">$n</span> -lt <span class="m">5</span> <span class="o">]</span>
+&gt; <span class="k">do</span>
+&gt; <span class="o">((</span> n++ <span class="o">))</span>
+&gt; <span class="k">if</span> <span class="o">[</span> <span class="nv">$n</span> -lt <span class="m">3</span> <span class="o">]</span>
+&gt; <span class="k">then</span>
+&gt; <span class="k">continue</span>  <span class="c1"># 满足continue条件之后错过之后代码，继续循环</span>
+&gt; <span class="k">fi</span>
+&gt; <span class="nb">echo</span> <span class="nv">$n</span>
+&gt; <span class="k">done</span>
+<span class="m">3</span>
+<span class="m">4</span>
+<span class="m">5</span>
+</pre></div>
+
+
+<h2 id="_7">函数<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
+<div class="codehilite"><pre><span></span><span class="c1"># 语法</span>
+<span class="o">[</span> <span class="k">function</span> <span class="o">]</span> funcname <span class="o">[</span> <span class="o">()</span> <span class="o">]</span>  <span class="c1"># 方括号内为可选内容</span>
+
+<span class="o">{</span>
+    action<span class="p">;</span>
+    <span class="o">[</span> <span class="k">return</span> int<span class="p">;</span> <span class="o">]</span>
+<span class="o">}</span>
+<span class="c1"># 实例</span>
+
+$ hello <span class="o">()</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s1">&#39;hello world&#39;</span><span class="p">;</span> <span class="o">}</span>
+$ hello
+hello world
+$ hello <span class="o">()</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&quot;hello </span><span class="nv">$1</span><span class="s2">&quot;</span><span class="p">;</span> <span class="o">}</span>
+$ hello world
+hello world
+</pre></div>
+
+
+<p>link: <a href="http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html">http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html</a></p>
                 
                   
                 
@@ -1054,9 +1391,9 @@ sudo aptitude remove package
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://jzztf.github.io/notes/linux/package_manage/";
+      this.page.url = "https://jzztf.github.io/notes/linux/bash_scripts/";
       this.page.identifier =
-        "linux/package_manage/";
+        "linux/bash_scripts/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -1078,7 +1415,7 @@ sudo aptitude remove package
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../network_manage/" title="网络管理" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../.." title="Welcome to MkDocs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1087,19 +1424,19 @@ sudo aptitude remove package
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                网络管理
+                Welcome to MkDocs
               </span>
             </div>
           </a>
         
         
-          <a href="../processing_manage/" title="Processing manage" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../disk_manage/" title="Disk manage" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Processing manage
+                Disk manage
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
