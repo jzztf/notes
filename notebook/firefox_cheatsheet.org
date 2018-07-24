@@ -1,0 +1,8 @@
+* FIREFOX CHEATSHEET
+
+| KEYS  | DESCEPTIONS         |
+| C-t   | 添加新标签"tab"     |
+| C-n   | 打开新窗口          |
+| C-w   | 关闭当前标签"tab"   |
+| C-S-r | 打开刚关闭标签"tab" |
+

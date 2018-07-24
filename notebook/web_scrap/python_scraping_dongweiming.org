@@ -1,0 +1,111 @@
+* Python爬虫-dongweimingzhihulive
+
+** HTTTP
+
+*** 请求方法(GET,POST,PUT...)
+*** HTTP状态码
+*** HTTP请求头
+*** Cookie
+*** 身份验证(BaseAuth,OAth...)
+*** Ajax
+*** 代理
+*** HTTPS
+*** Web服务器
+*** RESTful API(json)
+
+** Web前端
+
+*** HTML
+*** CSS
+*** JavaScript
+*** JQuery
+
+** 抓取工具
+
+*** Chrome
+
+    + Console
+    + Tamper Chrome
+
+*** Firefox
+
+    + Firebug
+    + Tamper Data
+    + XPath Checker
+
+*** Fiddler
+*** Charles
+*** JSONView
+
+** 请求库
+
+*** requests
+*** httpie
+*** curl
+*** urlib3
+*** aiohttp
+*** hyper(HTTP/2)
+*** tornado
+
+** 爬虫进阶
+
+*** 图片验证码
+
+    + Tersorflow
+    + Tesseract(不推荐)
+
+*** Bloom Filter
+*** MQ(消息队列)
+
+    + RabbitMQ
+    + Relds
+    + ZeroMQ
+    + Kafka
+
+*** 任务调度
+
+    + Celery
+    + rq
+    + huery
+
+** 爬虫框架
+
+*** scrapy
+
+    + distribute_crawler
+    + scrapy-redls
+
+*** Pyspider
+*** brownant
+*** you-get
+
+** 存储
+
+   + MongoDB
+   + MySQL
+   + Relds(爬取的中间结果)
+   + SQLite
+
+** 异步编程
+
+*** asyncio
+*** Twisted(optional)
+*** Tormorrow
+
+** 并发编程
+
+*** 多线程
+*** 多进程
+*** 进程池/线程池
+*** concurrent.futures
+
+** 动态编程
+
+*** Selenium
+*** Phantomjs
+
+** 解析库
+
+*** BeautifulSoup
+*** XPath(lxml)
+*** re(正则表达式)

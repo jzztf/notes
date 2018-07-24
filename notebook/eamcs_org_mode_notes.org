@@ -1,0 +1,389 @@
+-*-  mode: org; mode: visual-line -*-
+#+TODO: TODO | DONE
+
+* TODO emacs org-mode 笔记 [100%]
+
+
++ 学习计划 [0/0]
+  + [ ]  基本概念
+  + [ ]  帮助系统
+  + [ ]  基本编辑功能
+  + [ ]  高级编辑
+  + [ ]  有效率学习
+  + [ ]  基本定制
+
+** 帮助
+
+| 快捷键 | 说明                   |
+|--------+------------------------|
+| SPC h  | 查看帮助信息           |
+| SPC m  | 查看当前mode的相关文档 |
+| SPC b  | 查看当前buffer所有命令 |
+| SPC f  | 查看当前file所有命令   |
+
+
+
+** DONE 约定
+   CLOSED: [2018-07-03 二 18:34]
+
++ ~space~ ==> ~SPC~
++ ~shift~ ==> ~S~
++ ~ctrl~ ==> ~C~
++ ~alt~  => ~M~
+  
+** DONE 特色
+   CLOSED: [2018-07-03 二 18:34]
+
++ 编辑 :: 易编辑，易导航，查看大纲方便
++ 计划 :: 方便管理~TODO~列表
++ 计时 :: 方便管理任务开启关闭时间
++ 日程 :: 方便管理所有日程安排
++ 抓取 :: 方便抓取任何事物设置计划
++ 表格 :: 强大的简易文本表格编辑器
++ 输出 :: 方便输出其他文本格式
++ 源码 :: 支持编程源码，可在输出文件时，直接输出结果
+
+** DONE 编辑
+   CLOSED: [2018-07-03 二 18:34]
+
+*** 大纲
+
+   + 通过~TAB~和~S TAB~循环查看各个层级的折叠打开状态
+   + 大纲检索C-c /   
+*** 标题
+
+   * top level heading
+   ** second level
+   *** 3rd level
+       some text
+   *** 3rd level
+       more text
+
+   * another top heading
+
+*** 浏览
+
++ 全局循环和本地循环
+  + ~S TAB~ ==> 全局循环
+  + ~TAB~ ==> 本地循环
+
++ 初始化浏览状态
+  + 当emacs打开~.org~文件时，默认为~overview~，也就是全局折叠。
+  + 可通过在buffer内任一位置添加以下命令，即可改变初始化状态。
+
+~#+STARTUP: overview~
+~#+STARTUP: overview | content | showall | showeverything~
+
++ 移动
+
+  evil-mode 直接调也可很方便
+  C-c C-n ==> 下一标题 
+  C-c C-p ==> 上一标题
+  C-c C-f ==> 同等级标题向前
+  C-c C-b ==> 同等级标题向后
+  C-c C-u ==> 返回最高等级标题
+  C-c C-j ==> 跳到其他地方
+
++ 列表
+  + 无序列表符号~+~或~-~
+  + 有序列表符号~1.~或~1)~
+  + 要对列表描述，可在后添加双冒号~::~ :: 列表描述
+  + 如果有序列表从一特定位置开始可以使用~[@20]~，表示从20开始
+  + 移动
+    + S-left/right 改变列表类型：有序/无序/不同列表符号
+    + S-up/down 在同等级列表间移动光标
+    + M-left/right 改变列表等级
+    + M-up/down 改变列表顺序
+  + checkbox
+    + task [50%]
+      + [ ] sub_task-1
+      + [X] sub_task-2
+
++ 抽屉
+  + C-c C-x d 插入抽屉，名称不能有空格
+  + TAB 打开/关闭抽屉
+
+    ** heading
+       context
+       :DRAWERNAME:
+       this is in drawer
+       :END:
+
++ 代码快
+
+  设置开启文件时，是否打开代码块
+
+~#+STARTUP: hideblocks~
+~#+STARTUP: nohideblocks~       
+
++ 脚注
+  + ~[fn:1] ... [fn:1] balbala...~
+  + ~[fn:name]...[fn:name] balabala~
+  + ~[fn:: 行内注解]~
+  + ~[fn:name:adefinition]~ 可以注解两次，一次作为行内简单注解，以此作为name详细注解
+  + C-c C-c 跳到注解
+  + C-c C-x f 添加脚注描述[fn:1]
+
++ Orgstruct mode
++ Org syntax
+
+** DONE 计划任务
+   CLOSED: [2018-07-03 二 18:34]
+   :LOGBOOK:
+   CLOCK: [2018-07-03 二 08:35]--[2018-07-03 二 09:00] =>  0:25
+   :END:
+
++ 基础用法
+  + C-c C-t 可以将标题在未标记-> TODO -> DONE之间转换
+  + S-left/right 也可以进行转换
+  + C-u C-c C-t 选择状态
+  + C-c/t todo树形图
+  + C-c a t 全局todo列表
+
++ 扩展todo，实现流程监控
+  
+  + 流程状态
+
+    (setq org-todo-keywords
+      '((sequence "TODO" "FEEDBACK" "VERIFY" "|" "DONE" "DELEGATED")))~
+
+  + todo类型
+
+    (setq org-todo-keywords '((type "Fred" "Sara" "Lucy" "|" "DONE")))
+    
+  + 多关键字设置
+
+    (setq org-todo-keywords
+      '((sequence "TODO" "|" "DONE")
+        (sequence "REPORT" "BUG" "KNOWNCAUSE" "|" "FIXED")
+        (sequence "|" "CANCELED")))
+
+  + 快速到达todo状态
+    + ~c-c C-t~ 跳出菜单，可选择设置
+
+    (setq org-todo-keywords
+      '((sequence "TODO(t)" "|" "DONE(d)")
+        (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
+        (sequence "|" "CANCELED(c)")))
+
+    + C-c C-t 加上下面备注的字母，可快速设置
+
+  + 为单个文件添加关键字
+    + 光标在~#+~行，执行~C-c C-c~刷新文件状态
+    + 为确保使用正确关键字，可以使用~#+~，然后使用TAB自动补全
+    + 添加附加项,()内字符为该状态快捷键，!切换到该状态时会自动增加时间戳，@切换到该状态时会要求输入文字说明
+
+    #+TODO: TODO FEEDBACK VERIFY | DONE CANCELED
+    #+TODO: REPORT BUG KNOWNCAUSE | FIXED
+    #+TODO: Fred Sara Lucy Mike | DONE
+    #+TODO: TODO(t) | DONE(d @/!)
+
+    (setq org-todo-keywords
+        '((sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
+          (sequence "TODO(T!)" "|" "DONE(D@)3" "CANCELED(C@/!)")
+        ))    
+ 
+
+  + todo互相依赖
+    + 此处应该配合计时使用；
+    + 默认优先级设计会被折叠，可添加noblock; 
+    + ~C-c C-x o~可添加设置
+
+    + TODO Blocked until (two) is done
+    ** DONE one
+    ** TODO two
+
+    * Parent
+      :PROPERTIES:
+      :ORDERED: t
+      :END:
+    ** TODO a
+    ** TODO b, needs to wait for (a)
+    ** TODO c, needs to wait for (a) and (b)
+
+    * This entry is never blocked
+      :PROPERTIES:
+      :NOBLOCKING: t
+      :END:
+
+  + 使用复选框标记非标题性子任务
+    + task [1/2]
+      + [X] sub-task-1
+      + [ ] sub-task-2
+
+** DONE 表格 
+   CLOSED: [2018-07-03 二 18:34]
+
++ 基础用法
+
+  + 手动编辑 -> TAB键自动补全
+    
+  + 编辑至以下，即可TAB自动补全
+
+    |h-1|h-2|h-2|
+    |- 
+
+  + ~C-c |~直接插入表格或转换
+    + 直接插入，输入cols×rows，显示"wrong type"
+    + 选中编辑好的区块，直接添加"|"符号，然后"C-c -"添加水平线
+    + TAB，ENTER键可切换单元格
+    + "C-c ^"可用来排序
+
++ 调整宽度
+  + 在表内添加"<N>"N表示数字，限制表格宽度
+  + 通过"C-c C-c"恢复压缩的表格
+  + 添加以下设置，设置文件开启时的状态
+
+    #+STARTUP: align
+    #+STARTUP:noalign
+
+    | h-1 |   h-2 |
+    |-----+-------|
+    | <3> |   <5> |
+    | abcd | 1234567 |
+    | b   |   123 |
+    | c   | 1234567890 |
+
++ 为列分组
+  + 可以在第一列使用~/~后面使用~<~和~>~分隔，也可以直接使用~<~分隔
+
+  | h-1 | h-2 | h-3 | h-4 | h-5 |
+  |-----+-----+-----+-----+-----|
+  | /   | <   | >   | <   | >   |
+
+  | h-1 | h-2 | h-3 | h-4 | h-5 |
+  |-----+-----+-----+-----+-----|
+  | /   | <   |     | <   |     |
+
++ 其他模式使用table
+  + ~M-x orgtbl-mode~
+
++ [[https://orgmode.org/manual/The-spreadsheet.html#The-spreadsheet][电子表单]]
+
++ [[https://orgmode.org/manual/Org_002dPlot.html#Org_002dPlot][图形]]
+
+** DONE 超链接  
+   CLOSED: [2018-07-03 二 18:34]
+
++ 链接格式
+  + ~C-c C-l~光标放在链接上，编辑
+
+
++ 内部链接
+  + 其原理是在内部建立了表单链接彼此
+
+  ~[[#mycustom-id]]~ 就会在全文搜索<<#mycustom-id>>;
+  或者加上描述 ~[[m][mytargetdescription]]~ 就会在全文搜索<<mytarget>>
+
++ 外部链接
+  + 外部链接支持很多种格式
+  + 外部http链接：~http://www.astro.uva.nl/~dominik~
+  + 文件：~file:/home/dominik/images/jupiter.jpg~
+  + 文件：~/home/dominik/images/jupiter.jpg~
+  + 文件：~file:papers/last.pdf~
+  + 文件：~./papers/last.pdf~
+  + 跳到NN行：~file:sometextfile::NNN~
+  + 跳到其他文件：~file:projects.org~
+  + 跳到其他文件特定文字：~file:projects.org::some words~
+  + 跳到其他文件特定任务：~file:projects.org::*task title~
+
++ 创建，插入，追踪链接
+  + ~C-c l~存储一个链接？？？
+  + ~C-c C-l~插入一个链接，或者编辑已有链接
+  + ~C-u C-c C-l~插入文件链接可自动补全
+  + ~C-c C-o~打开链接
+  + ~C-c %~记录一个位置
+  + ~C-c &~返回记录的位置 
+  + ~C-c C-x C-n~下一个链接 
+  + ~C-c C-x C-p~上一个链接
+
++ 链接到外部org文件
+
+    (global-set-key "\C-c L" 'org-insert-link-global)
+    (global-set-key "\C-c o" 'org-open-at-point-global)
+
++ 简写复杂链接
+  + 可设置全局，也可设置单个文件
+  + ~%s~是替代文本，~%h~是encode后的urls
+
+    #+LINK: bugzilla  http://10.1.2.9/bugzilla/show_bug.cgi?id=
+    #+LINK: google    http://www.google.com/search?q=%s
+
+    (setq org-link-abbrev-alist
+      '(("bugzilla"  . "http://10.1.2.9/bugzilla/show_bug.cgi?id=")
+        ("url-to-ja" . "http://translate.google.fr/translate?sl=en&tl=ja&u=%h")
+        ("google"    . "http://www.google.com/search?q=")
+        ("gmap"      . "http://maps.google.com/maps?q=%s")
+        ("omap"      . "http://nominatim.openstreetmap.org/search?q=%s&polygon=1")
+        ("ads"       . "http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?author=%s&db_key=AST")))
+
+
++ 链接到特定位置
+
++ 自定义搜索
+  + 可自定义函数搜索
+
+
+
+
+** 时间
+   DEADLINE: <2018-07-03 二> SCHEDULED: <2018-07-04 三>
+
+  + C-c . 插入时间
+  + S-left/right 移动
+  + S-up/down
+  + C-c C-y 可以计算时间段（两个时间戳中间使用-）的间隔<2018-07-03 二>-<2018-07-07 六>
+  + “计划时间和截止时间”针对标题时间任务
+    + 计划时间SCHEDULED: C-c C-s
+    + 截止时间DEADLINE: C-c C-d
+
+** 全局任务清单
+
+  C-c a a 打开全局任务清单
+
+  清单中可以加入文件或目录，如果是目录，就会加入所有org文件，可使用C-c [/]将文件加入或移除清单，也可以通过C-c ‘/循环打开清单文件
+
+    (setq org-agenda-files (list "~/.todos/work.org"
+                                "~/.todos/projects.org"
+                                "~/.todos/home.org"
+                                "~/Documents/todo/"
+                              ))
+
+** 全局todo列表
+
+  可通过C-c a t进入全局todo列表，使用t改变状态，如果未定义
+
+    (global-set-key "\C-cl" 'org-store-link)
+    (global-set-key "\C-cc" 'org-capture)
+    (global-set-key "\C-ca" 'org-agenda)
+    (global-set-key "\C-cb" 'org-iswitchb)
+
+** 日程表
+  C-c ! 仅插入时间
+  C-c a a日程表视图
+
+* 实践
+
+需要什么就直接做，想学习GTD任务管理，看文档看了30%，虽然东西很全，但却少实际应用环境，遂决定直接应用到此文档，并在后面记录整个使用过程
+
+** TODO 常用技巧 [100%]
+   
+*** DONE 设置文档自动换行
+    CLOSED: [2018-07-03 二 18:48]
+
+ 添加 -*-  mode: org; mode: visual-line -*- 到文档头部
+
+*** DONE 设定自己的todo/done
+    CLOSED: [2018-07-03 二 18:48]
+
+    添加 #+TODO TODO | DONE 到文档头部，C-c C-c更新状态
+
+** 技巧练习
+
+
+[[http://www.cnblogs.com/holbrook/archive/2012/04/14/2447754.html]]
+* Footnotes
+
+[fn:1] 这是一条脚注
+
+

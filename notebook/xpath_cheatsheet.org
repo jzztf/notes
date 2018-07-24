@@ -1,0 +1,60 @@
+* XPATH CHEATSHEET
+
+
+* lxml
+
+  link: http://blog.datahut.co/beginners-guide-to-web-scraping-with-python-lxml/
+
+  lxml模块下有两个模块"lxml.etree"和"lxml.html"."lxml.etree"可以构建"html"文档,"lxml.html"可以解析"html"文件
+
+** "lxml.etree"
+
+   构造"html"文档
+
+#+BEGIN_SRC python
+
+#+END_SRC
+
+** "lxml.html"
+
+   解析"html"文档
+
+#+BEGIN_SRC python
+
+
+#+END_SRC
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+link: http://docs.python-guide.org/en/latest/scenarios/scrape/
+
+#+BEGIN_SRC python
+from lxml import html
+import requests
+
+page = requests.get('http://econpy.pythonanywhere.com/ex/001.html')
+tree = html.fromstring(page.content)
+
+tree.xpath('//div[@title="buyer-name"]/text()') 
+tree.xpath('//span[@class="item-price"]/text()')
+#+END_SRC
+
+
+** 选取节点
+** 谓语(predicates)
+** 通配符
+** 多路径选择
+** xpath轴
+** xpath运算符
+** 常用功能函数
+
+   html = "<html><h1>head</h1><a href="http://example.com">links</a></html>"
+
+   | 表达式      | 描述 | 用法 |
+   |-------------+------+------|
+   | starts-with |      |      |
+   | contains    |      |      |
+   | and         |      |      |
+   | not         |      |      |
+   | text()      |      |      |
+   |             |      |      |

@@ -1,0 +1,26 @@
+* IPYTHON CHEATSHEET
+
+| keys             | description                              |
+| %automagic       | 输入魔法命令就不需要%                    |
+| %rehashx         | 输入系统命令就不需要!                    |
+| %pwd             | 显示当前路径                             |
+| %bookmark        | 定义常用文件目录                         |
+| cd -b bookmarker | 直接进入书签目录                         |
+| %debug           | 激活debug模式                            |
+| %alias           | 定制别名                                 |
+| %edit            | 对于复杂函数,避免错误                    |
+| %hist            | 查看历史记录                             |
+| %timeit          | 获得程序运行时间(多次运行-n,获前3次-r)   |
+| %macro           | 将历史记录,文件封装为宏(打包命令,重命名) |
+| %load            | 将外部命令导入                           |
+| %save            | 将历史记录保存到文件                     |
+| logstart         | 记录日志                                 |
+| logoff           | 关闭日志记录(ipython -i ipython.log.py)  |
+| %time            | 测试代码执行时间                         |
+
+* 配置和定义
+
+  #+BEGIN_SRC 
+  ipython profile create my_ipython
+  ipython --profile=my_ipython
+  #+END_SRC

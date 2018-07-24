@@ -1,0 +1,9 @@
+* spaces小技巧
+
+
+| 快捷键  | 描述                        |
+|---------+-----------------------------|
+| SPC t m | 设置mode-line               |
+| SPC t n | 设置行号number              |
+| SPC t r | 设置相对行号relative number |
+| M-m m p | 番茄钟                      |

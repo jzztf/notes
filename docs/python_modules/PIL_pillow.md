@@ -39,19 +39,63 @@ im_copy.rotate(90)
 
 ### ImageDraw对象
 
+- 添加文字水印和线条
+
 ```python
-from PIL import Image,ImageDraw
+# coding=utf-8
 
-im = Image.open('flower.jpg')
-width,height = im.size
-# 创建画图对象
+from PIL import Image, ImageFont, ImageDraw
+
+im = Image.new("RGBA", (1366, 768), color=(126, 126, 126, 100))
+w, h = im.size
+w_draw, h_draw = int(w * 0.84), int(h * 0.88)
+
+# 创建ImageDraw.Draw对象，font对象
 draw = ImageDraw.Draw(im)
-# 对画图对象使用line方法,将图像四边中点连接起来，fill填充颜色，width表示线宽
-draw.line((0,height/2)+(width/2,height)+(width,height/2)+(width/2,0)+(0,height/2),fill=(255,255,255,255),width=9)
-im.save('line.jpg')
+fnt = ImageFont.truetype("monaco.ttf", size=18)
+text = "pillow"
 
-# 
+# 添加文字
+draw.text((w_draw+15, h_draw+15), text, font=fnt, fill=(255, 255, 255, 80))
 
+# 划线
+draw.line(((0, h_draw-10), (w, h_draw-10)), fill=(255, 255, 255, 30), width=10)
+draw.line(((w_draw-10, 0), (w_draw-10, h)), fill=(255, 255, 255, 30),
+          width=10)
+
+# 保存
+im.save("pillow_draw.png")
+```
+
+- 生成照片墙
+
+```python
+from PIL import Image, ImageFont, ImageDraw
+
+# 创建小图
+pic = Image.new("RGBA", (50,50), color="grey")
+
+# 创建大图
+bg = Image.new("RGBA", (500,500), color="red")
+p_w, p_h = pic.size
+b_w, b_h = bg.size
+
+# 设置字体
+fnt = ImageFont.truetype("monaco.ttf", size=22)
+
+# 创建Image.Draw对象
+draw = ImageDraw.Draw(pic)
+
+# 小图上添加文字
+draw.text((int(p_w/3), int(p_h/3)), "*_*", fill=(255,255,255,60))
+
+# 遍历大图，粘贴小图
+for x in range(int(b_w/p_w)):
+    for y in range(int(b_h/p_h)):
+        bg.paste(pic, (x*p_w, y*p_h))
+
+# 保存文件
+bg.save("pic_wall.png")
 ```
 
 - 实例

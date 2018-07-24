@@ -1,0 +1,69 @@
+* SPACEMACS CHEATSHEET
+
+** commands
+
+| KEYS        | DESCRIPTIONS           |
+|-------------+------------------------|
+| SPC f e d   | 打开配置文件           |
+| SPC f e R   | 更新配置               |
+|-------------+------------------------|
+| C-c y       | 有道词典[fn:1]         |
+| SPC a /     | 搜索[fn:3]             |
+|-------------+------------------------|
+| SPC o y/p   | 复制/粘贴[fn:2]        |
+|-------------+------------------------|
+| , i f       | 插入新脚注             |
+| , ,         | 脚注和描述之间切换     |
+|-------------+------------------------|
+| <s TAB      | 代码块(evil-org)       |
+| ~~          | 行内代码(evil-org)     |
+|-------------+------------------------|
+| SPC m t i c | 插入列                 |
+| SPC m t i r | 插入行                 |
+| SPC m t i h | 插入横线               |
+| C-c -       | 插入横线               |
+| SPC m t i H | 插入横线并移动         |
+| C-c RET     | 插入横线并移动         |
+| SPC m t     | org-tables相关         |
+| C-c 竖线    | 将现有内容转成表格     |
+|-------------+------------------------|
+| C-x d       | 进入dired              |
+| p           | 前一个                 |
+| n           | 后一个                 |
+| ^           | 上一级目录             |
+| >           | 下一目录行             |
+| <           | 上一个目录行           |
+| f           | visit当前文件          |
+| v           | view当前文件           |
+| o           | view当前文件在另一窗口 |
+| +           | 创建新子目录           |
+| m           | mark一个file           |
+| u           | unmark一个file         |
+| s           | 排序                   |
+| C-u s       | 编辑ls                 |
+| D           | delete marked file(s)  |
+| h/?         | 寻求帮助                   |
+
+** 基础概念
+  layers会自动收集与之相关的packages,比如"python"layer就会收集自动补全,语法高亮等特性.如果只是希望获得某一package的特性,可以将其添加到 ~dotspacmacs/layers~下的~dotspacemacs-additional-packages~
+  
+  #+~~
+  
+** 代码块 
+
+   定制代码块: 
+   + https://emacs.stackexchange.com/questions/12841/quickly-insert-source-blocks-in-org-mode
+   + https://orgmode.org/manual/Easy-templates.html
+
+   
+   #+BEGIN_SRC 
+   
+   #+END_SRC
+
+* Footnotes
+
+[fn:3]添加layers-list 
+
+[fn:2]额外安装, 安装xsel 
+
+[fn:1]额外安装 
