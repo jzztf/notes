@@ -186,6 +186,76 @@
             "title": "iptraf"
         },
         {
+            "location": "/linux/nginx/",
+            "text": "nginx\n\u00b6\n\n\nweb\u670d\u52a1\u5668\u4e0e\u5e94\u7528\u670d\u52a1\u5668\u7684\u533a\u522b\n\u00b6\n\n\n\n\nweb\u670d\u52a1\u5668\u8d1f\u8d23\u5904\u7406http\u534f\u8bae\uff0c\u5e94\u7528\u670d\u52a1\u5668\u53ef\u4ee5\u5904\u7406http\u5185\u5bb9\uff0c\u4e5f\u53ef\u4ee5\u5904\u7406\u5176\u4ed6\u534f\u8bae\uff0c\u6bd4\u5982RPC\n\n\nweb\u670d\u52a1\u5668\u7528\u4e8e\u5904\u7406\u9759\u6001\u9875\u9762\u7684\u5185\u5bb9\uff0c\u5bf9\u4e8e\u811a\u672c\u8bed\u8a00\u9648\u5347\u7684\u52a8\u6001\u5185\u5bb9\uff0c\u5219\u901a\u8fc7WSGI\u501f\u53e3\u4ea4\u7ed9\u5e94\u7528\u670d\u52a1\u5668\u6765\u5904\u7406\n\n\n\u4e00\u822c\u5e94\u7528\u670d\u52a1\u5668\u90fd\u96c6\u6210\u4e86web\u670d\u52a1\u5668\uff0c\u81ea\u5e26\u7684\u5e94\u7528\u670d\u52a1\u5668\u751a\u81f3\u53ef\u4ee5\u652f\u6301\u5e94\u7528\u7ea7\u522b\u7684\u529f\u80fd\uff0c\u6bd4\u5982\u8fde\u63a5\u6c60\uff0c\u4e8b\u7269\u652f\u6301\uff0c\u6d88\u606f\u670d\u52a1\u7b49\n\n\n\n\n\u4e3a\u4ec0\u4e48\u4f7f\u7528nginx\n\u00b6\n\n\n\n\n\u5904\u7406\u9759\u6001\u6587\u4ef6\uff0c\u7d22\u5f15\u6587\u4ef6\u5229\u7387\u975e\u5e38\u9ad8\n\n\n\u9ad8\u5e76\u53d1\u8fde\u63a5\n\n\n\u4f4e\u7684\u5185\u5b58\u6d88\u8017\n\n\n\u7a33\u5b9a\u6027\u9ad8\uff0c\u5b95\u673a\u6982\u7387\u5f88\u4f4e\n\n\n\u5f3a\u5927\u7684\u53cd\u5411\u4ee3\u7406\u548c\u8d1f\u8f7d\u5747\u8861\uff0c\u5e73\u8861\u96c6\u7fa4\u4e2d\u5404\u4e2a\u670d\u52a1\u5668\n\n\n\u914d\u7f6e\u7b80\u6d01\uff0c\u914d\u7f6e\u6587\u4ef6\u901a\u4fd7\u6613\u61c2\uff0c\u4e0a\u624b\u5bb9\u6613\n\n\n\u652f\u6301\u70ed\u90e8\u7f72\uff0c\u53ef\u4ee5\u5728\u4e0d\u95f4\u65ad\u670d\u52a1\u7684\u60c5\u51b5\u4e0b\u5bf9\u8f6f\u4ef6\u8fdb\u884c\u5347\u7ea7\n\n\n\u63d0\u4f9b\u5065\u5eb7\u68c0\u67e5\u652f\u6301\n\n\n\u81ea\u7531\u7684BSD\u8bb8\u53ef\uff08\u514d\u8d39\uff0c\u53ef\u4fee\u6539\uff0c\u53ef\u7528\u4e8e\u5546\u4e1a\uff09\n\n\n\n\n\u5b89\u88c5\n\u00b6\n\n\n\u9ed8\u8ba4\u5b89\u88c5\n\u00b6\n\n\nsudo apt install nginx\nsudo systemctl status nginx\nsudo systemctl \nenable\n nginx  \n# \u5f00\u673a\u81ea\u542f\u52a8\n\n\n\n\n\n\n\n\n80\uff1f\u7aef\u53e3\n\n\n\n\n\u6e90\u7801\u5b89\u88c5\n\u00b6\n\n\n\n\n\u5bf9\u8f6f\u4ef6\u6027\u80fd\u6709\u975e\u5e38\u9ad8\u7684\u8981\u6c42\uff0c\u53ef\u5bf9\u6e90\u7801\u8fdb\u884c\u5b9a\u5236\n\n\n\u5bf9\u8f6f\u4ef6\u6253\u8fc7\u7279\u6b8a\u4e0d\u5b9a\n\n\n\u6e90\u7801\u63d0\u4f9b\u7edf\u4e00\u7684\u5b89\u88c5\u65b9\u5f0f\uff0c\u53ef\u7528\u4e8e\u591a\u79cd\u5e73\u53f0\n\n\n\n\n\u81ea\u5df1\u7ef4\u62a4\u4e00\u4e2adeb\u7684\u5305\n\u00b6\n\n\n\u53cd\u5411\u4ee3\u7406\u548c\u6b63\u5411\u4ee3\u7406\n\u00b6\n\n\n\n\n\n\n\u6b63\u5411\u4ee3\u7406\n\n\n\u4f5c\u4e3a\u4e00\u4e2a\u5a92\u4ecb\u5c06\u4e92\u8054\u7f51\u4e0a\u83b7\u53d6\u7684\u8d44\u6e90\u8fd4\u56de\u7ed9\u5173\u8054\u5ba2\u6237\u7aef\uff0c\u4ee3\u7406\u548c\u5ba2\u6237\u7aef\u5728\u4e00\u4e2a\u5c40\u57df\u7f51\uff0c\u5bf9\u4e8e\u670d\u52a1\u7aef\u662f\u900f\u660e\u7684\u3002\n\n\n\n\n\n\n\u53cd\u5411\u4ee3\u7406\n\n\n\u6839\u636e\u5ba2\u6237\u7aef\u7684\u8bf7\u6c42\uff0c\u4ece\u540e\u7aef\u7684\u670d\u52a1\u5668\u4e0a\u83b7\u53d6\u8d44\u6e90\uff0c\u7136\u540e\u518d\u5c06\u8fd9\u4e9b\u8d44\u6e90\u8fd4\u56de\u7ed9\u5ba2\u6237\u7aef\uff0c\u4ee3\u7406\u548c\u670d\u52a1\u5668\u5728\u4e00\u4e2a\u5c40\u57df\u7f51\uff0c\u5bf9\u5ba2\u6237\u7aef\u662f\u900f\u660e\u7684\u3002\n\n\n\n\n\n\n\u6240\u8c13\u900f\u660e\uff0c\u6bd4\u5982\u53cd\u5411\u4ee3\u7406\uff1a\u5bf9\u4e8e\u5ba2\u6237\u7aef\u800c\u8a00\uff0c\u4ee3\u7406\u670d\u52a1\u5668\u548c\u539f\u59cb\u670d\u52a1\u5668\u662f\u4e00\u4e2a\u670d\u52a1\u5668\n\n\n\u53cd\u5411\u4ee3\u7406\u4f5c\u7528\n\u00b6\n\n\n\n\n\u63d0\u9ad8\u52a8\u6001\u8bed\u8a00\u7684I/O\u5904\u7406\u80fd\u529b\n\n\n\u52a0\u5bc6\u548cSSL\u52a0\u901f\n\n\n\u5b89\u5168\n\n\n\n\n\u8d1f\u8f7d\u5747\u8861\n\n\n\n\n\n\n\u7f13\u5b58\u9759\u6001\u5185\u5bb9\n\n\n\n\n\n\n\u652f\u6301\u538b\u7f29\n\n\n\n\n\n\nngnix \u914d\u7f6e\n\u00b6\n\n\n\u8d1f\u8f7d\u5747\u8861\u7b97\u6cd5\n\u00b6\n\n\n\n\nround-robin\n    \u8f6e\u8be2\n\n\nleast_conn\n    \u8bf7\u6c42\u53d1\u9001\u5230\u8bf7\u6c42\u8fde\u63a5\u5c11\u7684\u670d\u52a1\u5668 \n\n\nip_hash\n\n\nhash\n\n\n\n\n\u8d1f\u8f7d\u5747\u8861\u652f\u6301\u7684\u72b6\u6001\u53c2\u6570\n\u00b6\n\n\ngunicorn\u542f\u52a8Flask\u5e94\u7528\n\u00b6\n\n\n\n\nwsgi\u7ed3\u5408nginx\u90e8\u7f72web\u670d\u52a1",
+            "title": "nginx"
+        },
+        {
+            "location": "/linux/nginx/#nginx",
+            "text": "",
+            "title": "nginx"
+        },
+        {
+            "location": "/linux/nginx/#web",
+            "text": "web\u670d\u52a1\u5668\u8d1f\u8d23\u5904\u7406http\u534f\u8bae\uff0c\u5e94\u7528\u670d\u52a1\u5668\u53ef\u4ee5\u5904\u7406http\u5185\u5bb9\uff0c\u4e5f\u53ef\u4ee5\u5904\u7406\u5176\u4ed6\u534f\u8bae\uff0c\u6bd4\u5982RPC  web\u670d\u52a1\u5668\u7528\u4e8e\u5904\u7406\u9759\u6001\u9875\u9762\u7684\u5185\u5bb9\uff0c\u5bf9\u4e8e\u811a\u672c\u8bed\u8a00\u9648\u5347\u7684\u52a8\u6001\u5185\u5bb9\uff0c\u5219\u901a\u8fc7WSGI\u501f\u53e3\u4ea4\u7ed9\u5e94\u7528\u670d\u52a1\u5668\u6765\u5904\u7406  \u4e00\u822c\u5e94\u7528\u670d\u52a1\u5668\u90fd\u96c6\u6210\u4e86web\u670d\u52a1\u5668\uff0c\u81ea\u5e26\u7684\u5e94\u7528\u670d\u52a1\u5668\u751a\u81f3\u53ef\u4ee5\u652f\u6301\u5e94\u7528\u7ea7\u522b\u7684\u529f\u80fd\uff0c\u6bd4\u5982\u8fde\u63a5\u6c60\uff0c\u4e8b\u7269\u652f\u6301\uff0c\u6d88\u606f\u670d\u52a1\u7b49",
+            "title": "web\u670d\u52a1\u5668\u4e0e\u5e94\u7528\u670d\u52a1\u5668\u7684\u533a\u522b"
+        },
+        {
+            "location": "/linux/nginx/#nginx_1",
+            "text": "\u5904\u7406\u9759\u6001\u6587\u4ef6\uff0c\u7d22\u5f15\u6587\u4ef6\u5229\u7387\u975e\u5e38\u9ad8  \u9ad8\u5e76\u53d1\u8fde\u63a5  \u4f4e\u7684\u5185\u5b58\u6d88\u8017  \u7a33\u5b9a\u6027\u9ad8\uff0c\u5b95\u673a\u6982\u7387\u5f88\u4f4e  \u5f3a\u5927\u7684\u53cd\u5411\u4ee3\u7406\u548c\u8d1f\u8f7d\u5747\u8861\uff0c\u5e73\u8861\u96c6\u7fa4\u4e2d\u5404\u4e2a\u670d\u52a1\u5668  \u914d\u7f6e\u7b80\u6d01\uff0c\u914d\u7f6e\u6587\u4ef6\u901a\u4fd7\u6613\u61c2\uff0c\u4e0a\u624b\u5bb9\u6613  \u652f\u6301\u70ed\u90e8\u7f72\uff0c\u53ef\u4ee5\u5728\u4e0d\u95f4\u65ad\u670d\u52a1\u7684\u60c5\u51b5\u4e0b\u5bf9\u8f6f\u4ef6\u8fdb\u884c\u5347\u7ea7  \u63d0\u4f9b\u5065\u5eb7\u68c0\u67e5\u652f\u6301  \u81ea\u7531\u7684BSD\u8bb8\u53ef\uff08\u514d\u8d39\uff0c\u53ef\u4fee\u6539\uff0c\u53ef\u7528\u4e8e\u5546\u4e1a\uff09",
+            "title": "\u4e3a\u4ec0\u4e48\u4f7f\u7528nginx"
+        },
+        {
+            "location": "/linux/nginx/#_1",
+            "text": "",
+            "title": "\u5b89\u88c5"
+        },
+        {
+            "location": "/linux/nginx/#_2",
+            "text": "sudo apt install nginx\nsudo systemctl status nginx\nsudo systemctl  enable  nginx   # \u5f00\u673a\u81ea\u542f\u52a8    80\uff1f\u7aef\u53e3",
+            "title": "\u9ed8\u8ba4\u5b89\u88c5"
+        },
+        {
+            "location": "/linux/nginx/#_3",
+            "text": "\u5bf9\u8f6f\u4ef6\u6027\u80fd\u6709\u975e\u5e38\u9ad8\u7684\u8981\u6c42\uff0c\u53ef\u5bf9\u6e90\u7801\u8fdb\u884c\u5b9a\u5236  \u5bf9\u8f6f\u4ef6\u6253\u8fc7\u7279\u6b8a\u4e0d\u5b9a  \u6e90\u7801\u63d0\u4f9b\u7edf\u4e00\u7684\u5b89\u88c5\u65b9\u5f0f\uff0c\u53ef\u7528\u4e8e\u591a\u79cd\u5e73\u53f0",
+            "title": "\u6e90\u7801\u5b89\u88c5"
+        },
+        {
+            "location": "/linux/nginx/#deb",
+            "text": "",
+            "title": "\u81ea\u5df1\u7ef4\u62a4\u4e00\u4e2adeb\u7684\u5305"
+        },
+        {
+            "location": "/linux/nginx/#_4",
+            "text": "\u6b63\u5411\u4ee3\u7406  \u4f5c\u4e3a\u4e00\u4e2a\u5a92\u4ecb\u5c06\u4e92\u8054\u7f51\u4e0a\u83b7\u53d6\u7684\u8d44\u6e90\u8fd4\u56de\u7ed9\u5173\u8054\u5ba2\u6237\u7aef\uff0c\u4ee3\u7406\u548c\u5ba2\u6237\u7aef\u5728\u4e00\u4e2a\u5c40\u57df\u7f51\uff0c\u5bf9\u4e8e\u670d\u52a1\u7aef\u662f\u900f\u660e\u7684\u3002    \u53cd\u5411\u4ee3\u7406  \u6839\u636e\u5ba2\u6237\u7aef\u7684\u8bf7\u6c42\uff0c\u4ece\u540e\u7aef\u7684\u670d\u52a1\u5668\u4e0a\u83b7\u53d6\u8d44\u6e90\uff0c\u7136\u540e\u518d\u5c06\u8fd9\u4e9b\u8d44\u6e90\u8fd4\u56de\u7ed9\u5ba2\u6237\u7aef\uff0c\u4ee3\u7406\u548c\u670d\u52a1\u5668\u5728\u4e00\u4e2a\u5c40\u57df\u7f51\uff0c\u5bf9\u5ba2\u6237\u7aef\u662f\u900f\u660e\u7684\u3002    \u6240\u8c13\u900f\u660e\uff0c\u6bd4\u5982\u53cd\u5411\u4ee3\u7406\uff1a\u5bf9\u4e8e\u5ba2\u6237\u7aef\u800c\u8a00\uff0c\u4ee3\u7406\u670d\u52a1\u5668\u548c\u539f\u59cb\u670d\u52a1\u5668\u662f\u4e00\u4e2a\u670d\u52a1\u5668",
+            "title": "\u53cd\u5411\u4ee3\u7406\u548c\u6b63\u5411\u4ee3\u7406"
+        },
+        {
+            "location": "/linux/nginx/#_5",
+            "text": "\u63d0\u9ad8\u52a8\u6001\u8bed\u8a00\u7684I/O\u5904\u7406\u80fd\u529b  \u52a0\u5bc6\u548cSSL\u52a0\u901f  \u5b89\u5168   \u8d1f\u8f7d\u5747\u8861    \u7f13\u5b58\u9759\u6001\u5185\u5bb9    \u652f\u6301\u538b\u7f29",
+            "title": "\u53cd\u5411\u4ee3\u7406\u4f5c\u7528"
+        },
+        {
+            "location": "/linux/nginx/#ngnix",
+            "text": "",
+            "title": "ngnix \u914d\u7f6e"
+        },
+        {
+            "location": "/linux/nginx/#_6",
+            "text": "round-robin\n    \u8f6e\u8be2  least_conn\n    \u8bf7\u6c42\u53d1\u9001\u5230\u8bf7\u6c42\u8fde\u63a5\u5c11\u7684\u670d\u52a1\u5668   ip_hash  hash",
+            "title": "\u8d1f\u8f7d\u5747\u8861\u7b97\u6cd5"
+        },
+        {
+            "location": "/linux/nginx/#_7",
+            "text": "",
+            "title": "\u8d1f\u8f7d\u5747\u8861\u652f\u6301\u7684\u72b6\u6001\u53c2\u6570"
+        },
+        {
+            "location": "/linux/nginx/#gunicornflask",
+            "text": "wsgi\u7ed3\u5408nginx\u90e8\u7f72web\u670d\u52a1",
+            "title": "gunicorn\u542f\u52a8Flask\u5e94\u7528"
+        },
+        {
             "location": "/linux/package_manage/",
             "text": "linux \u5305\u7ba1\u7406\n\u00b6\n\n\ndpkg\n\u00b6\n\n\ndpkg\u662flinux\u5e95\u5c42\u7684\u5305\u7ba1\u7406\u8f6f\u4ef6\uff0c\u4e0d\u4f1a\u89e3\u51b3\u4f9d\u8d56\u4e4b\u95f4\u7684\u95ee\u9898\n\n\ndpkg -l  \n# \u5217\u51fa\u6240\u6709\u5305\n\ndpkg -l \n|\n grep firefox  \n# \u5217\u51fa\u6240\u6709\u5b89\u88c5\u5305\uff0c\u67e5\u627efirefox\n\ndpkg -L firefox  \n# \u5217\u51fa\u67d0\u4e00\u5305\u5b89\u88c5\u7684\u6587\u4ef6\n\ndpkg -S ~/.npmrc  \n# \u67e5\u627e\u67d0\u4e00\u6587\u4ef6\u6240\u5c5e\u7a0b\u5e8f\n\nsudo dpkg -i package.deb  \n# \u5b89\u88c5.deb\u5b89\u88c5\u5305\n\nsudo dpkg -r package.deb  \n# \u5378\u8f7d\u5305\n\n\n\n\n\n\napt/apt-get\n\u00b6\n\n\nAdvanced Packaging Tool (APT) \n\n\n\n\n\u6bd4apt-get\u6709\u66f4\u597d\u7684\u4ea4\u4e92\u4f53\u9a8c\n\n\n\n\nsudo apt install package  \n# \u5b89\u88c5\u5305\n\nsudo apt remove package  \n# \u79fb\u9664\u5305\uff0c\u4f46\u4f1a\u7559\u4e00\u4e9b\u4e2a\u4eba\u914d\u7f6e\u6216\u4fe1\u606f\u7684\u6587\u4ef6\n\nsudo apt purge package  \n# \u6bd4\u4e4bremove\u5220\u7684\u66f4\u591a\u70b9\n\nsudo apt autoremove  \n# \u81ea\u52a8\u79fb\u9664\u5f53\u524d\u6240\u6709\u5305\u4e0d\u9700\u8981\u7684\u4f9d\u8d56\uff08\u53ef\u80fd\u662f\u5b89\u88c5\u5176\u4ed6\u5305\uff0c\u5b89\u88c5\u7684\u4f9d\u8d56\uff0c\u5f53\u4e4b\u524d\u7684\u5305\u88ab\u79fb\u9664\u540e\uff0c\u8fd9\u4e9b\u4f9d\u8d56\u4e5f\u5c31\u6ca1\u7528\u4e86\uff09\n\nsudo apt search package  \n# \u67e5\u627e\u5305\n\nsudo apt show package  \n# \u663e\u793a\u7ed9\u5b9a\u5305\u7684\u4fe1\u606f\u4ee5\u53ca\u5176\u4f9d\u8d56\u7684\u4fe1\u606f\n\nsudo apt list  \n# \u663e\u793a\u6240\u6709\u5305\n\nsudo apt list --installed  \n# \u663e\u793a\u5df2\u5b89\u88c5\n\nsudo apt edit-source  \n# \u7f16\u8f91\"/etc/apt/sources.list\"\u6587\u4ef6\n\nsudo apt update  \n# \u66f4\u65b0\u6e90\n\nsudo apt upgrade  \n# \u66f4\u65b0\u53ef\u66f4\u65b0\u5305\n\n\n\n\n\n\nsources.list\n\u00b6\n\n\n\u5982\u679c\u53ea\u662f\u7528\napt\n\u5b89\u88c5\uff0c\u53ef\u4ee5\u53ea\u7559\ndeb\n\u5f00\u5934\u7684\n\n\n\n\ndeb\n\u884c\u5173\u8054\u4e8c\u8fdb\u5236\u9884\u7f16\u8bd1\u8f6f\u4ef6\u5305\uff0c\u53ef\u4ee5\u901a\u8fc7\napt\n\u5b89\u88c5\n\n\ndeb-src\n\u884c\u5173\u8054\u7528\u4e8e\u7f16\u8bd1\u4e8c\u8fdb\u5236\u8f6f\u4ef6\u5305\u7684\u6e90\u4ee3\u7801\uff0c\u901a\u8fc7\napt-get source $package\n\uff0c\u968f\u540e\u8fdb\u884c\u7f16\u8bd1\n\n\n\n\n\u6839\u636e\u9700\u6c42\u9009\u62e9\u8f6f\u4ef6\u5e93\n\n\n\n\nmain\n canoical\u652f\u6301\u7684\u514d\u8d39\u548c\u5f00\u6e90\n\n\nuniverse\n \u793e\u533a\u652f\u6301\u7684\u514d\u8d39\u548c\u5f00\u6e90\n\n\nrestricted\n \u5b98\u65b9\u652f\u6301\u7684\u975e\u5b8c\u5168\u81ea\u7531\u8f6f\u4ef6\n\n\nmultiverse\n \u975e\u5b98\u65b9\u652f\u6301\u7684\u975e\u81ea\u7531\u8f6f\u4ef6\n\n\n\n\n\u66f4\u65b0\u8f6f\u4ef6\u6e90\n\n\ndeb http://cn.archive.ubuntu.com/ubuntu/ bionic main restricted\ndeb http://cn.archive.ubuntu.com/ubuntu/ bionic universe\ndeb http://cn.archive.ubuntu.com/ubuntu/ bionic multiverse\n\ndeb http://cn.archive.ubuntu.com/ubuntu/ binoic-updates main restricted\ndeb http://cn.archive.ubuntu.com/ubuntu/ binoic-updates universe\ndeb http://cn.archive.ubuntu.com/ubuntu/ binoic-updates multiverse\n\ndeb http://cn.archive.ubuntu.com/ubuntu/ binoic-security main restricted\ndeb http://cn.archive.ubuntu.com/ubuntu/ binoic-security universe\ndeb http://cn.archive.ubuntu.com/ubuntu/ binoic-security multiverse\n\n\n# \u4f7f\u7528vim\u7f16\u8f91\u53ef\u4f7f\u7528s\u66ff\u6362\u547d\u4ee4\uff0c\u66f4\u6362\u7279\u5b9a\u6e90\n\n\n# \u201c:,$s/cn.archive.ubuntu.com/mirrors.aliyun.com/g\u201d\n\n\n\n\n\n\naptitude & synaptic\n\u00b6\n\n\n\n\naptitude \u7ec8\u7aef\u7684\u83dc\u5355\u5f0f\u5e26\u754c\u9762\u7684\u5305\u7ba1\u7406\n\n\nsynaptic \u53ef\u89c6\u5316\u5305\u7ba1\u7406\u5668\n\n\n\n\nsudo aptitude install package  \n# \u547d\u4ee4\u884c\u4e0b\u4f7f\u7528aptitude\n\nsudo aptitude remove package",
             "title": "linux \u5305\u7ba1\u7406"
@@ -561,6 +631,71 @@
             "title": "socket-\u5957\u63a5\u5b57\u6a21\u5757"
         },
         {
+            "location": "/tips_tricks/emacs_gtd/",
+            "text": "\u4f7f\u7528emacs \norg-mode\n \u8fdb\u884cGTD\u7ba1\u7406\n\u00b6\n\n\n\u6536\u96c6\n\u00b6\n\n\n\u4efb\u4f55\u9700\u8981\u5173\u6ce8\u7684\u4e8b\u4ef6\n- email\n- \u7535\u8bdd\n- \u7f51\u9875\n- \u6587\u6863\n- \u60f3\u6cd5\n- \u4ea4\u6d41\n\n\n\u5c06\u6240\u6709\u9700\u8981\u5173\u6ce8\u7684\u4e8b\u4ef6\u90fd\u8bb0\u5f55\u4e0b\u6765\uff0c\u6536\u96c6\u5230\u4e00\u4e2a\n\u6536\u96c6\u7bb1\n\n\n\u6574\u7406\n\u00b6\n\n\n\n\n\u65e0\u7528\u4fe1\u606f\u5220\u9664\n\n\n\u6709\u4ef7\u503c\u4fe1\u606f\u5f52\u6863\n\n\n\u9700\u5904\u7406\u4fe1\u606f\uff0c\u521b\u5efa\u4efb\u52a1\n\n\n\n\n\u7ec4\u7ec7\n\u00b6\n\n\n\u521b\u5efa\u4efb\u52a1\u8981\u505a\u4e00\u4e2a\u5224\u65ad | what | who | when | where | why | how | how long |\n\n\n\n\n\u5c06\u4efb\u52a1\u5f52\u5165\u4e0d\u540c\u5de5\u4f5c\u6e05\u5355\n\n\n\u4e3a\u4efb\u52a1\u589e\u52a0\u6807\u8bb0\n\n\n\u5b9a\u4e49\u4efb\u52a1\u5b8c\u6210\u72b6\u6001\n\n\n\u4e3a\u4efb\u52a1\u5b9a\u4e49\u4f18\u5148\u7ea7\n\n\n\u4e3a\u4efb\u52a1\u8bbe\u5b9a\u65f6\u95f4\n\n\n\n\n\u56de\u987e\n\u00b6\n\n\n\u5468\u671f\u6027\u56de\u987e\n\n\n\n\n\u6309\u65f6\u95f4\u68c0\u7d22\n\n\n\u6309\u9879\u76ee\u68c0\u7d22\n\n\n\u6309\u4efb\u52a1\u95f4\u7684\u4f9d\u8d56\u5173\u7cfb\n\n\n\n\n\u6267\u884c\n\u00b6\n\n\n\u6839\u636e\n\u60c5\u666f\u662f\u5426\u5408\u9002\uff0c\u65f6\u95f4\u662f\u5426\u591f\u7528\uff0c\u7ecf\u5386\u662f\u5426\u5145\u6c9b\uff0c\u4efb\u52a1\u662f\u5426\u91cd\u8981\n\u6765\u9009\u62e9\u6267\u884c\u4efb\u52a1\n\n\n\u8bbe\u8ba1\u5de5\u5177\u5b9e\u73b0\u4ee5\u4e0a\u6b65\u9aa4\n\u00b6\n\n\n\n\ninbox\n\n\ntask\n\n\nfinished\n\n\nnote\n\n\ntrash\n\n\nproject\n\n\n\n\nlink: \n\u7528Org-mode\u5b9e\u73b0GTD",
+            "title": "Emacs gtd"
+        },
+        {
+            "location": "/tips_tricks/emacs_gtd/#emacs-org-mode-gtd",
+            "text": "",
+            "title": "\u4f7f\u7528emacs org-mode \u8fdb\u884cGTD\u7ba1\u7406"
+        },
+        {
+            "location": "/tips_tricks/emacs_gtd/#_1",
+            "text": "\u4efb\u4f55\u9700\u8981\u5173\u6ce8\u7684\u4e8b\u4ef6\n- email\n- \u7535\u8bdd\n- \u7f51\u9875\n- \u6587\u6863\n- \u60f3\u6cd5\n- \u4ea4\u6d41  \u5c06\u6240\u6709\u9700\u8981\u5173\u6ce8\u7684\u4e8b\u4ef6\u90fd\u8bb0\u5f55\u4e0b\u6765\uff0c\u6536\u96c6\u5230\u4e00\u4e2a \u6536\u96c6\u7bb1",
+            "title": "\u6536\u96c6"
+        },
+        {
+            "location": "/tips_tricks/emacs_gtd/#_2",
+            "text": "\u65e0\u7528\u4fe1\u606f\u5220\u9664  \u6709\u4ef7\u503c\u4fe1\u606f\u5f52\u6863  \u9700\u5904\u7406\u4fe1\u606f\uff0c\u521b\u5efa\u4efb\u52a1",
+            "title": "\u6574\u7406"
+        },
+        {
+            "location": "/tips_tricks/emacs_gtd/#_3",
+            "text": "\u521b\u5efa\u4efb\u52a1\u8981\u505a\u4e00\u4e2a\u5224\u65ad | what | who | when | where | why | how | how long |   \u5c06\u4efb\u52a1\u5f52\u5165\u4e0d\u540c\u5de5\u4f5c\u6e05\u5355  \u4e3a\u4efb\u52a1\u589e\u52a0\u6807\u8bb0  \u5b9a\u4e49\u4efb\u52a1\u5b8c\u6210\u72b6\u6001  \u4e3a\u4efb\u52a1\u5b9a\u4e49\u4f18\u5148\u7ea7  \u4e3a\u4efb\u52a1\u8bbe\u5b9a\u65f6\u95f4",
+            "title": "\u7ec4\u7ec7"
+        },
+        {
+            "location": "/tips_tricks/emacs_gtd/#_4",
+            "text": "\u5468\u671f\u6027\u56de\u987e   \u6309\u65f6\u95f4\u68c0\u7d22  \u6309\u9879\u76ee\u68c0\u7d22  \u6309\u4efb\u52a1\u95f4\u7684\u4f9d\u8d56\u5173\u7cfb",
+            "title": "\u56de\u987e"
+        },
+        {
+            "location": "/tips_tricks/emacs_gtd/#_5",
+            "text": "\u6839\u636e \u60c5\u666f\u662f\u5426\u5408\u9002\uff0c\u65f6\u95f4\u662f\u5426\u591f\u7528\uff0c\u7ecf\u5386\u662f\u5426\u5145\u6c9b\uff0c\u4efb\u52a1\u662f\u5426\u91cd\u8981 \u6765\u9009\u62e9\u6267\u884c\u4efb\u52a1",
+            "title": "\u6267\u884c"
+        },
+        {
+            "location": "/tips_tricks/emacs_gtd/#_6",
+            "text": "inbox  task  finished  note  trash  project   link:  \u7528Org-mode\u5b9e\u73b0GTD",
+            "title": "\u8bbe\u8ba1\u5de5\u5177\u5b9e\u73b0\u4ee5\u4e0a\u6b65\u9aa4"
+        },
+        {
+            "location": "/tips_tricks/getting_things_done/",
+            "text": "GETTING THINGS DONE\n\u00b6\n\n\n\n\nGTD(Get things done) \u662f\u4e00\u79cd\u5c06\u7e41\u91cd\u8d85\u8d1f\u8377\u7684\u5de5\u4f5c\u751f\u6d3b\u65b9\u5f0f\u53d8\u6210\u65e0\u538b\u529b\u9ad8\u6548\u7684\u65f6\u95f4\u7ba1\u7406\u7cfb\u7edf  \n\n\n---\nGetting Things Done-The Art of Stress-Free Productivity\n \n\n\n\n\n\u57fa\u672c\u6d41\u7a0b\n\u00b6\n\n\n\u4e8b\u4ef6 -> \u6536\u96c6 -> \u6574\u7406 -> \u7ec4\u7ec7 -> \u56de\u987e -> \u6267\u884c\n\n\n\u53c2\u8003\uff1a\nGTD",
+            "title": "GETTING THINGS DONE"
+        },
+        {
+            "location": "/tips_tricks/getting_things_done/#getting-things-done",
+            "text": "GTD(Get things done) \u662f\u4e00\u79cd\u5c06\u7e41\u91cd\u8d85\u8d1f\u8377\u7684\u5de5\u4f5c\u751f\u6d3b\u65b9\u5f0f\u53d8\u6210\u65e0\u538b\u529b\u9ad8\u6548\u7684\u65f6\u95f4\u7ba1\u7406\u7cfb\u7edf    --- Getting Things Done-The Art of Stress-Free Productivity",
+            "title": "GETTING THINGS DONE"
+        },
+        {
+            "location": "/tips_tricks/getting_things_done/#_1",
+            "text": "\u4e8b\u4ef6 -> \u6536\u96c6 -> \u6574\u7406 -> \u7ec4\u7ec7 -> \u56de\u987e -> \u6267\u884c  \u53c2\u8003\uff1a GTD",
+            "title": "\u57fa\u672c\u6d41\u7a0b"
+        },
+        {
+            "location": "/tips_tricks/headless_virtualbox/",
+            "text": "ssh\u8fde\u63a5\u865a\u62df\u673a\n\u00b6\n\n\n\u5728\u4e0d\u4f7f\u7528vagrant\u7684\u60c5\u51b5\u4e0b\uff0c\u4f7f\u7528\nvboxheadless -s virtual_name\n\u542f\u52a8\u65e0\u7ec8\u7aef\u7684\u865a\u62df\u673a\uff0c\u7136\u540e\u8bbe\u7f6e\u7aef\u53e3\u8f6c\u53d1\uff0c\u4f7f\u7528\nssh -p username@127.0.0.1\n\uff0c\u8fde\u63a5\u865a\u62df\u673a\n\n\nlinks:\n\n\n\n\n\u7aef\u53e3\u8f6c\u53d1",
+            "title": "ssh\u8fde\u63a5\u865a\u62df\u673a"
+        },
+        {
+            "location": "/tips_tricks/headless_virtualbox/#ssh",
+            "text": "\u5728\u4e0d\u4f7f\u7528vagrant\u7684\u60c5\u51b5\u4e0b\uff0c\u4f7f\u7528 vboxheadless -s virtual_name \u542f\u52a8\u65e0\u7ec8\u7aef\u7684\u865a\u62df\u673a\uff0c\u7136\u540e\u8bbe\u7f6e\u7aef\u53e3\u8f6c\u53d1\uff0c\u4f7f\u7528 ssh -p username@127.0.0.1 \uff0c\u8fde\u63a5\u865a\u62df\u673a  links:   \u7aef\u53e3\u8f6c\u53d1",
+            "title": "ssh\u8fde\u63a5\u865a\u62df\u673a"
+        },
+        {
             "location": "/tips_tricks/project_password_manage/",
             "text": "\u59a5\u5584\u7ba1\u7406\u5bc6\u94a5\n\u00b6\n\n\nlinks\uff1a\nMiguel Grinberg - Oops! I Committed My Password To GitHub! - PyCon 2018\n\n\nmega-tutorial \u4e2d\u5c31\u662f\u63a8\u8350\u4f7f\u7528\u73af\u5883\u53d8\u91cf\u6765\u7ba1\u7406\u9879\u76ee\u7684\u5bc6\u94a5\u7b49\u4fe1\u606f\u3002\u5982\u4eca\u53ef\u4ee5\u4f7f\u7528\nautoenv\n\uff0c\u521b\u5efa\n.env\n\u6587\u4ef6\uff0c\u540c\u65f6\u5c06\u5176\u6392\u9664\u5728\u7248\u672c\u63a7\u5236\u5916\uff0c\u5199\u5165\n.gitignore\n\uff0c\u8fd9\u6837\u5c31\u4e0d\u4f1a\u5c06\u5bc6\u94a5\u4f20\u81f3github\u4e86\u3002\n\n\n#1 ignore .env in .gitignore\n\n.env\n\n\n#2 put these statments into /project/.env\n\n\n\nexport\n \nPASSWORD\n=\n'mypassword'\n\n\nexport\n \nSECRET_KEY\n=\n'mypassword'\n\n\nexport\n \ndatabase_url\n=\n'mysql://user:password@server/db'\n\n\n\n#3 use the env values in the project\n\n\n# os.environ\u5bf9\u8c61\u4e3a\u5b57\u5178\u7c7b\u578b\uff0c\u53ef\u4f7f\u7528d[k]\u548cget()\u65b9\u6cd5\u83b7\u53d6\u76f8\u5e94\u503c\n\n\n\npassword\n \n=\n os.environ\n[\n'PASSWORD'\n]\n\n\nsecret_key\n \n=\n os.environ.get\n(\n'SECRET_KEY'\n)\n\n\ndatabase_url\n \n=\n os.environ.get\n(\n'DATABASE_URL'\n,\n'sqlite:///'\n)\n\n\n# \u9ed8\u8ba4\u83b7\u53d6\u2018DATABASE_URL\u2018\uff0c\u82e5\u672a\u6307\u5b9a\u5219\u7528\u540e\u9762\u7684\u5b57\u7b26\u4e32\u4f5c\u4e3a\u9ed8\u8ba4\u503c",
             "title": "\u59a5\u5584\u7ba1\u7406\u5bc6\u94a5"
@@ -569,6 +704,81 @@
             "location": "/tips_tricks/project_password_manage/#_1",
             "text": "links\uff1a Miguel Grinberg - Oops! I Committed My Password To GitHub! - PyCon 2018  mega-tutorial \u4e2d\u5c31\u662f\u63a8\u8350\u4f7f\u7528\u73af\u5883\u53d8\u91cf\u6765\u7ba1\u7406\u9879\u76ee\u7684\u5bc6\u94a5\u7b49\u4fe1\u606f\u3002\u5982\u4eca\u53ef\u4ee5\u4f7f\u7528 autoenv \uff0c\u521b\u5efa .env \u6587\u4ef6\uff0c\u540c\u65f6\u5c06\u5176\u6392\u9664\u5728\u7248\u672c\u63a7\u5236\u5916\uff0c\u5199\u5165 .gitignore \uff0c\u8fd9\u6837\u5c31\u4e0d\u4f1a\u5c06\u5bc6\u94a5\u4f20\u81f3github\u4e86\u3002  #1 ignore .env in .gitignore \n.env #2 put these statments into /project/.env  export   PASSWORD = 'mypassword'  export   SECRET_KEY = 'mypassword'  export   database_url = 'mysql://user:password@server/db'  #3 use the env values in the project  # os.environ\u5bf9\u8c61\u4e3a\u5b57\u5178\u7c7b\u578b\uff0c\u53ef\u4f7f\u7528d[k]\u548cget()\u65b9\u6cd5\u83b7\u53d6\u76f8\u5e94\u503c  password   =  os.environ [ 'PASSWORD' ]  secret_key   =  os.environ.get ( 'SECRET_KEY' )  database_url   =  os.environ.get ( 'DATABASE_URL' , 'sqlite:///' )  # \u9ed8\u8ba4\u83b7\u53d6\u2018DATABASE_URL\u2018\uff0c\u82e5\u672a\u6307\u5b9a\u5219\u7528\u540e\u9762\u7684\u5b57\u7b26\u4e32\u4f5c\u4e3a\u9ed8\u8ba4\u503c",
             "title": "\u59a5\u5584\u7ba1\u7406\u5bc6\u94a5"
+        },
+        {
+            "location": "/tips_tricks/python_scrapy/",
+            "text": "python\u7f51\u7edc\u6570\u636e\u91c7\u96c6\n\u00b6\n\n\n\u91c7\u96c6\u6570\u636e\n\u00b6\n\n\n\n\n\u904d\u5386\u5355\u4e2a\u57df\u540d\n\n\n\u91c7\u96c6\u6574\u4e2a\u7f51\u7ad9\n- \u907f\u514d\u91cd\u590d\u91c7\u96c6\u9875\u9762\u53ef\u4ee5\u4f7f\u7528set\uff0c\u68c0\u6d4b\u65b0\u94fe\u63a5\u662f\u5426\u5728\u96c6\u5408\u5185\uff0c\u5982\u679c\u4e0d\u5728\u5c31\u91c7\u96c6\n\u00b6",
+            "title": "python\u7f51\u7edc\u6570\u636e\u91c7\u96c6"
+        },
+        {
+            "location": "/tips_tricks/python_scrapy/#python",
+            "text": "",
+            "title": "python\u7f51\u7edc\u6570\u636e\u91c7\u96c6"
+        },
+        {
+            "location": "/tips_tricks/python_scrapy/#_1",
+            "text": "\u904d\u5386\u5355\u4e2a\u57df\u540d  \u91c7\u96c6\u6574\u4e2a\u7f51\u7ad9",
+            "title": "\u91c7\u96c6\u6570\u636e"
+        },
+        {
+            "location": "/tips_tricks/python_scrapy/#-set",
+            "text": "",
+            "title": "- \u907f\u514d\u91cd\u590d\u91c7\u96c6\u9875\u9762\u53ef\u4ee5\u4f7f\u7528set\uff0c\u68c0\u6d4b\u65b0\u94fe\u63a5\u662f\u5426\u5728\u96c6\u5408\u5185\uff0c\u5982\u679c\u4e0d\u5728\u5c31\u91c7\u96c6"
+        },
+        {
+            "location": "/tips_tricks/useful_commands/",
+            "text": "USEFUL COMMANDS\n\u00b6\n\n\nset terminal proxy\n\u00b6\n\n\nHow do I set proxy for terminal?\n\n\nexport\n \nhttp_proxy\n=\nhttp://localhost:12345/\n\nexport\n \nhttps_proxy\n=\nhttp://localhost:12345/\n\n\n\n\n\nset git proxy\n\u00b6\n\n\nConfigure Git to use a proxy\n\n\ngit config --global http.proxy http://127.0.0.1:12345\n\n\n\n\n\nyoutube-dl\n\u00b6\n\n\nyoutube-dl\n\n\n\n\nSupport video and videos list\n\n\n\n\nyou-get\n\u00b6\n\n\nYou-Get\n\n\n\n\nSupport YouTube, \u4f18\u9177, etc.\n\n\n\n\nffmpeg\n\u00b6\n\n\nffmpeg",
+            "title": "USEFUL COMMANDS"
+        },
+        {
+            "location": "/tips_tricks/useful_commands/#useful-commands",
+            "text": "",
+            "title": "USEFUL COMMANDS"
+        },
+        {
+            "location": "/tips_tricks/useful_commands/#set-terminal-proxy",
+            "text": "How do I set proxy for terminal?  export   http_proxy = http://localhost:12345/ export   https_proxy = http://localhost:12345/",
+            "title": "set terminal proxy"
+        },
+        {
+            "location": "/tips_tricks/useful_commands/#set-git-proxy",
+            "text": "Configure Git to use a proxy  git config --global http.proxy http://127.0.0.1:12345",
+            "title": "set git proxy"
+        },
+        {
+            "location": "/tips_tricks/useful_commands/#youtube-dl",
+            "text": "youtube-dl   Support video and videos list",
+            "title": "youtube-dl"
+        },
+        {
+            "location": "/tips_tricks/useful_commands/#you-get",
+            "text": "You-Get   Support YouTube, \u4f18\u9177, etc.",
+            "title": "you-get"
+        },
+        {
+            "location": "/tips_tricks/useful_commands/#ffmpeg",
+            "text": "ffmpeg",
+            "title": "ffmpeg"
+        },
+        {
+            "location": "/tips_tricks/xpath/",
+            "text": "XPATH\n\u00b6\n\n\nXPATH TERMINOLOGY\n\u00b6\n\n\nSEVEN KIND OF NODES:\n\n\n\n\nelement\n\n\nattribute\n\n\ntext\n\n\nnamespace\n\n\nprocessing-instruction\n\n\ncomment\n\n\ndocument nodes\n\n\n\n\nATOMIC VALUES\n\n\nnodes with no children or parent\n\n\nItems\n are atomic values or nodes\n\n\nRELATIONSHIP OF NODES\n\n\n\n\nparent\n\n\nchildren\n\n\nsiblings\n\n\nancestors\n\n\ndescendants\n\n\n\n\nXPATH SYNATX\n\u00b6\n\n\nSELECTING NODES\n\n\n\n\n\n\n\n\nEXPRESSION\n\n\nDESCRIPTION\n\n\n\n\n\n\n\n\n\n\nnodename\n\n\nselects all nodes withs the name \"nodename\"\n\n\n\n\n\n\n/\n\n\nselects from the root node\n\n\n\n\n\n\n//\n\n\nselects nodes in the document from the current node that match the selection no matter where they are\n\n\n\n\n\n\n.\n\n\nselect the current node\n\n\n\n\n\n\n..\n\n\nselects the parent of th document\n\n\n\n\n\n\n@\n\n\nselects all attributes\n\n\n\n\n\n\n\n\nPREDICATES\n\n\n\n\n\n\n\n\nEXPRESSION\n\n\nDESCRIPTION\n\n\n\n\n\n\n\n\n\n\n/bookstore/book[1]\n\n\nselects the first book element that is the child of bookstore element\n\n\n\n\n\n\n/bookstore/book[last()]\n\n\nselects the last book element that is the child of bookstore element\n\n\n\n\n\n\n/bookstore/book[last()-1]\n\n\nselects the last second book element that is the child of bookstore element\n\n\n\n\n\n\n/bookstore/book[postition()<3]\n\n\nselects the first two book element that is the child of bookstore element\n\n\n\n\n\n\n//title[@lang]\n\n\nselects all the title that has a \"lang\" attribute\n\n\n\n\n\n\n/bookstore/book[price>35.00]\n\n\nselects all the book element that price is less than 35.00\n\n\n\n\n\n\n/bookstore/book[price>35.00]/title\n\n\nslects all the title element of book element that the priceis more than 35.00\n\n\n\n\n\n\n\n\nSELECT UNKNOWN  NODES\n\n\n\n\n\n\n\n\nWILDCARD\n\n\nDESCRIPTION\n\n\n\n\n\n\n\n\n\n\n*\n\n\nmatches any element nodes\n\n\n\n\n\n\n@*\n\n\nmatches any attribute node\n\n\n\n\n\n\nnode()\n\n\nmatch any node of any kind\n\n\n\n\n\n\n\n\nSELECT SEVERAL PATHS\n\n\n\n\n\n\n\n\nPATH EXPRESSION\n\n\nRESULTS\n\n\n\n\n\n\n\n\n\n\n//book/title &#124; //book/price\n\n\nselects all the title AND price elements of all book elements\n\n\n\n\n\n\n//title &#124; //price\n\n\nselects all the title AND price elements in the documnet\n\n\n\n\n\n\n/bookstore/book/title &#124; //price\n\n\nselects all the title elements of the  book element of bookstore element AND  all the price elements in the documnets\n\n\n\n\n\n\n\n\nxpath axes\n\n\naxis defines a node-set relative to the current node\n\n\n\n\n\n\n\n\naxisname\n\n\nresult\n\n\n\n\n\n\n\n\n\n\nancestor\n\n\nselects all the ancestors(parent, grandparent) of the current node\n\n\n\n\n\n\nancestor-or-self\n\n\nselects all the ancestors(parent, grandparent) of the current node and the current node\n\n\n\n\n\n\nattribute\n\n\nselects all the attribute of the current node\n\n\n\n\n\n\nchild\n\n\nselects all children of the current node\n\n\n\n\n\n\ndescendant\n\n\nselects all descendants(children,grandchildren,etc) of the current node\n\n\n\n\n\n\ndescendant-or-self\n\n\nselects all descendants(children,grandchildren,etc) of the current node and the current node it self\n\n\n\n\n\n\nfollowing\n\n\nselects everythong in the document after the closing tag of the  current node\n\n\n\n\n\n\nfollowing-sibling\n\n\nselects all siblings after the current node\n\n\n\n\n\n\nnamespace\n\n\nselects all namespace of the current node\n\n\n\n\n\n\nparent\n\n\nselects the parent of the current node\n\n\n\n\n\n\npreceding\n\n\nselects all nodes thata appear before the current node in the document, except ancestors, attribute nodes and namespace nodes\n\n\n\n\n\n\npreceding-sibling\n\n\nselects all siblings before the current node\n\n\n\n\n\n\nself\n\n\nselects the current node\n\n\n\n\n\n\n\n\nlocation path expression\n\n\n\n\nabsolute location: \n/step/step\n\n\nrelative location: \nstep/step/\n\n\n\n\n\n\na step consist of\n- an axis(defines the tree-relativeship between the selected node and the current node.)\n- a node-test(idetified a node within an axis)\n- zero or more predicates(to further refine the selected node-set)\n\n\n\n\nsyntax for a location step\n\n\naxisname::nodetest[predicate]\n\n\n\n\n\nexamples\n\n\n\n\n\n\n\n\nexample\n\n\nresult\n\n\n\n\n\n\n\n\n\n\nchild::book\n\n\nselects all book nodes that are child of the current node\n\n\n\n\n\n\nattribute::lang\n\n\nselects the lang attribut of the current node\n\n\n\n\n\n\nchild::*\n\n\nselects all elements of children of th current node\n\n\n\n\n\n\nattribute::*\n\n\nselects all the attribute of the current node\n\n\n\n\n\n\nchild::text()\n\n\nselects all text node children of the current node\n\n\n\n\n\n\nchild::node()\n\n\nselects all children of the current node\n\n\n\n\n\n\ndescendant::book\n\n\nselects all book descendants of the current node\n\n\n\n\n\n\nancenstor::book\n\n\nselects all ancestors of the current node\n\n\n\n\n\n\nancestor-or-self::book\n\n\nselects all ancestors of the current node and itself if it is a book node\n\n\n\n\n\n\nchild::*/child::price\n\n\nselects all price grandchildren of the current node",
+            "title": "XPATH"
+        },
+        {
+            "location": "/tips_tricks/xpath/#xpath",
+            "text": "",
+            "title": "XPATH"
+        },
+        {
+            "location": "/tips_tricks/xpath/#xpath-terminology",
+            "text": "SEVEN KIND OF NODES:   element  attribute  text  namespace  processing-instruction  comment  document nodes   ATOMIC VALUES  nodes with no children or parent  Items  are atomic values or nodes  RELATIONSHIP OF NODES   parent  children  siblings  ancestors  descendants",
+            "title": "XPATH TERMINOLOGY"
+        },
+        {
+            "location": "/tips_tricks/xpath/#xpath-synatx",
+            "text": "SELECTING NODES     EXPRESSION  DESCRIPTION      nodename  selects all nodes withs the name \"nodename\"    /  selects from the root node    //  selects nodes in the document from the current node that match the selection no matter where they are    .  select the current node    ..  selects the parent of th document    @  selects all attributes     PREDICATES     EXPRESSION  DESCRIPTION      /bookstore/book[1]  selects the first book element that is the child of bookstore element    /bookstore/book[last()]  selects the last book element that is the child of bookstore element    /bookstore/book[last()-1]  selects the last second book element that is the child of bookstore element    /bookstore/book[postition()<3]  selects the first two book element that is the child of bookstore element    //title[@lang]  selects all the title that has a \"lang\" attribute    /bookstore/book[price>35.00]  selects all the book element that price is less than 35.00    /bookstore/book[price>35.00]/title  slects all the title element of book element that the priceis more than 35.00     SELECT UNKNOWN  NODES     WILDCARD  DESCRIPTION      *  matches any element nodes    @*  matches any attribute node    node()  match any node of any kind     SELECT SEVERAL PATHS     PATH EXPRESSION  RESULTS      //book/title &#124; //book/price  selects all the title AND price elements of all book elements    //title &#124; //price  selects all the title AND price elements in the documnet    /bookstore/book/title &#124; //price  selects all the title elements of the  book element of bookstore element AND  all the price elements in the documnets     xpath axes  axis defines a node-set relative to the current node     axisname  result      ancestor  selects all the ancestors(parent, grandparent) of the current node    ancestor-or-self  selects all the ancestors(parent, grandparent) of the current node and the current node    attribute  selects all the attribute of the current node    child  selects all children of the current node    descendant  selects all descendants(children,grandchildren,etc) of the current node    descendant-or-self  selects all descendants(children,grandchildren,etc) of the current node and the current node it self    following  selects everythong in the document after the closing tag of the  current node    following-sibling  selects all siblings after the current node    namespace  selects all namespace of the current node    parent  selects the parent of the current node    preceding  selects all nodes thata appear before the current node in the document, except ancestors, attribute nodes and namespace nodes    preceding-sibling  selects all siblings before the current node    self  selects the current node     location path expression   absolute location:  /step/step  relative location:  step/step/    a step consist of\n- an axis(defines the tree-relativeship between the selected node and the current node.)\n- a node-test(idetified a node within an axis)\n- zero or more predicates(to further refine the selected node-set)   syntax for a location step  axisname::nodetest[predicate]  examples     example  result      child::book  selects all book nodes that are child of the current node    attribute::lang  selects the lang attribut of the current node    child::*  selects all elements of children of th current node    attribute::*  selects all the attribute of the current node    child::text()  selects all text node children of the current node    child::node()  selects all children of the current node    descendant::book  selects all book descendants of the current node    ancenstor::book  selects all ancestors of the current node    ancestor-or-self::book  selects all ancestors of the current node and itself if it is a book node    child::*/child::price  selects all price grandchildren of the current node",
+            "title": "XPATH SYNATX"
         },
         {
             "location": "/tools/dot_notes/",
@@ -746,6 +956,86 @@
             "title": "Mkdocs"
         },
         {
+            "location": "/tools/org-mode/",
+            "text": "ORG MODE\n\u00b6\n\n\nlinks:\n- \norg-mode\n\n- \norgguide\n\n\n\n\nOrg is amode for keeping notes, maintaing TODO lists, and doing project planning with a fast effective plain-text system.\n\n\n\n\nfeatures\n\u00b6\n\n\n\n\nediting\n\n\nnavigate through headlines and (un)fold (sub)sections of Org documents easily. \n\n\n\n\n\n\nplanning\n | \ndates/times\n\n\nused as a TODO lists manager and as a planner. \n\n\n\n\n\n\nclocking\n\n\nclock in and out and to produce nice reports easily.\n\n\n\n\n\n\nagenda\n | \ncommands\n\n\nit is easy to focus on what you need to do for each context. \n\n\n\n\n\n\ncapturing\n\n\nAdding TODO items to your .org files is called capturing. \n\n\n\n\n\n\ntables\n\n\na great plain-text table editor.\n\n\n\n\n\n\nexporting\n\n\nOrg is an authoring and publication tool. \n\n\n\n\n\n\nsource code\n\n\nOrg makes literate programming a handy and natural way to deal with code. \n\n\n\n\n\n\nwith moble(iphone) \n\n\n\n\ndocument structure\n\u00b6\n\n\n\n\noutlines\n\n\nheadings\n\n\nvisibility cycling\n\n\nmotion\n\n\nstructure editing\n\n\nsparse trees\n\n\nplain lists\n\n\ndrawers\n\n\nblockks\n\n\nfootnotes\n\n\norgstruct mode\n\n\norg syntax\n\n\n\n\n\n\nDOCUMENT STRUCTURE\n\u00b6\n\n\n\n\nOutlines\n\n\n\n\norg\u6a21\u5f0f\u4e0b\u53ef\u4ee5\u901a\u8fc7\nTAB\n\u952e\u6216\u8005\nS TAB\n\u952e\uff0c\u5c55\u5f00\u5408\u5e76\u6587\u6863\u7ed3\u6784\u3002\n\n\n\n\nHeadings\n\n\n\n\n* top-level-heading\n** level-2\n*** level-3\n    some text\n*** level-3\n    more text\n\n\n\n\n\n\n\nVisibility cycling\n\n\n\n\n# TAB\n## Subtree cycling\n\n,-> FOLDER -> CHILDREN -> SUBTREE --.\n'-----------------------------------'\n\n# S TAB | C-u TAB\n## Global cycling\n\n,-> OVERVIEW -> CONTENTS -> SHOW ALL --.\n'--------------------------------------'\n\n----------------------------------------\n# add a start keyword: overview, content, showall to define the startup action\n#+STARTUP: content\n\n\n\n\n\n\n\njump between heading\n\n\n\n\nC-c C-n ==> next heading\nC-c C-p ==> previous heading\nC-c C-f ==> next heading same level\nC-c C-b ==> previous heading same level\nC-c C-u ==> back to higher level heading\n\n\n\n\n\n\n\nstructure editing\n\n\n\n\nM-RET       ==> no use in evil\nM-S-RET     ==> no use in evil\nS-left/right==> list[ol<->ul] | heading[todo<->done]\nS-up/down   ==> heading[#A<->#C]\nM-left/right==> heading[level]\nM-up/down   ==> list[up<->down] | heading [up<->down]\n\n\n\n\n\n\n\nSparse trees\n\n\n\n\nsparse trees for selectes information\n\n\nC-c /\nC-c /r\n\n\n\n\n\n\n\nPlain lists\n\n\n\n\n# ul\n\n+ list-1\n+ list-2\n  + sublist-1\n  + sublist-2\n+ list-3 :: desc\n\n# ol\n\n1. ol-1\n2. ol-2\n\n# checkbox\nC-c C-c toggle checkbox\n[%] and [/] can show process\n\n+ [ ] task [%]\n  + [ ] task-1\n  + [ ] tsak-2\n\n\n\n\n\n\n\nFootnotes\n\n\n\n\nThis is a footnotes[fn:1]\n...\n[fn:1] Footenotes is ...\n\nC-c C-x f ==> jump to the definition\nC-c C-c   ==> jump between definition and reference\n\n\n\n\n\nTABLES\n\u00b6\n\n\n|h-1|h-2|h-3|\n|- \"==> now TAB would autocomplete it\"\n| \"==> now TAB would autocomplete it\"\n\n\"TAB/up/down/left/right\" move cursor \nC-c - ==> insert a horizontal line below current row\nC-c ^ ==> sort the table line in the region\n\n\n\n\n\nHYPERLINKS\n\u00b6\n\n\n# link format\n[[link][description]]\n[[link]]\n\nC-c C-l ==> edit invisible link\n\n# internal link\n\n[[#my-custom-id]]\n\n[[my target]] ==> find <<my target>>\n[[job]] ==> find <<job>>\n\n# external links\n\nhttp://www.google.com\nfile:/home/xx/j.jpg\n/home/xx/j.jpg\nfile:papers/last.pdf\nfile:projects.org\n...\n\n\n\n\n\n\n\nhandling links\n\n\n\n\nC-c l\nC-c C-l ==> insert a link\nC-c C-l ==> edit link\n\n\n\n\n\n\n\ntarget links\n\n\n\n\n[[file:~/code/main.c::255]]\n[[file:~/xx.org::my target]]\n[[file:~/xx.org::#my-custom-id]]\n\n\n\n\n\nTODO Items\n\u00b6\n\n\n\n\nusing todo states\n\n\n\n\nC-c C-t         ==> rotate todo states\nS-left/right    ==> simply cycling\nC-c/t           ==> view todo items in a sparse tree\nC-c a t         ==> show global todo list\n\n\n\n\n\n\n\nmulti-state workflows\n\n\n\n\n(set org-todo-keywords\n    '((sequence \"TODO\" \"FEEDBACK\" \"VERIFY\" \"|\" \"DONE\" \"DELEGATED\")))\n...more...\n\n\n\n\n\n\n\nprogress logging\n\n\n\n\nTAGS\n\u00b6\n\n\nPROPERTIES\n\u00b6\n\n\nDATES AND TIMES\n\u00b6\n\n\nCAPTURE-REFILE-ARCHIVE\n\u00b6\n\n\nEXPORTING\n\u00b6\n\n\nPUBLISHING\n\u00b6\n\n\nWORKING WITH SOURCE CODE\n\u00b6\n\n\nMISCELLANEOUS\n\u00b6",
+            "title": "Org mode"
+        },
+        {
+            "location": "/tools/org-mode/#org-mode",
+            "text": "links:\n-  org-mode \n-  orgguide   Org is amode for keeping notes, maintaing TODO lists, and doing project planning with a fast effective plain-text system.",
+            "title": "ORG MODE"
+        },
+        {
+            "location": "/tools/org-mode/#features",
+            "text": "editing  navigate through headlines and (un)fold (sub)sections of Org documents easily.     planning  |  dates/times  used as a TODO lists manager and as a planner.     clocking  clock in and out and to produce nice reports easily.    agenda  |  commands  it is easy to focus on what you need to do for each context.     capturing  Adding TODO items to your .org files is called capturing.     tables  a great plain-text table editor.    exporting  Org is an authoring and publication tool.     source code  Org makes literate programming a handy and natural way to deal with code.     with moble(iphone)",
+            "title": "features"
+        },
+        {
+            "location": "/tools/org-mode/#document-structure",
+            "text": "outlines  headings  visibility cycling  motion  structure editing  sparse trees  plain lists  drawers  blockks  footnotes  orgstruct mode  org syntax",
+            "title": "document structure"
+        },
+        {
+            "location": "/tools/org-mode/#document-structure_1",
+            "text": "Outlines   org\u6a21\u5f0f\u4e0b\u53ef\u4ee5\u901a\u8fc7 TAB \u952e\u6216\u8005 S TAB \u952e\uff0c\u5c55\u5f00\u5408\u5e76\u6587\u6863\u7ed3\u6784\u3002   Headings   * top-level-heading\n** level-2\n*** level-3\n    some text\n*** level-3\n    more text   Visibility cycling   # TAB\n## Subtree cycling\n\n,-> FOLDER -> CHILDREN -> SUBTREE --.\n'-----------------------------------'\n\n# S TAB | C-u TAB\n## Global cycling\n\n,-> OVERVIEW -> CONTENTS -> SHOW ALL --.\n'--------------------------------------'\n\n----------------------------------------\n# add a start keyword: overview, content, showall to define the startup action\n#+STARTUP: content   jump between heading   C-c C-n ==> next heading\nC-c C-p ==> previous heading\nC-c C-f ==> next heading same level\nC-c C-b ==> previous heading same level\nC-c C-u ==> back to higher level heading   structure editing   M-RET       ==> no use in evil\nM-S-RET     ==> no use in evil\nS-left/right==> list[ol<->ul] | heading[todo<->done]\nS-up/down   ==> heading[#A<->#C]\nM-left/right==> heading[level]\nM-up/down   ==> list[up<->down] | heading [up<->down]   Sparse trees   sparse trees for selectes information  C-c /\nC-c /r   Plain lists   # ul\n\n+ list-1\n+ list-2\n  + sublist-1\n  + sublist-2\n+ list-3 :: desc\n\n# ol\n\n1. ol-1\n2. ol-2\n\n# checkbox\nC-c C-c toggle checkbox\n[%] and [/] can show process\n\n+ [ ] task [%]\n  + [ ] task-1\n  + [ ] tsak-2   Footnotes   This is a footnotes[fn:1]\n...\n[fn:1] Footenotes is ...\n\nC-c C-x f ==> jump to the definition\nC-c C-c   ==> jump between definition and reference",
+            "title": "DOCUMENT STRUCTURE"
+        },
+        {
+            "location": "/tools/org-mode/#tables",
+            "text": "|h-1|h-2|h-3|\n|- \"==> now TAB would autocomplete it\"\n| \"==> now TAB would autocomplete it\"\n\n\"TAB/up/down/left/right\" move cursor \nC-c - ==> insert a horizontal line below current row\nC-c ^ ==> sort the table line in the region",
+            "title": "TABLES"
+        },
+        {
+            "location": "/tools/org-mode/#hyperlinks",
+            "text": "# link format\n[[link][description]]\n[[link]]\n\nC-c C-l ==> edit invisible link\n\n# internal link\n\n[[#my-custom-id]]\n\n[[my target]] ==> find <<my target>>\n[[job]] ==> find <<job>>\n\n# external links\n\nhttp://www.google.com\nfile:/home/xx/j.jpg\n/home/xx/j.jpg\nfile:papers/last.pdf\nfile:projects.org\n...   handling links   C-c l\nC-c C-l ==> insert a link\nC-c C-l ==> edit link   target links   [[file:~/code/main.c::255]]\n[[file:~/xx.org::my target]]\n[[file:~/xx.org::#my-custom-id]]",
+            "title": "HYPERLINKS"
+        },
+        {
+            "location": "/tools/org-mode/#todo-items",
+            "text": "using todo states   C-c C-t         ==> rotate todo states\nS-left/right    ==> simply cycling\nC-c/t           ==> view todo items in a sparse tree\nC-c a t         ==> show global todo list   multi-state workflows   (set org-todo-keywords\n    '((sequence \"TODO\" \"FEEDBACK\" \"VERIFY\" \"|\" \"DONE\" \"DELEGATED\")))\n...more...   progress logging",
+            "title": "TODO Items"
+        },
+        {
+            "location": "/tools/org-mode/#tags",
+            "text": "",
+            "title": "TAGS"
+        },
+        {
+            "location": "/tools/org-mode/#properties",
+            "text": "",
+            "title": "PROPERTIES"
+        },
+        {
+            "location": "/tools/org-mode/#dates-and-times",
+            "text": "",
+            "title": "DATES AND TIMES"
+        },
+        {
+            "location": "/tools/org-mode/#capture-refile-archive",
+            "text": "",
+            "title": "CAPTURE-REFILE-ARCHIVE"
+        },
+        {
+            "location": "/tools/org-mode/#exporting",
+            "text": "",
+            "title": "EXPORTING"
+        },
+        {
+            "location": "/tools/org-mode/#publishing",
+            "text": "",
+            "title": "PUBLISHING"
+        },
+        {
+            "location": "/tools/org-mode/#working-with-source-code",
+            "text": "",
+            "title": "WORKING WITH SOURCE CODE"
+        },
+        {
+            "location": "/tools/org-mode/#miscellaneous",
+            "text": "",
+            "title": "MISCELLANEOUS"
+        },
+        {
             "location": "/tools/pip/",
             "text": "pip & pipenv & autoenv\n\u00b6\n\n\nsource\n\u00b6\n\n\n# ~/.pip/pip.conf\n\n\n\n[\nglobal\n]\n\ntrusted-host \n=\n  mirrors.aliyun.com\nindex-url \n=\n https://mirrors.aliyun.com/pypi/simple\n\n\n\n\n\npipenv\n\u00b6\n\n\npip install pipenv\npipenv install\npipenv --help\npipenv shell\n\n\n\n\n\nautoenv\n\u00b6\n\n\npip install autoenv\n\n\n# touch a \".env\" in the project folder\n\n\n# project/.env\n\npipenv shell",
             "title": "pip & pipenv & autoenv"
@@ -774,6 +1064,46 @@
             "location": "/tools/pycharm/",
             "text": "",
             "title": "Pycharm"
+        },
+        {
+            "location": "/tools/spacemacs/",
+            "text": "spacemacs \u4f7f\u7528\u548c\u914d\u7f6e\n\u00b6\n\n\n\u7b80\u5355\u8bb0\u5f55\u4e0b\u6298\u817e\n\u00b6\n\n\n\n\n\u719f\u6089\nevil\n\u6a21\u5f0f \n\n\n\u5b89\u88c5\nmode line\n(\u5931\u8d25) \n\n\n\n\ntelephone-line\n\n\n\n\n\u6298\u817e\u4e3b\u9898\n\n\n\n\nSPC SPC package-install\nSPC SPC load-theme\nSPC SPC enable-theme\nSPC T \nh\n \n==\n>\n\n(\nset-default dospacemacs-themes \n'\n(\nlist-themes-here\n))\n\n\n\n\n\n\nlayer\u548cpackage\n\u00b6\n\n\n\n\npackage: emacs lisp\u6587\u4ef6\u7684\u96c6\u5408\uff0c\u5176\u53ef\u80fd\u5728ELPA\u6216MELPA\u4ed3\u5e93\uff0cgithub \u6216\u8005\u5728\u672c\u5730\n\n\nlayer: \u5185\u7f6e\u5728spacemacs\u5185\u7684\u8bbe\u7f6e\u7ec4\u4ef6\uff0c\u4e00\u4e2alayer\u53ef\u5305\u6db5\u4e00\u4e2a\u6216\u591a\u4e2apackage\n\n\n\n\n\u5e38\u7528\u5feb\u6377\u952e\n\u00b6\n\n\n\n\n\n\n\n\n\u6309\u952e\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nSPC f\n\n\n\u6253\u5f00file\u64cd\u4f5c\u83dc\u5355\n\n\n\n\n\n\nSPC p\n\n\n\u6253\u5f00project\u64cd\u4f5c\u83dc\u5355\n\n\n\n\n\n\nSPC b\n\n\n\u6253\u5f00buffer\u64cd\u4f5c\u83dc\u5355\n\n\n\n\n\n\nSPC w\n\n\n\u6253\u5f00window\u64cd\u4f5c\u83dc\u5355\n\n\n\n\n\n\nSPC q\n\n\n\u6253\u5f00quit\u64cd\u4f5c\u83dc\u5355\n\n\n\n\n\n\nSPC h\n\n\n\u6253\u5f00help\u64cd\u4f5c\u83dc\u5355\n\n\n\n\n\n\nSPC T\n\n\n\u6253\u5f00theme\u64cd\u4f5c\u83dc\u5355\n\n\n\n\n\n\n\n\ncheatsheet\n\u00b6\n\n\nvim\u64cd\u4f5c\uff01\n\n\n# \u6587\u4ef6\n\n-----------------------------\nopen \nfile\n       \n==\n> SPC f f\nsave \nfile\n       \n==\n> SPC f s\ncreate \nfile\n     \n==\n> SPC f f\nfind \nfile\n       \n==\n> SPC p f\nedit .spacmacs  \n==\n> SPC f e d\n\n\n# \u67e5\u627e\u6587\u672c\n\n-----------------------------\n/               \n==\n> \u672c\u6587\u4e2d\u641c\u7d22\u8bcd\n*               \n==\n> \u67e5\u627e\u5149\u6807\u6240\u5728\u8bcd\u7684\u4e0b\u4e00\u4e2a\n\n#               ==> \u67e5\u627e\u5149\u6807\u6240\u5728\u8bcd\u7684\u4e0a\u4e00\u4e2a\n\n:nohl           \n==\n> \u53d6\u6d88\u9ad8\u4eae\u641c\u7d22\u8bcd\nSPC /           \n==\n> \u9879\u76ee\u4e2d\u641c\u7d22\u8bcd\n\n\n# \u5bfc\u822a \n\n-----------------------------\n^               \n==\n> \u884c\u9996\n$               \n==\n> \u884c\u5c3e\n\nw\n               \n==\n> \u53f31\u8bcd\u9996\n\n5w\n              \n==\n> \u53f35\u4e2a\u8bcd\u8bcd\u9996\n\ne\n               \n==\n> \u53f31\u8bcd\u5c3e\n\nb\n               \n==\n> \u5de61\u8bcd\u9996\nj/k/h/l         \n==\n> \u4e0a\u4e0b\u5de6\u53f3\n\n22j\n             \n==\n> \u4e0b22\u884c\n\n22k\n             \n==\n> \u4e0a22\u884c\n\n{\n               \n==\n> \u4e0b1\u6bb5\n\n}\n               \n==\n> \u4e0a1\u6bb5\n\n[[\n              \n==\n> \u4e0a1\u51fd\u6570\n\n]]\n              \n==\n> \u4e0b1\u51fd\u6570\n^ \nd\n             \n==\n> \u4e0b1\u9875\n^ \nu\n             \n==\n> \u4e0a1\u9875\n\ngg\n              \n==\n> \u6587\u9996\n\nG\n               \n==\n> \u6587\u5c3e\ng\n;\n              \n==\n> \u4e0a\u6b21\u4fee\u6539\u4f4d\u7f6e\n\n\n# \u7a97\u53e3\u5e03\u5c40\n\n------------------------------\nSPC \nw\n           \n==\n> \u7a97\u53e3\u5e03\u5c40\u83dc\u5355\nSPC w -         \n==\n> \u4e0b\u52061\u5c4f\nSPC w /         \n==\n> \u53f3\u52061\u5c4f\nSPC w \n2\n         \n==\n> \u52062\u5217\nSPC w j/k/h/l   \n==\n> \u79fb\u52a8\u7126\u70b9\n\n\n# \u7f16\u8f91\n\n------------------------------\n\nv\n               \n==\n> \u53ef\u89c6\u6a21\u5f0f\n\ny\n               \n==\n> \u590d\u5236\n\nyw\n              \n==\n> \u590d\u5236\u8bcd\n\nyy\n              \n==\n> \u590d\u5236\u884c\n\n3yy\n             \n==\n> \u590d\u52363\u884c\ny$              \n==\n> \u590d\u5236\u81f3\u884c\u5c3e\n\nd\n               \n==\n> \u5220\u9664\n\nx\n               \n==\n> \u5220\u9664\u5b57\u7b26\n\ndw\n              \n==\n> \u5220\u9664\u8bcd\n\ndd\n              \n==\n> \u5220\u9664\u884c\n\n3dd\n             \n==\n> \u5220\u96643\u884c\nd$              \n==\n> \u5220\u9664\u81f3\u884c\u5c3e\ndf\n)\n             \n==\n> \u5220\u9664\u81f3\u62ec\u53f7\u5185\n\nu\n               \n==\n> \u64a4\u9500\n>               \n==\n> \u53f3\u79fb1\u5b57\u7b26\n\n2\n>              \n==\n> \u53f3\u79fb2\u5b57\u7b26\n<               \n==\n> \u5de6\u79fb1\u5b57\u7b26\n\n2\n<              \n==\n> \u5de6\u79fb2\u5b57\u7b26\n\n\n\n\n\nemacs \u64cd\u4f5c\n\u00b6\n\n\n## \u7f13\u51b2\u533abuffer\n\nSPC-b h ==> back to home\nSPC-b N ==> new buffer \nSPC-b n ==> next buffer\nSPC-b p ==> previous buffer\nSPC-b d ==> kill this buffer\nSPC-b m ==> kill other buffer\nSPC-b P ==> paste clipboard to this buffer\nSPC-b Y ==> yank this buffer to clipboard\n\n---\n\n## \u6587\u4ef6\n\nSPC-f f ==> find-file\nSPC-f s ==> save-file\nSPC-f r ==> helm-recent-file\nSPC-f T ==> neotree-show\nSPC-F t ==> neotree-toggle\nSPC-F R ==> rename-the-file \n\n---\n\n## \u7a97\u53e3\n\nSPC-w - ==> split-window-below\nSPC-w / ==> split-window-right\nSPC-w + ==> window-layout-toggle\nSPC-w 2 ==> layout-double-columns\nSPC-w 3 ==> layout-three-columns\nSPC-w = ==> balance-windows\nSPC-w _ ==> maximize-horizontally\nSPC-w d ==> delete-window\n\n### evil mode\nSPC-w H/h ==> \nSPC-w J/j ==> \nSPC-w K/k ==> \nSPC-w L/l ==>\nSPC-w S/s ==> aplit-window-below\nSPC-w V/v ==> split-window-right\nSPC-w up/down ==> move-cursor-up/down\nSPC-w up/down ==> move-cursor-right/right\nSPC-w S-up/down ==> move-cursor-very-up/down\nSPC-w S-right/left ==>move-cursor-very-right/left\n\n## org-mode\n\nopen an org file\n\nSPC-m p ==> org-pomodoro\nSPC-m T ==> show-TODO-tree\n\n### promodoro\n\nSPC-m p ==> star-pomodoro\n\n### presentation\n\nSPC SPC org-present\n\nh ==> previous slide\nl ==> next slide\nq ==> quit\n\n### org-mime\n\nSPC m M ==> in message-mode buffers convert into html email\nSPC m m ==> send current buffer as HTML \n\n### org-projectile\n\nSPC a o p ==> capture a TODO for the current project\nSPC u SPC a o p ==> capture a TODO for any given project\nSPC p o ==> go to the TODOs for the current project\n\n\n\n\n\nothers\n\u00b6\n\n\n\n\nSPC s c\n \u6e05\u9664\u641c\u7d22\u9ad8\u4eae",
+            "title": "spacemacs \u4f7f\u7528\u548c\u914d\u7f6e"
+        },
+        {
+            "location": "/tools/spacemacs/#spacemacs",
+            "text": "",
+            "title": "spacemacs \u4f7f\u7528\u548c\u914d\u7f6e"
+        },
+        {
+            "location": "/tools/spacemacs/#_1",
+            "text": "\u719f\u6089 evil \u6a21\u5f0f   \u5b89\u88c5 mode line (\u5931\u8d25)    telephone-line   \u6298\u817e\u4e3b\u9898   SPC SPC package-install\nSPC SPC load-theme\nSPC SPC enable-theme\nSPC T  h   == > ( set-default dospacemacs-themes  ' ( list-themes-here ))",
+            "title": "\u7b80\u5355\u8bb0\u5f55\u4e0b\u6298\u817e"
+        },
+        {
+            "location": "/tools/spacemacs/#layerpackage",
+            "text": "package: emacs lisp\u6587\u4ef6\u7684\u96c6\u5408\uff0c\u5176\u53ef\u80fd\u5728ELPA\u6216MELPA\u4ed3\u5e93\uff0cgithub \u6216\u8005\u5728\u672c\u5730  layer: \u5185\u7f6e\u5728spacemacs\u5185\u7684\u8bbe\u7f6e\u7ec4\u4ef6\uff0c\u4e00\u4e2alayer\u53ef\u5305\u6db5\u4e00\u4e2a\u6216\u591a\u4e2apackage",
+            "title": "layer\u548cpackage"
+        },
+        {
+            "location": "/tools/spacemacs/#_2",
+            "text": "\u6309\u952e  \u8bf4\u660e      SPC f  \u6253\u5f00file\u64cd\u4f5c\u83dc\u5355    SPC p  \u6253\u5f00project\u64cd\u4f5c\u83dc\u5355    SPC b  \u6253\u5f00buffer\u64cd\u4f5c\u83dc\u5355    SPC w  \u6253\u5f00window\u64cd\u4f5c\u83dc\u5355    SPC q  \u6253\u5f00quit\u64cd\u4f5c\u83dc\u5355    SPC h  \u6253\u5f00help\u64cd\u4f5c\u83dc\u5355    SPC T  \u6253\u5f00theme\u64cd\u4f5c\u83dc\u5355",
+            "title": "\u5e38\u7528\u5feb\u6377\u952e"
+        },
+        {
+            "location": "/tools/spacemacs/#cheatsheet",
+            "text": "vim\u64cd\u4f5c\uff01  # \u6587\u4ef6 \n-----------------------------\nopen  file         == > SPC f f\nsave  file         == > SPC f s\ncreate  file       == > SPC f f\nfind  file         == > SPC p f\nedit .spacmacs   == > SPC f e d # \u67e5\u627e\u6587\u672c \n-----------------------------\n/                == > \u672c\u6587\u4e2d\u641c\u7d22\u8bcd\n*                == > \u67e5\u627e\u5149\u6807\u6240\u5728\u8bcd\u7684\u4e0b\u4e00\u4e2a #               ==> \u67e5\u627e\u5149\u6807\u6240\u5728\u8bcd\u7684\u4e0a\u4e00\u4e2a \n:nohl            == > \u53d6\u6d88\u9ad8\u4eae\u641c\u7d22\u8bcd\nSPC /            == > \u9879\u76ee\u4e2d\u641c\u7d22\u8bcd # \u5bfc\u822a  \n-----------------------------\n^                == > \u884c\u9996\n$                == > \u884c\u5c3e w                 == > \u53f31\u8bcd\u9996 5w                == > \u53f35\u4e2a\u8bcd\u8bcd\u9996 e                 == > \u53f31\u8bcd\u5c3e b                 == > \u5de61\u8bcd\u9996\nj/k/h/l          == > \u4e0a\u4e0b\u5de6\u53f3 22j               == > \u4e0b22\u884c 22k               == > \u4e0a22\u884c {                 == > \u4e0b1\u6bb5 }                 == > \u4e0a1\u6bb5 [[                == > \u4e0a1\u51fd\u6570 ]]                == > \u4e0b1\u51fd\u6570\n^  d               == > \u4e0b1\u9875\n^  u               == > \u4e0a1\u9875 gg                == > \u6587\u9996 G                 == > \u6587\u5c3e\ng ;                == > \u4e0a\u6b21\u4fee\u6539\u4f4d\u7f6e # \u7a97\u53e3\u5e03\u5c40 \n------------------------------\nSPC  w             == > \u7a97\u53e3\u5e03\u5c40\u83dc\u5355\nSPC w -          == > \u4e0b\u52061\u5c4f\nSPC w /          == > \u53f3\u52061\u5c4f\nSPC w  2           == > \u52062\u5217\nSPC w j/k/h/l    == > \u79fb\u52a8\u7126\u70b9 # \u7f16\u8f91 \n------------------------------ v                 == > \u53ef\u89c6\u6a21\u5f0f y                 == > \u590d\u5236 yw                == > \u590d\u5236\u8bcd yy                == > \u590d\u5236\u884c 3yy               == > \u590d\u52363\u884c\ny$               == > \u590d\u5236\u81f3\u884c\u5c3e d                 == > \u5220\u9664 x                 == > \u5220\u9664\u5b57\u7b26 dw                == > \u5220\u9664\u8bcd dd                == > \u5220\u9664\u884c 3dd               == > \u5220\u96643\u884c\nd$               == > \u5220\u9664\u81f3\u884c\u5c3e\ndf )               == > \u5220\u9664\u81f3\u62ec\u53f7\u5185 u                 == > \u64a4\u9500\n>                == > \u53f3\u79fb1\u5b57\u7b26 2 >               == > \u53f3\u79fb2\u5b57\u7b26\n<                == > \u5de6\u79fb1\u5b57\u7b26 2 <               == > \u5de6\u79fb2\u5b57\u7b26",
+            "title": "cheatsheet"
+        },
+        {
+            "location": "/tools/spacemacs/#emacs",
+            "text": "## \u7f13\u51b2\u533abuffer\n\nSPC-b h ==> back to home\nSPC-b N ==> new buffer \nSPC-b n ==> next buffer\nSPC-b p ==> previous buffer\nSPC-b d ==> kill this buffer\nSPC-b m ==> kill other buffer\nSPC-b P ==> paste clipboard to this buffer\nSPC-b Y ==> yank this buffer to clipboard\n\n---\n\n## \u6587\u4ef6\n\nSPC-f f ==> find-file\nSPC-f s ==> save-file\nSPC-f r ==> helm-recent-file\nSPC-f T ==> neotree-show\nSPC-F t ==> neotree-toggle\nSPC-F R ==> rename-the-file \n\n---\n\n## \u7a97\u53e3\n\nSPC-w - ==> split-window-below\nSPC-w / ==> split-window-right\nSPC-w + ==> window-layout-toggle\nSPC-w 2 ==> layout-double-columns\nSPC-w 3 ==> layout-three-columns\nSPC-w = ==> balance-windows\nSPC-w _ ==> maximize-horizontally\nSPC-w d ==> delete-window\n\n### evil mode\nSPC-w H/h ==> \nSPC-w J/j ==> \nSPC-w K/k ==> \nSPC-w L/l ==>\nSPC-w S/s ==> aplit-window-below\nSPC-w V/v ==> split-window-right\nSPC-w up/down ==> move-cursor-up/down\nSPC-w up/down ==> move-cursor-right/right\nSPC-w S-up/down ==> move-cursor-very-up/down\nSPC-w S-right/left ==>move-cursor-very-right/left\n\n## org-mode\n\nopen an org file\n\nSPC-m p ==> org-pomodoro\nSPC-m T ==> show-TODO-tree\n\n### promodoro\n\nSPC-m p ==> star-pomodoro\n\n### presentation\n\nSPC SPC org-present\n\nh ==> previous slide\nl ==> next slide\nq ==> quit\n\n### org-mime\n\nSPC m M ==> in message-mode buffers convert into html email\nSPC m m ==> send current buffer as HTML \n\n### org-projectile\n\nSPC a o p ==> capture a TODO for the current project\nSPC u SPC a o p ==> capture a TODO for any given project\nSPC p o ==> go to the TODOs for the current project",
+            "title": "emacs \u64cd\u4f5c"
+        },
+        {
+            "location": "/tools/spacemacs/#others",
+            "text": "SPC s c  \u6e05\u9664\u641c\u7d22\u9ad8\u4eae",
+            "title": "others"
         },
         {
             "location": "/tools/strong_code/",
@@ -927,7 +1257,7 @@
         },
         {
             "location": "/tools/vim/",
-            "text": "vim \u64cd\u4f5c\n\u00b6\n\n\n\u5c0f\u6280\u5de7\n\u00b6\n\n\n\u4f7f\u7528\u7cfb\u7edf\u526a\u5207\u677f\n\n\n# \u5b89\u88c5\u5fc5\u8981\u5305\n\n$ sudo apt-get install vim-gui-common\n\n# \u4f7f\u7528\uff0c\u9009\u4e2d\u76ee\u6807\u540e\n\n\u201c+y\n\n\n\n\n\n\u5b9e\u9645\u4e0a\u53ea\u662f\u5728\u539f\u547d\u4ee4\ny\n\u524d\u6dfb\u52a0\n\u201d+\n\n\nlinks\uff1a\n- \nhttps://www.zhihu.com/question/19863631\n\n- \nhttps://github.com/ruanyf/articles/blob/master/dev/vim/operation.md",
+            "text": "vim \u64cd\u4f5c\n\u00b6\n\n\n\u53ef\u7528\u4e8e\u751f\u4ea7\u73af\u5883\u7684\u914d\u7f6e\n\u00b6\n\n\n\u9700\u6c42\n\u00b6\n\n\n\n\n\u65b0\u5efa\u6587\u4ef6\uff0c\u5173\u95ed\u6587\u4ef6\n\n\n:e file\n\u65b0\u5efa\u7f13\u51b2\u533a\u6253\u5f00file\u6587\u4ef6\u6848\n\n\n:bn\n\u540e\u4e00\u4e2a\u7f13\u51b2\u533a\n\n\n:bp\n\u524d\u4e00\u4e2a\u7f13\u51b2\u533a\n\n\n:bd\n\u5173\u95ed\u7f13\u51b2\u533a\n\n\n:ls\n\u5217\u51fa\u6240\u6709\u6253\u5f00\u7684\u7f13\u51b2\u533a\n\n\n\n\n\n\n\u4f7f\u7528tab\u6807\u7b7e\n\n\n:tabnew\n | \n:tabnew file\n\u6253\u5f00\u65b0\u6807\u7b7e\n\n\n^w + T\n\u5c06\u7a97\u53e3\u53d8\u6210\u6807\u7b7e\uff08\u5206\u5c4f\u7684\u7a97\u53e3\uff09\n\n\ngt\n | \n:tabnext\n | \n:tabn\n\u5207\u6362\u5230\u4e0b\u4e00\u4e2a\u6807\u7b7e\n\n\ngT\n | \n:tabprev\n | \n:tabp\n\u5207\u6362\u5230\u4e0a\u4e00\u4e2a\u6807\u7b7e\n\n\n#gt\n\u5207\u6362\u5230\u7b2c\n#\n\u4e2a\u6807\u7b7e\n\n\n:tabmove #\n\u79fb\u52a8\u6807\u7b7e\u5230\u7b2c\n#\n\u4f4d\n\n\n:tabclose\n | \n:tabc\n\u5173\u95ed\u5f53\u524d\u6807\u7b7e\n\n\n:tabonly\n | \n:tabo\n\u5173\u95ed\u5176\u4ed6\u6807\u7b7e\n\n\n:tabdo command\n\u5728\u6240\u6709\u6807\u7b7e\u4e2d\u6267\u884c\u547d\u4ee4\n\n\n:tabdo q\n\u5173\u95ed\u6240\u6709\u6807\u7b7e\n\n\n\n\n\n\n\u5206\u5c4f\n\n\n:sp file\n\u6c34\u5e73\u5206\u5272\u7a97\u53e3\n\n\n:vsp file\n\u5782\u76f4\u5206\u5272\u7a97\u53e3\n\n\n^w + s\n\u6c34\u5e73\u5206\u5272\u7a97\u53e3\n\n\n^w + w\n\u7a97\u53e3\u89c1\u5207\u6362\n\n\n^w + q\n\u9000\u51fa\u7a97\u53e3\n\n\n^w + v\n\u5782\u76f4\u5206\u5272\u7a97\u53e3\n\n\n^x + h-j-k-l\n\u5207\u6362\u7a97\u53e3\n\n\n\n\n\n\n\u627e\u5230\u6700\u8fd1\u4fee\u6539\u7684\u6587\u4ef6\n\n\n\u627e\u5230\u51fd\u6570\u5b9a\u4e49\n\n\n\u627e\u5230\u58f0\u660e\n\n\n\u66ff\u6362\n\n\n\u56de\u6eda\n\n\ngoogle search\n\n\nipython\u4ea4\u4e92\n\n\n\n\n\u5c0f\u6280\u5de7\n\u00b6\n\n\n\u4f7f\u7528\u7cfb\u7edf\u526a\u5207\u677f\n\n\n# \u5b89\u88c5\u5fc5\u8981\u5305\n\n$ sudo apt-get install vim-gui-common\n\n# \u4f7f\u7528\uff0c\u9009\u4e2d\u76ee\u6807\u540e\n\n\u201c+y\n\n\n\n\n\n\u5b9e\u9645\u4e0a\u53ea\u662f\u5728\u539f\u547d\u4ee4\ny\n\u524d\u6dfb\u52a0\n\u201d+\n\n\nlinks\uff1a\n- \nhttps://www.zhihu.com/question/19863631\n\n- \nhttps://github.com/ruanyf/articles/blob/master/dev/vim/operation.md",
             "title": "vim \u64cd\u4f5c"
         },
         {
@@ -937,6 +1267,16 @@
         },
         {
             "location": "/tools/vim/#_1",
+            "text": "",
+            "title": "\u53ef\u7528\u4e8e\u751f\u4ea7\u73af\u5883\u7684\u914d\u7f6e"
+        },
+        {
+            "location": "/tools/vim/#_2",
+            "text": "\u65b0\u5efa\u6587\u4ef6\uff0c\u5173\u95ed\u6587\u4ef6  :e file \u65b0\u5efa\u7f13\u51b2\u533a\u6253\u5f00file\u6587\u4ef6\u6848  :bn \u540e\u4e00\u4e2a\u7f13\u51b2\u533a  :bp \u524d\u4e00\u4e2a\u7f13\u51b2\u533a  :bd \u5173\u95ed\u7f13\u51b2\u533a  :ls \u5217\u51fa\u6240\u6709\u6253\u5f00\u7684\u7f13\u51b2\u533a    \u4f7f\u7528tab\u6807\u7b7e  :tabnew  |  :tabnew file \u6253\u5f00\u65b0\u6807\u7b7e  ^w + T \u5c06\u7a97\u53e3\u53d8\u6210\u6807\u7b7e\uff08\u5206\u5c4f\u7684\u7a97\u53e3\uff09  gt  |  :tabnext  |  :tabn \u5207\u6362\u5230\u4e0b\u4e00\u4e2a\u6807\u7b7e  gT  |  :tabprev  |  :tabp \u5207\u6362\u5230\u4e0a\u4e00\u4e2a\u6807\u7b7e  #gt \u5207\u6362\u5230\u7b2c # \u4e2a\u6807\u7b7e  :tabmove # \u79fb\u52a8\u6807\u7b7e\u5230\u7b2c # \u4f4d  :tabclose  |  :tabc \u5173\u95ed\u5f53\u524d\u6807\u7b7e  :tabonly  |  :tabo \u5173\u95ed\u5176\u4ed6\u6807\u7b7e  :tabdo command \u5728\u6240\u6709\u6807\u7b7e\u4e2d\u6267\u884c\u547d\u4ee4  :tabdo q \u5173\u95ed\u6240\u6709\u6807\u7b7e    \u5206\u5c4f  :sp file \u6c34\u5e73\u5206\u5272\u7a97\u53e3  :vsp file \u5782\u76f4\u5206\u5272\u7a97\u53e3  ^w + s \u6c34\u5e73\u5206\u5272\u7a97\u53e3  ^w + w \u7a97\u53e3\u89c1\u5207\u6362  ^w + q \u9000\u51fa\u7a97\u53e3  ^w + v \u5782\u76f4\u5206\u5272\u7a97\u53e3  ^x + h-j-k-l \u5207\u6362\u7a97\u53e3    \u627e\u5230\u6700\u8fd1\u4fee\u6539\u7684\u6587\u4ef6  \u627e\u5230\u51fd\u6570\u5b9a\u4e49  \u627e\u5230\u58f0\u660e  \u66ff\u6362  \u56de\u6eda  google search  ipython\u4ea4\u4e92",
+            "title": "\u9700\u6c42"
+        },
+        {
+            "location": "/tools/vim/#_3",
             "text": "\u4f7f\u7528\u7cfb\u7edf\u526a\u5207\u677f  # \u5b89\u88c5\u5fc5\u8981\u5305 \n$ sudo apt-get install vim-gui-common # \u4f7f\u7528\uff0c\u9009\u4e2d\u76ee\u6807\u540e \n\u201c+y  \u5b9e\u9645\u4e0a\u53ea\u662f\u5728\u539f\u547d\u4ee4 y \u524d\u6dfb\u52a0 \u201d+  links\uff1a\n-  https://www.zhihu.com/question/19863631 \n-  https://github.com/ruanyf/articles/blob/master/dev/vim/operation.md",
             "title": "\u5c0f\u6280\u5de7"
         },
@@ -964,6 +1304,26 @@
             "location": "/tools/vim_config/#other-setting",
             "text": "\" set coding\nset encoding=utf-8\n\nset nu\n\nau BufNewFile,BufRead *.js, *.html, *.css, *.md\n    \\ set tabstop=2 |\n    \\ set softtabstop=2 |\n    \\ set shiftwidth=2\n\n\" Split Layouts,<:sv filename>;<:vs filename>\nset splitbelow\nset splitright\n\n\"split navigations\nnnoremap <C-J> <C-W><C-J>\nnnoremap <C-K> <C-W><C-K>\nnnoremap <C-L> <C-W><C-L>\nnnoremap <C-H> <C-W><C-H>",
             "title": "other setting"
+        },
+        {
+            "location": "/tools/virtualebox/",
+            "text": "virtualbox\u7684\u76f8\u5173\u4f7f\u7528\n\u00b6\n\n\n\u4ee5\u201cheadless\u201d\u65e0\u524d\u7aef\u6a21\u5f0f\u5f00\u542f\n\u00b6\n\n\nVBoxManage list vms  \n# \u67e5\u770b\u5f53\u524d\u6240\u6709\u865a\u62df\u673a\n\nVBoxHeadless-startvm \n[\nubuntu\n]\n\n\n\n\n\n\n\u8bbe\u7f6essh\u8fdc\u7a0b\u767b\u9646\n\u00b6\n\n\nVBoxManage modifyvm myserver --natpf1 \n\"ssh,tcp,,3022,,22\"\n\nVBoxManage showvminfo myserver \n|\n grep \n'Rule'\n\nsudo apt-get install openssh-server\nssh -p \n3022\n user@127.0.0.1\n\n\n\n\n\nlink: \nHow to SSH to a VirtualBox guest externally through a host?",
+            "title": "virtualbox\u7684\u76f8\u5173\u4f7f\u7528"
+        },
+        {
+            "location": "/tools/virtualebox/#virtualbox",
+            "text": "",
+            "title": "virtualbox\u7684\u76f8\u5173\u4f7f\u7528"
+        },
+        {
+            "location": "/tools/virtualebox/#headless",
+            "text": "VBoxManage list vms   # \u67e5\u770b\u5f53\u524d\u6240\u6709\u865a\u62df\u673a \nVBoxHeadless-startvm  [ ubuntu ]",
+            "title": "\u4ee5\u201cheadless\u201d\u65e0\u524d\u7aef\u6a21\u5f0f\u5f00\u542f"
+        },
+        {
+            "location": "/tools/virtualebox/#ssh",
+            "text": "VBoxManage modifyvm myserver --natpf1  \"ssh,tcp,,3022,,22\" \nVBoxManage showvminfo myserver  |  grep  'Rule' \nsudo apt-get install openssh-server\nssh -p  3022  user@127.0.0.1  link:  How to SSH to a VirtualBox guest externally through a host?",
+            "title": "\u8bbe\u7f6essh\u8fdc\u7a0b\u767b\u9646"
         },
         {
             "location": "/tools/zsh/",

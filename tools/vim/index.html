@@ -305,6 +305,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../linux/nginx/" title="nginx" class="md-nav__link">
+      nginx
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../linux/package_manage/" title="linux 包管理" class="md-nav__link">
       linux 包管理
     </a>
@@ -569,8 +581,80 @@
 
 
   <li class="md-nav__item">
+    <a href="../../tips_tricks/emacs_gtd/" title="Emacs gtd" class="md-nav__link">
+      Emacs gtd
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tips_tricks/getting_things_done/" title="GETTING THINGS DONE" class="md-nav__link">
+      GETTING THINGS DONE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tips_tricks/headless_virtualbox/" title="ssh连接虚拟机" class="md-nav__link">
+      ssh连接虚拟机
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../tips_tricks/project_password_manage/" title="妥善管理密钥" class="md-nav__link">
       妥善管理密钥
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tips_tricks/python_scrapy/" title="python网络数据采集" class="md-nav__link">
+      python网络数据采集
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tips_tricks/useful_commands/" title="USEFUL COMMANDS" class="md-nav__link">
+      USEFUL COMMANDS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tips_tricks/xpath/" title="XPATH" class="md-nav__link">
+      XPATH
     </a>
   </li>
 
@@ -727,6 +811,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../org-mode/" title="Org mode" class="md-nav__link">
+      Org mode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../pip/" title="pip & pipenv & autoenv" class="md-nav__link">
       pip & pipenv & autoenv
     </a>
@@ -741,6 +837,18 @@
   <li class="md-nav__item">
     <a href="../pycharm/" title="Pycharm" class="md-nav__link">
       Pycharm
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spacemacs/" title="spacemacs 使用和配置" class="md-nav__link">
+      spacemacs 使用和配置
     </a>
   </li>
 
@@ -814,7 +922,27 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="小技巧" class="md-nav__link">
+  <a href="#_1" title="可用于生产环境的配置" class="md-nav__link">
+    可用于生产环境的配置
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="需求" class="md-nav__link">
+    需求
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="小技巧" class="md-nav__link">
     小技巧
   </a>
   
@@ -845,6 +973,18 @@
   <li class="md-nav__item">
     <a href="../vim_config/" title="Vim config" class="md-nav__link">
       Vim config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../virtualebox/" title="Virtualebox" class="md-nav__link">
+      Virtualebox
     </a>
   </li>
 
@@ -887,7 +1027,27 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="小技巧" class="md-nav__link">
+  <a href="#_1" title="可用于生产环境的配置" class="md-nav__link">
+    可用于生产环境的配置
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="需求" class="md-nav__link">
+    需求
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="小技巧" class="md-nav__link">
     小技巧
   </a>
   
@@ -919,7 +1079,49 @@
                 
                 
                 <h1 id="vim">vim 操作<a class="headerlink" href="#vim" title="Permanent link">¶</a></h1>
-<h2 id="_1">小技巧<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<h2 id="_1">可用于生产环境的配置<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<h3 id="_2">需求<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<ul>
+<li>新建文件，关闭文件<ul>
+<li><code>:e file</code>新建缓冲区打开file文件案</li>
+<li><code>:bn</code>后一个缓冲区</li>
+<li><code>:bp</code>前一个缓冲区</li>
+<li><code>:bd</code>关闭缓冲区</li>
+<li><code>:ls</code>列出所有打开的缓冲区</li>
+</ul>
+</li>
+<li>使用tab标签<ul>
+<li><code>:tabnew</code> | <code>:tabnew file</code>打开新标签</li>
+<li><code>^w + T</code>将窗口变成标签（分屏的窗口）</li>
+<li><code>gt</code> | <code>:tabnext</code> | <code>:tabn</code>切换到下一个标签</li>
+<li><code>gT</code> | <code>:tabprev</code> | <code>:tabp</code>切换到上一个标签</li>
+<li><code>#gt</code>切换到第<code>#</code>个标签</li>
+<li><code>:tabmove #</code>移动标签到第<code>#</code>位</li>
+<li><code>:tabclose</code> | <code>:tabc</code>关闭当前标签</li>
+<li><code>:tabonly</code> | <code>:tabo</code>关闭其他标签</li>
+<li><code>:tabdo command</code>在所有标签中执行命令</li>
+<li><code>:tabdo q</code>关闭所有标签</li>
+</ul>
+</li>
+<li>分屏<ul>
+<li><code>:sp file</code>水平分割窗口</li>
+<li><code>:vsp file</code>垂直分割窗口</li>
+<li><code>^w + s</code>水平分割窗口</li>
+<li><code>^w + w</code>窗口见切换</li>
+<li><code>^w + q</code>退出窗口</li>
+<li><code>^w + v</code>垂直分割窗口</li>
+<li><code>^x + h-j-k-l</code>切换窗口</li>
+</ul>
+</li>
+<li>找到最近修改的文件</li>
+<li>找到函数定义</li>
+<li>找到声明</li>
+<li>替换</li>
+<li>回滚</li>
+<li>google search</li>
+<li>ipython交互</li>
+</ul>
+<h2 id="_3">小技巧<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <p>使用系统剪切板</p>
 <div class="codehilite"><pre><span></span><span class="c1"># 安装必要包</span>
 $ sudo apt-get install vim-gui-common
