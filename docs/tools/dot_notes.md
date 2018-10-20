@@ -175,8 +175,8 @@ digraph {
 ## 链接
 
 - [colors](https://www.graphviz.org/doc/info/colors.html)
-- [shapes](www.graphviz.org/doc/info/shapes.html)
-- [arrows](www.graphviz.org/doc/info/arrows.html)
+- [shapes](https://www.graphviz.org/doc/info/shapes.html)
+- [arrows](https://www.graphviz.org/doc/info/arrows.html)
 
 ## 终端输出命令
 
