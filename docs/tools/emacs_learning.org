@@ -1,0 +1,36 @@
+* EMACS LEARNING NOTES
+
+** 安装emacs+spacemacs
+
+*** linux
+
+
+**** 安装库里的emacs
+
+     "sudo apt install emacs"
+
+**** 安装最新版emacs
+
+     ""
+
+**** 安装spacemacs
+
+
+     "git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d"
+    
+*** windows
+
+
+**** 安装最新版emacs 26.1
+
+**** 安装spacemacs
+
+
+** 备份自己的spacemacs配置
+
+
+*** 使用git对“.spacemacs”进行版本控制及备份（SPC-h-SPC文档有介绍）
+  
+    + "~/.spacemacs" => "~/.spacemacs.d/init.el" 
+    + 对“～/.spacemacs.d”进行版本控制及备份
+

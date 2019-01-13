@@ -23,6 +23,13 @@ Port 22
 
 # connect
 ssh hostNameAlias
-# scp
-scp /some/file tencent:/path/to/storage/loaction
+# scp from local to remote
+scp /some/file hostNameAlias:/path/to/storage/loaction
+# scp from remote to local
+scp hostNameAlias:/some/file /local/path/
 ```
+
+## parameters
+
+- `-r` 递归复制整个目录
+- `-P` 数据传输端口号
