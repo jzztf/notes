@@ -1,6 +1,5 @@
 * XPATH CHEATSHEET
 
-
 * lxml
 
   link: http://blog.datahut.co/beginners-guide-to-web-scraping-with-python-lxml/
@@ -9,36 +8,24 @@
 
 ** "lxml.etree"
 
-   构造"html"文档
-
-#+BEGIN_SRC python
-
-#+END_SRC
+    构造"html"文档
 
 ** "lxml.html"
 
-   解析"html"文档
+    解析"html"文档
 
-#+BEGIN_SRC python
+    link: http://docs.python-guide.org/en/latest/scenarios/scrape/
 
+    #+BEGIN_SRC python
+    from lxml import html
+    import requests
 
-#+END_SRC
+    page = requests.get('http://econpy.pythonanywhere.com/ex/001.html')
+    tree = html.fromstring(page.content)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-link: http://docs.python-guide.org/en/latest/scenarios/scrape/
-
-#+BEGIN_SRC python
-from lxml import html
-import requests
-
-page = requests.get('http://econpy.pythonanywhere.com/ex/001.html')
-tree = html.fromstring(page.content)
-
-tree.xpath('//div[@title="buyer-name"]/text()') 
-tree.xpath('//span[@class="item-price"]/text()')
-#+END_SRC
-
+    tree.xpath('//div[@title="buyer-name"]/text()') 
+    tree.xpath('//span[@class="item-price"]/text()')
+    #+END_SRC
 
 ** 选取节点
 ** 谓语(predicates)
@@ -58,3 +45,249 @@ tree.xpath('//span[@class="item-price"]/text()')
    | not         |      |      |
    | text()      |      |      |
    |             |      |      |
+
+* DONE cheatsheet(devhints.io/xpath)
+  CLOSED: [2018-07-25 三 21:12]
+
+  xpath的个人体会: 
+  + 通过"/"或"//"限定节点路径,
+  + 使用"[]"方括号作为定语限定其前面的节点,
+  + 方括号内的内容被称为表达式"expressions".
+  + "@"表示属性,
+  + 常用函数"contains()","starts-with()","ends-with()","name()","text()","count()","position()" 
+
+** 选择器(selectors) 选择器
+
+| 后代选择器(descendant selectors)     | 描述 |
+|--------------------------------------+------|
+| //h1                                 |      |
+| //div//p                             |      |
+| //ul/li                              |      |
+| //ul/li/a                            |      |
+| //div/*                              |      |
+| /                                    |      |
+| /body                                |      |
+|--------------------------------------+------|
+| 属性选择                             |      |
+|--------------------------------------+------|
+| //*[@id="id"]                        |      |
+| //input[@type="Submit"]              |      |
+| //a[@id="abc"][@for="xyz"]           |      |
+| //a[@rel]                            |      |
+| //a[starts-with(@href, '/')]         |      |
+| //a[ends-with(@href, '.pdf')]        |      |
+| //a[contains(@href, '://')]          |      |
+| //a[starts-with(@rel, 'help')]       |      |
+|--------------------------------------+------|
+| 顺序选择                             |      |
+|--------------------------------------+------|
+| //ul/li[1]                           |      |
+| //ul/li[2]                           |      |
+| //ul/li[last()]                      |      |
+| //li[@id="id][1]                     |      |
+| //a[1]                               |      |
+| //a[last()]                          |      |
+|--------------------------------------+------|
+| 兄弟选择                             |      |
+|--------------------------------------+------|
+| //h1/following-sibling::ul           |      |
+| //h1/following-sibling::ul[1]        |      |
+| //h1/following-sibling::ul[@id="id"] |      |
+|--------------------------------------+------|
+| jQuery                               |      |
+|--------------------------------------+------|
+| //ul/li/..                           |      |
+| //li/ancestor-or-self::section       |      |
+| //a/@href                            |      |
+| //span/text()                        |      |
+|--------------------------------------+------|
+| 其他                                 |      |
+|--------------------------------------+------|
+| //h1[not(@id)]                       |      |
+| //button[text()="Submit"]            |      |
+| //button[contains(text(),"Go")       |      |
+| //product[@price > 2.50)]            |      |
+| //ul[*]                              |      |
+| //ul[li]                             |      |
+| //a[@name or @href]                  |      |
+| //a &#124;//div                      |      |
+
+** 表达式(expressions)
+
+表达式由轴(axis)和步(step)组成
+
+| axis | step | axis | step          |
+|------+------+------+---------------|
+| //   | ul   | /    | a[@id='link'] |
+
+
+| 前缀               | 例子               | 描述       |
+|--------------------+--------------------+------------|
+| //                 | //hr[@class='edge' | anywhere   |
+| ./                 | ./a                | relative   |
+| /                  | /html/body/div     | root       |
+|--------------------+--------------------+------------|
+| 轴(axes)           | 例子               | 描述       |
+|--------------------+--------------------+------------|
+| /                  | //ul/li/a          | child      |
+| //                 | //[@id='list]//a   | descendant |
+|--------------------+--------------------+------------|
+| 步(steps)          | 例子               | 描述       |
+|--------------------+--------------------+------------|
+| //div              |                    |            |
+| //div[@name='box'] |                    |            |
+| //[@id='links']    |                    |            |
+
+** 谓语(predicates)
+
+Predicate refers to the XPath expression written in square brackets. It refers to restrict the selected nodes in a node set for some condition.
+
+xpath中的谓词是指写在方括号内的表达式,用一些条件来限定所选节点.
+
+
+| 谓语(predicates)                  | 描述 |
+|-----------------------------------+------|
+| //div[true]                       |      |
+| //div[@class="head"]              |      |
+| //div[@class="head"][@id="top"]   |      |
+|-----------------------------------+------|
+| 使用节点(using nodes)             | 描述 |
+|-----------------------------------+------|
+| //ul[count(li) > 2]               |      |
+| //ul[count(li[@class='hide']) > 0 |      |
+| //ul/[li]                         |      |
+|-----------------------------------+------|
+| 链接顺序(chaining order)          | 描述 |
+|-----------------------------------+------|
+| a[1][@href='/']                   |      |
+| a[@href='/'][1]                   |      |
+|-----------------------------------+------|
+| 操作符(opertors)                  | 描述 |
+|-----------------------------------+------|
+| //a[@id = "xyz"                   |      |
+| //a[@id != "xyz"]                 |      |
+| //a[@price > 25]                  |      |
+| //div[@id="head" and position()=2 |      |
+| //div[(x and y) or not(z)         |      |
+|-----------------------------------+------|
+| 索引(indexing)                    | 描述 |
+|-----------------------------------+------|
+| //a[1]                            |      |
+| //a[last()]                       |      |
+| //ol/li[2]                        |      |
+| //ol/li[position()=2              |      |
+| //ol/li[position()>1              |      |
+|-----------------------------------+------|
+| 嵌套(nesting predicates)          | 描述 |
+|-----------------------------------+------|
+| //section[//h1[@id='hi']]         |      |
+
+** 函数(functions)
+
+| 节点函数(node functions)       | 例子                                         |
+|--------------------------------+----------------------------------------------|
+| name()                         | //[starts-with(name(), 'h')]                 |
+| text()                         | //button[text()="Submit"]                    |
+|                                | //button/text()                              |
+| lang(str)                      |                                              |
+| namespace-uri                  |                                              |
+| count()                        | //table[count(tr)=1]                         |
+| position()                     | //ol/li[position()=2]                        |
+|--------------------------------+----------------------------------------------|
+| 布尔函数(boolean function)     | 例子                                         |
+|--------------------------------+----------------------------------------------|
+| not(expressions)               | //button[not(starts-with(text(), "Submit"))] |
+|--------------------------------+----------------------------------------------|
+| 类型函数(type conversion)      | 例子                                         |
+|--------------------------------+----------------------------------------------|
+| string()                       |                                              |
+| number()                       |                                              |
+| boolean()                      |                                              |
+|--------------------------------+----------------------------------------------|
+| contains()                     | //font[contains(@class, "head")]             |
+| starts-with()                  | //font[starts-with(@class, "head")]          |
+| end-with()                     | //font[ends-with(@class, "head")]            |
+| concat(x,y)                    |                                              |
+| substring(str, start, len)     |                                              |
+| substring-before("01/02", "/") | 01                                           |
+| substring-after("01/02", "/")  | 02                                           |
+| translate()                    |                                              |
+| normalize-space()              |                                              |
+| string-length()                |                                              |
+
+
+** 轴(axes)
+
+*** axies and steps
+
+| //   | ul   | /child:: | li   |
+|------+------+----------+------|
+| Axis | Step | Axis     | Step |
+
+*** using axes
+
+| using_axes                         | simple    |
+|------------------------------------+-----------|
+| //ul/child::li                     | //ul/li   |
+| //ul/following-sibling::li         |           |
+| //ul/descendant-or-self::li        |           |
+| //ul/ancestor-or-self::li          |           |
+|------------------------------------+-----------|
+| child_axis                         |           |
+|------------------------------------+-----------|
+| //child::ul/child::li/child::a     | //ul/li/a |
+| //ul[li]                           |           |
+| //ul[child::li]                    |           |
+| //ul[count(li) > 2                 |           |
+| //ul[count(child::li) > 2          |           |
+|------------------------------------+-----------|
+| descendant-or-self axis            |           |
+|------------------------------------+-----------|
+| //div/descendant-or-self::[last()] | //div//h4 |
+| //ul//[last()]                     |           |
+| //ul/desant-or-self::[last()]      |           |
+|------------------------------------+-----------|
+| unions                             |           |
+|------------------------------------+-----------|
+| //a &#124; //span                  |           |
+
+*** other axes
+
+| axis               | 描述                            |
+|--------------------+---------------------------------|
+| accestor           |                                 |
+| ancestor-or-self   |                                 |
+| attribute          | @href = attribute::href         |
+| child              |                                 |
+| descendant         |                                 |
+| descendant-or-self | // = descendant-or-self::node() |
+| namespace          |                                 |
+| self               | . = self::node()                |
+| parent             | .. = self::node()               |
+| following          |                                 |
+| following-sibling  |                                 |
+| preceding          |                                 |
+| preceding-sibling  |                                 |
+
+** 更多实例
+
+| examples                           | descriptions                 |
+|------------------------------------+------------------------------|
+| //*                                | 所有元素                     |
+| count(//*)                         | 计算所有元素                 |
+| (//*)[1]/text()                    | 第一个heading的文本          |
+| //li[span]                         | 找到包含span的li             |
+| //ul/li/..                         | 选择父节点                   |
+|------------------------------------+------------------------------|
+| closest                            |                              |
+|------------------------------------+------------------------------|
+| ./ancestor-or-self::[@class="box"] | jQuery's $().closest('.box') |
+|------------------------------------+------------------------------|
+| find a parent                      |                              |
+|------------------------------------+------------------------------|
+| //section[h1[@id='section-name']]  |                              |
+| //section[//h1[@id='section-name'] |                              |
+|------------------------------------+------------------------------|
+| attributes                         |                              |
+|------------------------------------+------------------------------|
+| //item[@price > 2*@dicount]        |                              |

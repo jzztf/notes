@@ -1,0 +1,99 @@
+** Attribut selection
+   属性选择
+   /document/@name 
+** Conditional element selection
+   有条件的元素选择
+   /document/linkList[@name = 'A']/document
+** Merging character strings
+   合并字符串
+   concat(person/lastName, ', ', person/firstName)
+** Filtering by attribute value
+   根据属性值过滤
+   jobs/job[@priority = 'critical' or @priority = 'high']
+** Filtering by numeric values
+   根据数字值过滤
+   persons/person[@age < 35]
+** Limiting number
+   限制数字
+   persons/person[position() <= 3]
+** Filtering by character conditions
+   根据字符条件过滤
+   persons/person[starts-with(@firstName, 'H')]
+** Filtering by text length
+   根据文本长度过滤
+   persons/person[string-length(@firstName) <= 5]
+** Rounding up and down and adding
+   四舍五入和加法
+   sum(numbers/number[round(.) = 34])
+** Selecting the following siblings
+   选择兄弟节点
+   following-sibling::product
+** Selecting following siblings with filtering
+   使用过滤选择兄弟节点
+   following-sibling::product[@category = 1]
+** Attribute selection with namespaces
+   使用命名空间选择属性
+   /document/reference/@x:href
+** Selecting all links of a document
+   选择文档中所有链接
+   /document/content//x:a
+** Selecting all links to Google within a document
+   选择文档中所有指向google的链接
+   /document/content//x:a[contains(@href, 'google')]
+** Selecting elements by name
+   通过名称选择元素
+   document/*[starts-with(local-name(), 'item')]
+** Selecting elements by name with namespaces
+   使用命名空间和名称选择属性
+   t:document/t:*[starts-with(local-name(), 'item')]
+** Counting elements selected by certain criteria
+   计算元素数量
+   concat('In der Sammlung gibt es ', count(collection/artist/cds/cd),' Alben von Solokünstlern und ', count(collection/band/cds/cd),' Alben von Bands.')
+** Content of a parent element
+   父级元素的内容
+   ../../name
+** Finding surrounding element
+   宣州周围元素
+   ancestor::x:div[1]/@id
+** First and last element
+   第一和最后的元素
+   collection/artist[last()]/cds/cd[1]
+** Changing character string
+   改变字符串字符
+   concat('HTML', substring(., 5))
+** Counting nodes with condition
+   通过条件计算节点
+   count(jobs/job[@priority="low"])
+** Comparisons in conditions
+   通过条件对比
+   /jobs/job[sum(work/@usedBudget) > @availableBudget]
+** Selecting all links which open a new window
+   选择所有能打开新窗口的链接
+   /document/content//x:a[@target = '_new']
+** Calculating position
+   计算位置
+   count(preceding-sibling::title) + 1
+** Changing small to capital letters
+   将小写字母变成大写
+   translate(text, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+** Selecting querystring
+   选择查询字符串
+   substring-after(link, '?')
+** Elements with mixed text
+   混合文本的元素
+   items/item[contains(@width, 'px') and number(substring-before(@width, 'px')) <= 70] 
+** Filtering by key and numerical value
+   通过键值过滤
+   items/item[@unit = 'px' and @width < 70]
+** Totalling by key and numerical value
+   计算键值的总数
+   sum(items/item[@unit = 'px' and @width <= 70]/@width)
+** Selecting subelements by number
+   通过数值选择子元素
+   collection/*[count(cds/cd) = 1]
+** Selecting elements by namespace
+   通过命名空间选择元素
+   Items/*[starts-with(namespace-uri(), 'http://www.getit.de/')] 
+** Change XML document into CSV output
+   将xml文档写入csv文件
+   合并多个数组或字符串使用"concat()"函数
