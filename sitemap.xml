@@ -2,277 +2,312 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://jzztf.github.io/notes/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/linux/bash_scripts/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/linux/disk_manage/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/linux/network_manage/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/linux/nginx/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/linux/package_manage/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/linux/processing_manage/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/linux/ssh_virtualbox/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/linux/system_manage/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/linux/user_group_manage/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/python_basis/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/python_basis/callback_function/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/python_basis/decorator/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/python_basis/dict_type/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/python_basis/generator_iterator_corontine/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/python_basis/python_expert_James_Powell/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/python_modules/PIL_pillow/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/python_modules/datetime_time/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://jzztf.github.io/notes/python_modules/fake_useragent/</loc>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/python_modules/mysqlclient_pyhon/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/python_modules/selectors/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://jzztf.github.io/notes/python_modules/selenium/</loc>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/python_modules/socket/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://jzztf.github.io/notes/tips_tricks/crontab/</loc>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tips_tricks/emacs_gtd/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://jzztf.github.io/notes/tips_tricks/emacs_install/</loc>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tips_tricks/getting_things_done/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tips_tricks/git_win10/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tips_tricks/headless_virtualbox/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://jzztf.github.io/notes/tips_tricks/how-to-install-emacs-in-lubuntu/</loc>
+     <lastmod>2019-09-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://jzztf.github.io/notes/tips_tricks/how_to_enhance_lubuntu/</loc>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tips_tricks/project_password_manage/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tips_tricks/python_scrapy/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tips_tricks/scp_alias/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tips_tricks/useful_commands/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://jzztf.github.io/notes/tips_tricks/wget/</loc>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tips_tricks/xpath/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/dot_notes/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/emacs_notes/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/git_github/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/guest_connect_to_host_proxy/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/hexo/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/install_linux_into_usb/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/ipython/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/jekyll/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/jupyter_notebook/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/linux_config/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/mdwiki/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/mkdocs/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/org-mode/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/pip/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/pycharm/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/spacemacs/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/strong_code/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/tmux/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/veracrypt/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/vim-vixen/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/vim/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/vim_config/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/vim_tips/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/virtualebox/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://jzztf.github.io/notes/tools/zsh/</loc>
-     <lastmod>2019-01-19</lastmod>
+     <lastmod>2019-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
