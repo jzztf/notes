@@ -1,3 +1,4 @@
+#+BEGIN_SRC  python
 import csv
 import requests
 from lxml import html
@@ -15,3 +16,4 @@ with open('xx.csv', 'w') as f:
     writer = csv.writer(f)
     for i in zip(text, links):
         writer.writerow(i)
+#+END_SRC
