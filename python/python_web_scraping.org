@@ -1,0 +1,133 @@
+python网络数据收集
+
+* 初见爬虫
+
+** 网络爬虫:
+   + 通过网站域名获取HTML数据
+   + 根据目标解析数据
+   + 如有必要,移动到另一个网页重复这个过程
+
+* 复杂的HTML解析
+
+** 解析复杂页面技巧
+   + 寻找"打印此页"链接,或者移动版"HTML"样式,获得更简单的页面
+   + 寻找"JavaScript"文件里的信息
+   + 网页标题可以从"URL"获取
+   + 寻找的资源可能不局限于一个网站,可能存在于其他网站,其他网站还可能更容易收集
+
+** BeautifulSoup
+
+   "Tag"对象".get_text()"方法会剥离出标签内文本
+
+   "find()"和"find_all()"是最常用的两个函数,多数情况(95%)只会用到前两个参数
+
+   #+BEGIN_SRC 
+   find(tag,attributes,recurisive,text,keywords)
+   find_all(tag,attributes,recurisive,text,limit,keywords)
+   #+END_SRC
+
+*** 标签
+
+    | 参数                                       | 作用                                            |
+    |--------------------------------------------+-------------------------------------------------|
+    | .find_all({"h1","h2","h3","h6","h6"})      | 将返回所有标题标签列表                          |
+    | .find_all("span",{"class":{"green","red"}} | 将返回所有"class"属性为"green"和"red"的标签列表 |
+    | .find_all(text="the prince")               | 返回所有包含"the prince"内容的标签列表          |
+    | .find_all(id="text")                       | 返回所有"id"为"text"的标签                      |
+    | .find_all(class_="content")                | 避免python中"class"冲突,添加了下划线"class_"    |
+    | .find_all("",{"class":"content"})          | 同上作用                                        |
+
+*** 对象类型
+    
+    + Beautifulsoup对象,"find()"和"find_all()"就是就是BeautifulSoup对象的方法
+    + Tag对象,"find_all()"方法获得的对象就是"Tag"对象
+    + NavigationString对象表示标签里的文字,不是标签
+    + Comment对象用来表示注释标签
+
+*** 导航树 
+    
+    起初觉得这个功能没什么用处,但是如果处理的购物网站之类的一块块的标签,可以锁定一个区块,然后使用导航树进行获取其他信息
+
+    + 明确"children"和"descendants"之间的区别
+      + "children()"返回子标签,子标签就是一个父级标签的下一级
+      + "descendants()"返回后代标签,后代标签是一个父级标签的所有标签
+    + 兄弟标签"next_sibling"和"perivous_sibling"
+    + 一般搜索页面都是从顶级开始向下搜,偶尔也需要使用"parent"或"parents"的情况
+
+*** 使用正则
+
+    在进行匹配时,使用正则能够更快速,便捷的匹配
+
+    比如: ~soup.find_all("a", href=re.compile(r"^/wiki/.*"))~ 寻找所有"href"属性为"/wiki/"开头的链接
+
+*** 获取属性
+
+    对于一个"Tag"对象,使用"attrs"属性获取其所有属性
+
+    比如: ~soup.find_all("img").attrs['src']~ "soup"对象获取所有"img"类型的"tag"对象的属性,再使用"['src']"获取图片链接
+
+*** lambda函数
+
+    ~soup.find_all(lambda tag: len(tag.attrs) == 2)~ 寻找所有只有两个属性的标签
+
+*** 超越BeautifulSoup
+
+    + "lxml"也就是"xpath"
+ 
+* 开始采集
+
+  网络爬虫(web scrawler)之所以这样叫,是因为他们可以沿着网络爬行,他们的本质就是一种递归方式,找到页面,检查页面,找到新的链接,再继续下去,不断循环
+
+** 遍历单个域名
+
+   遍历单个域名只需要:
+   + 获取网页
+   + 分析网页
+   + 处理数据
+
+  #+BEGIN_SRC 
+  import requests
+  from bs4 import BeautifulSoup
+  
+  r = requests.get("https://en.wikipedia.org/wiki/Python_(programming_language)")
+  soup = BeautifulSoup(r.text, "lxml")
+  
+  external_links = soup.find_all("a", href=re.compile(r"^http(s)?://.*"))
+  for link in external_links:
+      print(link['href'])
+  internal_links = soup.find_all("a", href=re.compile(r"^/wiki/.*"))  
+  for link in internal_links:
+      print(link['href'])
+  #+END_SRC 
+
+** 采集整个网站
+
+  一般很少采集整个网站,除非用来生成网站地图,收集更全面的数据 
+
+  为避免一个页面被反复采集可使用"set"集合来收集链接,可以创建一个爬虫和数据收集的组合,一边爬去内容,一边进行收集整理
+
+** 通过互联网采集
+
+   搜索整个互联网,通过一个页面跳到其他页面,不断的跳转,这时需要思考:
+   + 我要收集那些网站
+   + 当爬取新网站时,立即顺着爬下去还是停留一会
+   + 有没有不想采集的页面,比如英文页面
+   + 如何避免纠纷,当爬取量过大时,会增大服务器的负担
+
+** 使用scrapy
+
+   scrapy是一个网络爬虫框架,可以减少重复劳动
+
+   
+* 使用API
+* 存储数据
+* 读取文档
+* 数据清洗
+* 自然语言处理
+* 采集javascript
+* 图像识别与文字处理
+* 避开采集陷阱
+* 用爬虫测试网站
+* 远程采集
+
+* BeautifulSoup对象

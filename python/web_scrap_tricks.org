@@ -1,0 +1,50 @@
+* python爬虫技巧
+
+
+** 修改User-agent(requests/fake-useragent)
+
+*** 基础用法
+
+    #+BEGIN_SRC python
+    # pip install fake-useragent
+    # 
+
+    import requests
+
+    from fake_useragent import UserAgent
+    ua = UsearAgent()
+
+    useragent = ua.random()
+
+    r = requests.get('https://douban.com', {'User-Agent': useragent})
+    #+END_SRC
+
+*** 其他补充
+
+    管理UA数据
+
+    #+BEGIN_SRC python
+    import fake_useragent
+
+    location = '/home/user/fake_useragent_{}.json'.format(fake_useragent.VERSION)
+    ua = fake_useragent.UserAgent(path=location)
+    ua.random
+    #+END_SRC
+
+** 修改proxy(requests)
+
+*** 基础用法
+
+#+BEGIN_SRC python
+
+import requests
+
+proxies = {
+    "http": 'http://209.50.162:9050',
+    "https": 'http://209.50.52.162:9050'}
+
+response = requests.get(url, proxies=proxies)
+
+#+END_SRC
+
+*** 爬取更多代理
