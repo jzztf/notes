@@ -4,9 +4,8 @@
 
 ```bash
 $ mkdocs --help
-Usage: mkdocs [OPTIONS] COMMAND [ARGS]...
 
-  MkDocs - Project documentation with Markdown.
+MkDocs - Project documentation with Markdown.
 
 Options:
   -V, --version  Show the version and exit.
@@ -19,5 +18,22 @@ Commands:
   gh-deploy  Deploy your documentation to GitHub Pages
   new        Create a new MkDocs project
   serve      Run the builtin development server
-				   
+```
+
+## 编辑发布
+
+```bash
+# 生成,编辑mkdown文件到/docs目录
+
+# 将原文档提交到github
+git push
+
+# 将文档生成html
+mkdocs build
+
+# 本地查看
+mkdocs serve
+
+# 发布到github个人页面
+mkdocs gh-deploy
 ```
