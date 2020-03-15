@@ -257,6 +257,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    编辑发布
+  </a>
+  
+</li>
+      
       
       
       
@@ -1171,6 +1178,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    编辑发布
+  </a>
+  
+</li>
+      
       
       
       
@@ -1193,9 +1207,8 @@
                 <h1 id="mkdocs">使用mkdocs存储零散笔记<a class="headerlink" href="#mkdocs" title="Permanent link">¶</a></h1>
 <h2 id="_1">基本命令<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <div class="codehilite"><pre><span></span><code>$ mkdocs --help
-Usage: mkdocs <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
 
-  MkDocs - Project documentation with Markdown.
+MkDocs - Project documentation with Markdown.
 
 Options:
   -V, --version  Show the version and exit.
@@ -1208,6 +1221,23 @@ Commands:
   gh-deploy  Deploy your documentation to GitHub Pages
   new        Create a new MkDocs project
   serve      Run the <span class="nb">builtin</span> development server
+</code></pre></div>
+
+
+<h2 id="_2">编辑发布<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 生成,编辑mkdown文件到/docs目录</span>
+
+<span class="c1"># 将原文档提交到github</span>
+git push
+
+<span class="c1"># 将文档生成html</span>
+mkdocs build
+
+<span class="c1"># 本地查看</span>
+mkdocs serve
+
+<span class="c1"># 发布到github个人页面</span>
+mkdocs gh-deploy
 </code></pre></div>
                 
                   
