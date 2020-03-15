@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://jzztf.github.io/notes/tools/emacs_notes/">
+        <link rel="canonical" href="https://jzztf.github.io/notes/tools/dockerfile-edit/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>Emacs notes - notes</title>
+        <title>docker使用的一些记录 - notes</title>
       
     
     
@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#emacs-notes" tabindex="0" class="md-skip">
+      <a href="#docker" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -113,7 +113,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Emacs notes
+                docker使用的一些记录
               
             </span>
           
@@ -651,11 +651,109 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../dockerfile-edit/" title="docker使用的一些记录" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        docker使用的一些记录
+      </label>
+    
+    <a href="./" title="docker使用的一些记录" class="md-nav__link md-nav__link--active">
       docker使用的一些记录
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker_1" class="md-nav__link">
+    docker基本命令
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker_2" class="md-nav__link">
+    docker 更换源
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dockerfile" class="md-nav__link">
+    dockerfile
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dockerfiledocker-image" class="md-nav__link">
+    创建"Dockerfile",构建属于自己的docker image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dockerfile_1" class="md-nav__link">
+    dockerfile基本构成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipstricks" class="md-nav__link">
+    tips&amp;tricks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    docker compose
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -699,55 +797,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Emacs notes
-      </label>
-    
-    <a href="./" title="Emacs notes" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../emacs_notes/" title="Emacs notes" class="md-nav__link">
       Emacs notes
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
-    Intro
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" class="md-nav__link md-nav__link--active">
-            Comments
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1209,8 +1263,62 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
-    Intro
+  <a href="#docker_1" class="md-nav__link">
+    docker基本命令
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker_2" class="md-nav__link">
+    docker 更换源
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dockerfile" class="md-nav__link">
+    dockerfile
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dockerfiledocker-image" class="md-nav__link">
+    创建"Dockerfile",构建属于自己的docker image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dockerfile_1" class="md-nav__link">
+    dockerfile基本构成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipstricks" class="md-nav__link">
+    tips&amp;tricks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    docker compose
   </a>
   
 </li>
@@ -1237,12 +1345,92 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jzztf/notes/edit/master/docs/tools/emacs_notes.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jzztf/notes/edit/master/docs/tools/dockerfile-edit.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="emacs-notes">EMACS NOTES<a class="headerlink" href="#emacs-notes" title="Permanent link">¶</a></h1>
-<h2 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">¶</a></h2>
-<p>之前使用vim，因为它可以在terminal中，随时快速调用，并且快速移动，批量修改，搜索替换功能都比较好用.</p>
+                <h1 id="docker">docker使用的一些记录<a class="headerlink" href="#docker" title="Permanent link">¶</a></h1>
+<h2 id="docker_1">docker基本命令<a class="headerlink" href="#docker_1" title="Permanent link">¶</a></h2>
+<h3 id="docker_2">docker 更换源<a class="headerlink" href="#docker_2" title="Permanent link">¶</a></h3>
+<p>编辑<code>/etc/docker/daemon.json</code></p>
+<div class="codehilite"><pre><span></span><code><span class="o">{</span>
+  <span class="s2">&quot;registry-mirrors&quot;</span>: <span class="o">[</span>
+  <span class="s2">&quot;https://dockerhub.azk8s.cn&quot;</span>,
+  <span class="s2">&quot;https://hub-mirror.c.163.com&quot;</span>
+  <span class="o">]</span>
+<span class="o">}</span>
+</code></pre></div>
+
+
+<h2 id="dockerfile">dockerfile<a class="headerlink" href="#dockerfile" title="Permanent link">¶</a></h2>
+<h3 id="dockerfiledocker-image">创建"Dockerfile",构建属于自己的docker image<a class="headerlink" href="#dockerfiledocker-image" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 查看帮助</span>
+docker build --help
+<span class="c1"># 构建image 值得注意最后有一个&quot;.&quot;,从当前目录&quot;Dockerfile&quot;构建</span>
+docker build -t name:tag .
+</code></pre></div>
+
+
+<h3 id="dockerfile_1">dockerfile基本构成<a class="headerlink" href="#dockerfile_1" title="Permanent link">¶</a></h3>
+<p>以下为"Dockerfile"内容</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># &quot;#&quot;号可以做注释</span>
+<span class="c1"># &quot;FROM&quot;表示从哪个image开始构建</span>
+FROM ubuntu:18.04
+
+<span class="c1"># &quot;ARG&quot;声明一些dockerfile内部的变量参数</span>
+ARG <span class="nv">user_name</span><span class="o">=</span>john
+
+<span class="c1"># &quot;RUN&quot;在shell中执行一些命令,可以使用&quot;\&quot;换行</span>
+RUN apt update <span class="o">&amp;&amp;</span> <span class="se">\</span>
+    apt upgrade
+<span class="c1"># 对于参数较多的名名令可以使用下面的方式</span>
+RUN <span class="o">[</span><span class="s2">&quot;echo&quot;</span>, <span class="s2">&quot;hello world!&quot;</span><span class="o">]</span>
+
+<span class="c1"># &quot;CMD&quot;用来为需要直接启动的container提供默认的命令</span>
+CMD <span class="o">[</span><span class="s2">&quot;executable&quot;</span>, <span class="s2">&quot;param1&quot;</span>, <span class="s2">&quot;param2&quot;</span><span class="o">]</span>
+
+<span class="c1"># &quot;LABEL&quot;以键值对的方式打标签,有多种方式,可以添加网站信息,描述等</span>
+LABEL <span class="nv">maintainer</span><span class="o">=</span><span class="s2">&quot;SvenDowideit@home.org.au&quot;</span>
+LABEL multi.label1<span class="o">=</span><span class="s2">&quot;value1&quot;</span> <span class="se">\</span>
+      multi.label2<span class="o">=</span><span class="s2">&quot;value2&quot;</span> <span class="se">\</span>
+            <span class="nv">other</span><span class="o">=</span><span class="s2">&quot;value3&quot;</span>
+
+
+<span class="c1"># &quot;MAINTAINER&quot;维护者信息</span>
+MAINTAINER <span class="s2">&quot;SvenDowideit@home.org.au&quot;</span>
+
+<span class="c1"># &quot;EXPOSE&quot;释放端口号</span>
+EXPOSE <span class="m">80</span>/tcp
+EXPOSE <span class="m">3000</span>/tcp
+
+<span class="c1"># &quot;ENV&quot;声明环境变量</span>
+ENV <span class="nv">myName</span><span class="o">=</span><span class="s2">&quot;John Doe&quot;</span> 
+
+<span class="c1"># &quot;ADD&quot;创建新目录或文件</span>
+ADD /mydir/
+ADD <span class="nb">test</span> /mydir/
+
+<span class="c1"># &quot;COPY&quot;复制文件</span>
+COPY <span class="nb">test</span> /relativeDir/
+
+<span class="c1"># &quot;ENTRYPOINT&quot; 运行最后的命令,覆盖&quot;CMD&quot;</span>
+ENTRYPOINT <span class="o">[</span><span class="s2">&quot;executable&quot;</span>, <span class="s2">&quot;param1&quot;</span>, <span class="s2">&quot;param2&quot;</span><span class="o">]</span>
+<span class="c1"># &quot;VOLUME&quot;</span>
+<span class="c1"># &quot;ARG&quot;</span>
+<span class="c1"># &quot;USER&quot;</span>
+<span class="c1"># &quot;WORKDIR&quot;</span>
+</code></pre></div>
+
+
+<p>link: https://docs.docker.com/engine/reference/builder/</p>
+<h3 id="tipstricks">tips&amp;tricks<a class="headerlink" href="#tipstricks" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 更换安装源,更新软件更快</span>
+RUN  sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g
+/etc/apt/sources.list <span class="se">\</span>
+</code></pre></div>
+
+
+<h2 id="docker-compose">docker compose<a class="headerlink" href="#docker-compose" title="Permanent link">¶</a></h2>
+<p>用来同时启动多个存在内在联系的docker container,协同运行</p>
                 
                   
                 
@@ -1256,9 +1444,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://jzztf.github.io/notes/tools/emacs_notes/";
+      this.page.url = "https://jzztf.github.io/notes/tools/dockerfile-edit/";
       this.page.identifier =
-        "tools/emacs_notes/";
+        "tools/dockerfile-edit/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -1280,7 +1468,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../emacs_install/" title="EMACS INSTALL" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../crontab/" title="CRONTAB-定时任务" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1289,19 +1477,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                EMACS INSTALL
+                CRONTAB-定时任务
               </span>
             </div>
           </a>
         
         
-          <a href="../getting_things_done/" title="GETTING THINGS DONE" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../dot_notes/" title="dot 笔记" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                GETTING THINGS DONE
+                dot 笔记
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

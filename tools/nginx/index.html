@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://jzztf.github.io/notes/tools/emacs_notes/">
+        <link rel="canonical" href="https://jzztf.github.io/notes/tools/nginx/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>Emacs notes - notes</title>
+        <title>nginx 实际应用的 - notes</title>
       
     
     
@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#emacs-notes" tabindex="0" class="md-skip">
+      <a href="#nginx" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -113,7 +113,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Emacs notes
+                nginx 实际应用的
               
             </span>
           
@@ -699,55 +699,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Emacs notes
-      </label>
-    
-    <a href="./" title="Emacs notes" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../emacs_notes/" title="Emacs notes" class="md-nav__link">
       Emacs notes
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
-    Intro
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" class="md-nav__link md-nav__link--active">
-            Comments
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -935,11 +891,62 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../nginx/" title="nginx 实际应用的" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        nginx 实际应用的
+      </label>
+    
+    <a href="./" title="nginx 实际应用的" class="md-nav__link md-nav__link--active">
       nginx 实际应用的
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v2ray" class="md-nav__link">
+    v2ray
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rocketchat" class="md-nav__link">
+    rocketchat
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1209,8 +1216,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
-    Intro
+  <a href="#v2ray" class="md-nav__link">
+    v2ray
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rocketchat" class="md-nav__link">
+    rocketchat
   </a>
   
 </li>
@@ -1237,12 +1251,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jzztf/notes/edit/master/docs/tools/emacs_notes.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jzztf/notes/edit/master/docs/tools/nginx.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="emacs-notes">EMACS NOTES<a class="headerlink" href="#emacs-notes" title="Permanent link">¶</a></h1>
-<h2 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">¶</a></h2>
-<p>之前使用vim，因为它可以在terminal中，随时快速调用，并且快速移动，批量修改，搜索替换功能都比较好用.</p>
+                <h1 id="nginx">nginx 实际应用的<a class="headerlink" href="#nginx" title="Permanent link">¶</a></h1>
+<h2 id="v2ray">v2ray<a class="headerlink" href="#v2ray" title="Permanent link">¶</a></h2>
+<p>可做反向代理,将所有收到的请求通过nginx转发到v2ray</p>
+<h2 id="rocketchat">rocketchat<a class="headerlink" href="#rocketchat" title="Permanent link">¶</a></h2>
+<p>将域名收到的请求转发给rocketchat的监听地址127.0.0.1:3000</p>
                 
                   
                 
@@ -1256,9 +1272,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://jzztf.github.io/notes/tools/emacs_notes/";
+      this.page.url = "https://jzztf.github.io/notes/tools/nginx/";
       this.page.identifier =
-        "tools/emacs_notes/";
+        "tools/nginx/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -1280,7 +1296,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../emacs_install/" title="EMACS INSTALL" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mkdocs/" title="Mkdocs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1289,19 +1305,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                EMACS INSTALL
+                Mkdocs
               </span>
             </div>
           </a>
         
         
-          <a href="../getting_things_done/" title="GETTING THINGS DONE" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../org-mode/" title="Org mode" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                GETTING THINGS DONE
+                Org mode
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
